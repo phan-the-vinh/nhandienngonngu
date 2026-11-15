@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "status": "UNIFIED_EXPERIMENTAL_ADAPTER",
+  "letters_config": "configs/letters.json",
+  "digits_config": "configs/digits.json",
+  "dynamic_experiment_dir": "data/experiments/dynamic_jz_binary_baseline_v1",
+  "mediapipe_task": "models/mediapipe/hand_landmarker.task",
+  "jz_commits_default": false,
+  "mirror_display": true,
+  "migration_stage": "A_B_C_NO_ARTIFACT_MOVES"
+}

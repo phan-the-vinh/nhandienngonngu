@@ -1,0 +1,66 @@
+{
+  "schema_version": 2,
+  "status": "ACTIVE",
+  "task": "10_static_digits",
+  "model_name": "digits_final",
+  "model": {
+    "path": "models/digits/production/digits_final.joblib",
+    "sha256": "43c7e87a287daf7e2c4958f037a91c128f97ab381ccb4f0ae40c7c096776b25c",
+    "format": "joblib",
+    "pipeline_steps": ["orientation_2d", "scaler", "mlp"],
+    "pipeline_classes": ["HandCentric2DAligner", "StandardScaler", "MLPClassifier"]
+  },
+  "fallback": {
+    "path": "models/digits/fallback/mlp_large_v2a_pre_digits_final.joblib",
+    "sha256": "d64acc7bc44449c7186f70b221d123581f786efdbd53885edc2ae70bf0968ad3",
+    "source_model": "models/digits/production/mlp_large_v2a.joblib",
+    "pipeline_classes": ["StandardScaler", "MLPClassifier"]
+  },
+  "transformer": {
+    "class": "HandCentric2DAligner",
+    "module": "hand_centric_2d",
+    "path": "ai/preprocessing/hand_centric_2d.py",
+    "sha256": "3aca63bdb27e43f82636c7ba90d406723243375a679ec937bf881f0ffb6e94f1",
+    "axis_epsilon": 1e-6
+  },
+  "feature_count": 63,
+  "feature_columns": ["f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8", "f9", "f10", "f11", "f12", "f13", "f14", "f15", "f16", "f17", "f18", "f19", "f20", "f21", "f22", "f23", "f24", "f25", "f26", "f27", "f28", "f29", "f30", "f31", "f32", "f33", "f34", "f35", "f36", "f37", "f38", "f39", "f40", "f41", "f42", "f43", "f44", "f45", "f46", "f47", "f48", "f49", "f50", "f51", "f52", "f53", "f54", "f55", "f56", "f57", "f58", "f59", "f60", "f61", "f62", "f63"],
+  "classes": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"],
+  "runtime": {
+    "entrypoint": "run.py --mode digits",
+    "inference_module": "app/inference/digit_inference.py",
+    "config_path": "configs/digits.json",
+    "model_path_override": "--model-path",
+    "normalization": "ai/preprocessing/landmark_utils.py::normalize_landmarks",
+    "mirror_before_mediapipe": false,
+    "mediapipe_path": "models/mediapipe/hand_landmarker.task",
+    "mediapipe_sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+  },
+  "frozen_training": {
+    "dataset_path": "data/processed/digits/digits_final_train_frozen.csv",
+    "dataset_sha256": "79f79d15d06524eb92d8d275a6d2018d507c058bcddffabf295a0dc9a1f8b68c",
+    "samples": 549,
+    "freeze_manifest_path": "data/metadata/digits/digits_final_freeze_manifest.json",
+    "freeze_manifest_sha256": "fdc97be581074ed816ae5f50b4b0af3001b49ad9598a1781d28d6c515033611f",
+    "training_manifest_path": "data/metadata/digits/digits_final_repro/training_manifest_digits_final.json",
+    "training_manifest_sha256": "e1514d1971e508fd4188f3b7d8982936f3603888efeb3dfbee62c11e2c3a5d59"
+  },
+  "validation": {
+    "path": "data/splits/digits/validation_reference.csv",
+    "sha256": "623463a3eedc4f5e66f9ba028fcd638bef0453222a956b0fbcf055bd978257a3",
+    "samples": 100,
+    "accuracy": 0.99,
+    "macro_f1": 0.9899749373433584
+  },
+  "regression_reference": {
+    "path": "data/splits/digits/regression_reference.csv",
+    "sha256": "a4f4ac064bdcd45f13f65091e800baf551129677ec96892a0bac00757d185a32",
+    "samples": 250,
+    "accuracy": 0.96,
+    "independent_final_test": false,
+    "used_for_model_selection_or_tuning": false,
+    "note": "Historical test_v1 is a regression reference, not an independent final test for digits_final."
+  },
+  "training_performed_during_promotion": false,
+  "production_depends_on_experiment_data": false
+}

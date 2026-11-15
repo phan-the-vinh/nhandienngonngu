@@ -1,0 +1,88 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Notebooks / caches
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment & secrets
+.env
+.env.*
+*.pem
+*.key
+*.token
+
+# Media, archives and runtime logs (Privacy & Bloat Protection)
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+*.log
+jz_motion_log.txt
+
+# Heavy datasets and intermediate artifacts in ai/
+dulieu/
+ai/dataset/
+ai/raw_data/
+ai/quality_checkpoints/
+ai/phase2_outputs/
+ai/audit_landmark_previews/
+ai/camera_debug_*/
+ai/review_*/
+ai/_cleanup_quarantine_v1/
+ai/final_promotion_audit/
+ai/models/
+
+# Experimental model checkpoints
+models/digits/candidates/
+models/dynamic_jz/dtw_templates/
+models/**/*.tmp
+
+# Unverified production and fallback models (Public Source-Only policy)
+models/letters/production/uvw_medium_model.joblib
+models/digits/production/digits_final.joblib
+models/space/production/final_space_model.joblib
+models/letters/fallback/*.joblib
+models/digits/fallback/*.joblib
+models/digits/production/mlp_large_v2a.joblib
+
+# Data directory: exclude datasets/videos, whitelist runtime production assets
+data/*
+!data/dictionary/
+data/dictionary/source/
+!data/experiments/
+data/experiments/*
+!data/experiments/dynamic_jz_binary_baseline_v1/
+data/experiments/dynamic_jz_binary_baseline_v1/*
+!data/experiments/dynamic_jz_binary_baseline_v1/model_pipeline.joblib
+!data/experiments/dynamic_jz_binary_baseline_v1/scaler.joblib
+!data/experiments/dynamic_jz_binary_baseline_v1/metadata.json
+
+# Reports runtime data
+reports/figures/
+reports/data/*.json
+!reports/data/README.md

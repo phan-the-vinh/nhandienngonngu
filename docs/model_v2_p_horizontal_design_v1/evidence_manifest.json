@@ -1,0 +1,907 @@
+{
+  "schema_version": 1,
+  "document_status": "DESIGN_ONLY",
+  "created_date": "2026-09-23",
+  "root": "<project-root>",
+  "purpose": "Evidence snapshot before writing v2 planning documents; not a new dataset/model freeze.",
+  "verification": {
+    "AI/dataset/pq_debug_model_analysis_v1/manifest.json": true,
+    "AI/dataset/pq_debug_data_audit_v1/manifest.json": true,
+    "AI/dataset/pq_debug_data_audit_v1/input_hashes.json": true,
+    "model_scaler_mapping_match_training_manifest": true
+  },
+  "source_file_count": 174,
+  "source_files": [
+    {
+      "path": "AI/camera_debug_pq/P_front/20260920T163842_970772Z.json",
+      "bytes": 6449,
+      "sha256": "d27ee01c3ab685c35e4dfa831119952e4a14c7ff4592ff45740355e47286d3e1"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_front/20260920T163842_970772Z_overlay.png",
+      "bytes": 323599,
+      "sha256": "a840f1269d3c2e89c76634b84fb17e4fc46de3e9c379fe079f002f40ed8afd35"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_front/20260920T163842_970772Z_raw.png",
+      "bytes": 321708,
+      "sha256": "7602710842bcd81384fc315340f11c3e5093ca7c62a5f2ac538db87d0f44365e"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_front/20260920T163847_265749Z.json",
+      "bytes": 6450,
+      "sha256": "f7d06b26ddfedfd5b7c670ec58005098e16a7e3dc3b1c9a648d31f3380594069"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_front/20260920T163847_265749Z_overlay.png",
+      "bytes": 320779,
+      "sha256": "2397985bb1528e9cbc77da98543edb0b35cd453a7c3996c65d5739db079aceb8"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_front/20260920T163847_265749Z_raw.png",
+      "bytes": 319012,
+      "sha256": "e4cb5017c25f74fcc4daba997502249170c251c2b3120445bac64987fc44c097"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_front/20260920T163848_404681Z.json",
+      "bytes": 6456,
+      "sha256": "57312795a6b97e84965c4890c451cf92bc664c3e1a7982151295b5f2ed843b41"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_front/20260920T163848_404681Z_overlay.png",
+      "bytes": 323656,
+      "sha256": "64be2f44171dcf44f189c46c66759135f1a149dfb3006867b825d43ea65980a8"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_front/20260920T163848_404681Z_raw.png",
+      "bytes": 321264,
+      "sha256": "306a3a3c6c4f85a559b035b870ba49f5c3d0f3f48dea5c08cdb29a6290c3cc18"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_front/20260920T163849_426918Z.json",
+      "bytes": 6454,
+      "sha256": "da8650bb34e0f6fd353ac78d14a1f04c09da07691cb5a1f46bcc2830f6748e0c"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_front/20260920T163849_426918Z_overlay.png",
+      "bytes": 326493,
+      "sha256": "77dcb72b0650a388649f86de45f7896e37f332f3704c27e7e345fe5ac280ef9a"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_front/20260920T163849_426918Z_raw.png",
+      "bytes": 324131,
+      "sha256": "09ad1f5d0295864e76ca699d6a9290f94fa7eba1e212204d5bb35c39425b99b2"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_front/20260920T163850_606953Z.json",
+      "bytes": 6459,
+      "sha256": "cb3a01bb611b438f6c62096e32538ad868e70e29d76824da0349e11d344d923a"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_front/20260920T163850_606953Z_overlay.png",
+      "bytes": 332816,
+      "sha256": "7d84222e2357b70735f8cbb4d62188940e6e8b933cdc51b8a851c9339e1fd2cb"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_front/20260920T163850_606953Z_raw.png",
+      "bytes": 330090,
+      "sha256": "98bee31e97d92b222930cddba2252cad38f9501ed5a5da52ca6a99e54418a9b5"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_front/20260920T163851_863193Z.json",
+      "bytes": 6459,
+      "sha256": "8c5913c7aa5523c1d9cf48275f48f105a6d644753513d62010fad8ea6c7b97e5"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_front/20260920T163851_863193Z_overlay.png",
+      "bytes": 334562,
+      "sha256": "7407325772db8886f48259c4f6e8dd625d7d4a7092d1ec331c0c2c2e22a5c609"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_front/20260920T163851_863193Z_raw.png",
+      "bytes": 332215,
+      "sha256": "a5f5e49fd43910c38de88dd6f9865f8d3104ac562d8ee1e5c06237465e1155df"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_front/20260920T163852_912025Z.json",
+      "bytes": 6454,
+      "sha256": "d533c4e395b7acca6caff326d12025356c95bc1ce7d5f324eb776cd3302012bc"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_front/20260920T163852_912025Z_overlay.png",
+      "bytes": 334011,
+      "sha256": "fa75779ec19d2ea1b8fdde6730b8b2c0069f9b1c4f6a47d025903715f8c9cda9"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_front/20260920T163852_912025Z_raw.png",
+      "bytes": 332295,
+      "sha256": "15f112f2fed51bdcad03f9fb68b816b004fe2f4b7a35c978aabf9d7ef8207cd0"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_front/20260920T163853_939699Z.json",
+      "bytes": 6429,
+      "sha256": "4f9f17e53efed1883c22df3c4e7ea472ff9b9e8641816b3311c521680d17a901"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_front/20260920T163853_939699Z_overlay.png",
+      "bytes": 326121,
+      "sha256": "d2aa0fd34997541d7874042982376fb8f9fc421f7f98654f2a9c1a5dbbd27940"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_front/20260920T163853_939699Z_raw.png",
+      "bytes": 324322,
+      "sha256": "2190f2d3947ba1ba8844a4ce236b91bfeb4399e94acf9fe4bb65ef63af07a9fe"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_front/20260920T163855_138592Z.json",
+      "bytes": 6449,
+      "sha256": "a1dd08d73ff60b7eebeb22c4e5599457a3254d6b57929f7317d65b2ba29896c1"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_front/20260920T163855_138592Z_overlay.png",
+      "bytes": 326246,
+      "sha256": "cb0fba684fb3c2fc7416b40e15e4e41d2f6548ae2724710c79220cc39c634d64"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_front/20260920T163855_138592Z_raw.png",
+      "bytes": 324405,
+      "sha256": "85523da0597ecab09abee28164e804186d61583f2d42e9b885407ca7add9c511"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_front/20260920T163856_099086Z.json",
+      "bytes": 6408,
+      "sha256": "f2fddc736020824fc2258e17d281fbebf08e20de826bd0c9d28e365eafa7f481"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_front/20260920T163856_099086Z_overlay.png",
+      "bytes": 324124,
+      "sha256": "48d6a2b6839ecfbdd1f22e423e1913444cd9a212c55d1a6f87731b129ebbeee3"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_front/20260920T163856_099086Z_raw.png",
+      "bytes": 322219,
+      "sha256": "7a48370b77dc5eaabc15961713f71996a4f1fa63c4bfd7baa3f0f3df13dc0ef0"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_front/20260920T163856_948369Z.json",
+      "bytes": 6414,
+      "sha256": "8ebc93a6f5adbbc87e72b9b281b2239e41c972ef94dadf7a7f2d1537c2af9697"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_front/20260920T163856_948369Z_overlay.png",
+      "bytes": 323599,
+      "sha256": "e6c8144e1093fc626888820d77baceda21b0afdb94ddb26c9d4a59a6a0aca844"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_front/20260920T163856_948369Z_raw.png",
+      "bytes": 321637,
+      "sha256": "f05779d6772515ebc65a3724c25da45e53a1b6e6998a5c150ad2a951952b98d1"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_front/20260920T163857_909070Z.json",
+      "bytes": 6448,
+      "sha256": "1716e2a3ad94f59057ff7d6e33bae5624141e2271cb76c27848b987a4677b292"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_front/20260920T163857_909070Z_overlay.png",
+      "bytes": 322017,
+      "sha256": "5b5b447ea18c7fbb7bd6f7a2e9b0093ce803b5c6042c3087c0b22adeb96eb392"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_front/20260920T163857_909070Z_raw.png",
+      "bytes": 319880,
+      "sha256": "fc743b13ad1dcdad1de5bd136924a9fc9ac4ea00fb2228b353eee5cb12c1def6"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_front/20260920T163859_030892Z.json",
+      "bytes": 6432,
+      "sha256": "6462af444f882ccc5fad2350c5fd35620080bb16384d1b334284ec67d4458922"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_front/20260920T163859_030892Z_overlay.png",
+      "bytes": 319461,
+      "sha256": "3b3f2ca32f9ce08889d86532da7b08b1ea6229344f0ad2c888ca833449609617"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_front/20260920T163859_030892Z_raw.png",
+      "bytes": 317489,
+      "sha256": "5d1803fb6914f30acc78d472dc91d0971c6b15592930df021afe79eea2e09196"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_front/20260920T163900_800323Z.json",
+      "bytes": 6458,
+      "sha256": "0b245b9bd09fc21526053ef4b98ccb916b187f43f13f5f43b499179d98af969a"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_front/20260920T163900_800323Z_overlay.png",
+      "bytes": 320482,
+      "sha256": "457aa2d0fdd1062bb688df3a729892ce53b5f2534cd7ceb831fc65256128bf90"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_front/20260920T163900_800323Z_raw.png",
+      "bytes": 318673,
+      "sha256": "5544d5c1e84a3acd95e4e0aaec8e1bab7fbc4bd8a1abfa542945592138a14d53"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_front/20260920T163904_096905Z.json",
+      "bytes": 6434,
+      "sha256": "04e45f61405f3b2468e3b88224b340efbcb6d18cff098bbba4ca7ff9c6f0a03d"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_front/20260920T163904_096905Z_overlay.png",
+      "bytes": 318038,
+      "sha256": "b50a4dfcf349baf8360aedbdb2a24bcf273b3dad3cba6ef906bedb042bfb55c6"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_front/20260920T163904_096905Z_raw.png",
+      "bytes": 315707,
+      "sha256": "9d17c151dfe8fc5a48ba1b66bd2ebd67c46fe75775c38e4b877f77816520fb69"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_front/20260920T163905_676166Z.json",
+      "bytes": 6436,
+      "sha256": "f36834d3fbe7e6d3c66e1bfd4055ed391046fe274d82ef609cc4f037d3518dbf"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_front/20260920T163905_676166Z_overlay.png",
+      "bytes": 322979,
+      "sha256": "100186fed13a5fbbd9aea9dda0011ee6599e30fee5f7d4b57ed7f54c6b56637d"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_front/20260920T163905_676166Z_raw.png",
+      "bytes": 320631,
+      "sha256": "0ae9c12b7bc1b9e10dcf036aea831a96cf6a8daeef3d0c730ef293d2d88352dd"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_front/captures.csv",
+      "bytes": 4153,
+      "sha256": "3739d7bba769026f4197ab37fb76213ed6b0de40c4a9cb8d629a6fad2b5a2684"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/20260920T163941_424461Z.json",
+      "bytes": 6459,
+      "sha256": "31a534a6c2ea0a00b957ced89a0ded699a380aa0a0e3d998fc4b34d2c55d28a4"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/20260920T163941_424461Z_overlay.png",
+      "bytes": 320587,
+      "sha256": "4544e1ede2846b9fa6c2d51bb30e6725c12995b0d448302b6f5658c7e649750b"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/20260920T163941_424461Z_raw.png",
+      "bytes": 318760,
+      "sha256": "ac4b56cca659b881de154e39cbfc295c74a011269b1566ea6bbf551dc5d16702"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/20260920T163942_586694Z.json",
+      "bytes": 6469,
+      "sha256": "a83ecc2031912480d8629c49a9286375c2878dbb961456ac5eee34d6e67bb9c7"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/20260920T163942_586694Z_overlay.png",
+      "bytes": 315038,
+      "sha256": "adfab3ea8e723420cb87ae74716a2f8405b278b6acdfafd0bf3950b70dc65351"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/20260920T163942_586694Z_raw.png",
+      "bytes": 312997,
+      "sha256": "4117892accaa7a3bc0c2e2877531e5f8399ff796cc59750d55ec336c54d44ddd"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/20260920T163944_050507Z.json",
+      "bytes": 6458,
+      "sha256": "1777028c849df686a9e9e49c3d9350a876ec7e45cffaa1ce0532212b08102508"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/20260920T163944_050507Z_overlay.png",
+      "bytes": 314057,
+      "sha256": "9aaf643ec7152f428413fbccc38c44ac0351fa910096f7415b1ad936d1eae371"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/20260920T163944_050507Z_raw.png",
+      "bytes": 312217,
+      "sha256": "5e0912da1829736c31c884b42e11192e03b177abf895bfb481b172074b8b9a47"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/20260920T163945_635108Z.json",
+      "bytes": 6455,
+      "sha256": "cf57cf6b4d7f2cc113ac64be642d31a7a7331c6683e3bca9ffc280de99373246"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/20260920T163945_635108Z_overlay.png",
+      "bytes": 313912,
+      "sha256": "892bc78de7fe27653a8381622c0ad5c7776b71c26897fbda356fe7baa879ac91"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/20260920T163945_635108Z_raw.png",
+      "bytes": 312177,
+      "sha256": "338a2a7ecf0af2676b2061bc1ff6b667e48d93aefb721220b96dcb20d452dace"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/20260920T163946_822198Z.json",
+      "bytes": 6464,
+      "sha256": "88555eaafa72f9c74f09951f4273c9fba0439952294996c57835f52e3e60eaf8"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/20260920T163946_822198Z_overlay.png",
+      "bytes": 314363,
+      "sha256": "be4260e3164c9daf80b002b9ee2cdd61e3f9a6d68e5d372c61b6e600d011623a"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/20260920T163946_822198Z_raw.png",
+      "bytes": 312699,
+      "sha256": "aaf752c8b9685d59732acb011221d2e8706d26e9341f9390fee9182fa4a279e8"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/20260920T163949_760229Z.json",
+      "bytes": 6461,
+      "sha256": "d2d42a93ade85f24521441031a62e021c8e9fee65fdb35dafe9129ff3bf33a18"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/20260920T163949_760229Z_overlay.png",
+      "bytes": 314002,
+      "sha256": "b90c011e1b05e4c2a7c2bef657db700ab5faacc7a6dae3049e1e1d1721558ef1"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/20260920T163949_760229Z_raw.png",
+      "bytes": 312292,
+      "sha256": "d2d6e81e2b70c63c8a730eac1a1530bf148c743ccfe60f29d761fcb32df1e6ab"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/20260920T163950_915177Z.json",
+      "bytes": 6468,
+      "sha256": "f8016400e46d848aac6df748da75a797e380dcc01e14fc1491ae488869703be2"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/20260920T163950_915177Z_overlay.png",
+      "bytes": 317215,
+      "sha256": "b002542807e0cd33a264ae30042da91462447a9e4924c9d919ae2e2e89afd3a3"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/20260920T163950_915177Z_raw.png",
+      "bytes": 315469,
+      "sha256": "b6aec6897e6807c7ca2e55129fa20e06a4f9abcd295604f488c1af2ba8fa366b"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/20260920T163951_935633Z.json",
+      "bytes": 6474,
+      "sha256": "dccfd316008628348006b9db561ce882eed91172b6667cbbe8f4b99c08d5366f"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/20260920T163951_935633Z_overlay.png",
+      "bytes": 317921,
+      "sha256": "2e49239af19bf58bdc7d14a93be1fb2706dedd833b3e3303f27ca917d8002075"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/20260920T163951_935633Z_raw.png",
+      "bytes": 316731,
+      "sha256": "c600d744338f66592ace16a3ed1ff43171e2219024a2f83419549cd36b1dc73b"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/20260920T163953_074767Z.json",
+      "bytes": 6464,
+      "sha256": "9e3034b6b93d120be4c28491bd4c4f39bc6c7a986efc1690daa6342cff34c9f6"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/20260920T163953_074767Z_overlay.png",
+      "bytes": 317674,
+      "sha256": "3ee78d5eb7af8dcad6df85bd85bc89473e27236f4ece34a7bcc9282f0dd8edcd"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/20260920T163953_074767Z_raw.png",
+      "bytes": 315832,
+      "sha256": "98bc64352d1ad907dc2c646f6f7b30e378de03fa32320ac783da887050ab2266"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/20260920T163955_775247Z.json",
+      "bytes": 6462,
+      "sha256": "e64974d3a08330f66e6f158b8dd520d44966da8c3cd96420d9583d0586b94bd7"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/20260920T163955_775247Z_overlay.png",
+      "bytes": 318905,
+      "sha256": "48ee788384abb54314547ccf54fc8835f880611aee5023a3a10e519de7f84845"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/20260920T163955_775247Z_raw.png",
+      "bytes": 316900,
+      "sha256": "3405ede928b7b6638561c8c076ce46ac1e0fa767d4503825a2d849de0efac4ec"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/20260920T164000_048623Z.json",
+      "bytes": 6463,
+      "sha256": "7b83cc5d20c14881cd677ae684237ddbb9c9e1566517409ca040ccac32d8f1c5"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/20260920T164000_048623Z_overlay.png",
+      "bytes": 317890,
+      "sha256": "b362b7f6754c90e8cf7b9bc16131260c8926404e36c4f20201e9a7099256efb3"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/20260920T164000_048623Z_raw.png",
+      "bytes": 316131,
+      "sha256": "dc728a911348d0b2d8594b0d4e3135ce9f12dc741cfc0bbffefce0e165f5765a"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/20260920T164002_470361Z.json",
+      "bytes": 6467,
+      "sha256": "524b29b0b9719036da6873716d3c2dd7137a125e32dd687f905e0484c30d223e"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/20260920T164002_470361Z_overlay.png",
+      "bytes": 317607,
+      "sha256": "a521d1246a81b7e166e47a1f0b624d5cab0a12389f7d759a4d916d4eefb9c407"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/20260920T164002_470361Z_raw.png",
+      "bytes": 315928,
+      "sha256": "fccdc2e06e78130e4053f7b96b8225bb28130df42bfeacb196ec2cae65426e68"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/20260920T164004_384040Z.json",
+      "bytes": 6466,
+      "sha256": "90ac99fbf53c6de4f4903d57c452e33bf68111c22f2e400026ac4c9d8c877496"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/20260920T164004_384040Z_overlay.png",
+      "bytes": 319187,
+      "sha256": "6b8d345bd06819b86eb18ddcd79383689106ce2d5d4e5f3bc15518786eb442ff"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/20260920T164004_384040Z_raw.png",
+      "bytes": 317432,
+      "sha256": "9761ca7782bff12a4db06e85c9798a4663677194f2c9408d7a34ce899ccdbc8f"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/20260920T164007_264779Z.json",
+      "bytes": 6466,
+      "sha256": "1d3553aa18df172ab83e4e4aa7067d41f5038b0e5ee172dc49339ff40569aed2"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/20260920T164007_264779Z_overlay.png",
+      "bytes": 319110,
+      "sha256": "3f423a7f133f335cc4227fb446015bdf09ad7bde9b122f1ad6098c3e02bab723"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/20260920T164007_264779Z_raw.png",
+      "bytes": 317178,
+      "sha256": "bee0d4d730ecee3310eae23408bb2d9bc4246bb32cdc569f1837971b4e3ac8f6"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/20260920T164008_769053Z.json",
+      "bytes": 6479,
+      "sha256": "f808a78fe2e74256e3003b29cbf5aa88a970cbf44a1a4c7d6f8ad19a87803e6c"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/20260920T164008_769053Z_overlay.png",
+      "bytes": 318524,
+      "sha256": "b65e8c09bcc1be650c13505799bfcb20cc7cf32a179a6cc5f4ff9dcc9d1d229d"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/20260920T164008_769053Z_raw.png",
+      "bytes": 316856,
+      "sha256": "890f3a1570523045f69e0d843beb2be941be9362e4eeb7015e7681d5814b6a30"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/20260920T164011_599919Z.json",
+      "bytes": 6456,
+      "sha256": "f314adf80ef5fb6b41ec89f352c929c801ddcf4645af2f39e2be088df382d341"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/20260920T164011_599919Z_overlay.png",
+      "bytes": 318334,
+      "sha256": "15d58febb576a4041c870f9bd2fab177261d028ab4a78410eb5a36e7f66284c1"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/20260920T164011_599919Z_raw.png",
+      "bytes": 316640,
+      "sha256": "5c6fe42c9d3780be635ec08302f05f58b1743b9b2a5bcdc719b32743d5c35741"
+    },
+    {
+      "path": "AI/camera_debug_pq/P_horizontal/captures.csv",
+      "bytes": 4275,
+      "sha256": "e1ba0d8dd85bee90fe06ceb590abd3e0c31aa777a225b46aefd27f00d97da595"
+    },
+    {
+      "path": "AI/camera_debug_pq/Q_horizontal/20260920T164538_661170Z.json",
+      "bytes": 6444,
+      "sha256": "3d8b293846e63c774a7f20515d28f3e402d36022121d30abb52c612c5a7e704c"
+    },
+    {
+      "path": "AI/camera_debug_pq/Q_horizontal/20260920T164538_661170Z_overlay.png",
+      "bytes": 327799,
+      "sha256": "e0ef750f217fdee26ac6c1ea4ad71306fb3ed110144409e9f20a3ff017bfbaee"
+    },
+    {
+      "path": "AI/camera_debug_pq/Q_horizontal/20260920T164538_661170Z_raw.png",
+      "bytes": 325138,
+      "sha256": "28e0e30417f0ff39a6b0942f7f5687950a6ce2da69ecd24c7bd9cf2804465e53"
+    },
+    {
+      "path": "AI/camera_debug_pq/Q_horizontal/20260920T164540_579763Z.json",
+      "bytes": 6454,
+      "sha256": "4a945702ef4a20171c8792486c72d7629f5baa8ece1762587467f0938c091382"
+    },
+    {
+      "path": "AI/camera_debug_pq/Q_horizontal/20260920T164540_579763Z_overlay.png",
+      "bytes": 327831,
+      "sha256": "4d0e0eed431d9905d794c8b1d1d27a226fd9ea3d8878091d132ec7386a13d8c7"
+    },
+    {
+      "path": "AI/camera_debug_pq/Q_horizontal/20260920T164540_579763Z_raw.png",
+      "bytes": 325486,
+      "sha256": "bd6098aef4bc9694c48246f7f391873c5c54c3e169a33b1b88b0c3eaa78fe358"
+    },
+    {
+      "path": "AI/camera_debug_pq/Q_horizontal/20260920T164541_801460Z.json",
+      "bytes": 6478,
+      "sha256": "1a67c97718c85a4b50b4015061e42b5d7acb1d3f8441320f4739e861e8714848"
+    },
+    {
+      "path": "AI/camera_debug_pq/Q_horizontal/20260920T164541_801460Z_overlay.png",
+      "bytes": 328032,
+      "sha256": "9eb1668e909614ff54a33dd669e9c8ccf1d44e07635bd21b68fe72e8ba0a0e32"
+    },
+    {
+      "path": "AI/camera_debug_pq/Q_horizontal/20260920T164541_801460Z_raw.png",
+      "bytes": 325939,
+      "sha256": "4cf1ac858abc7928b1a91755804cd649f7bf67ec1da5c45d8cc46084bbeafc8f"
+    },
+    {
+      "path": "AI/camera_debug_pq/Q_horizontal/20260920T164544_197603Z.json",
+      "bytes": 6455,
+      "sha256": "becd7cb1b44d980c9bd3ddc6c2e0ea83bc29d93b4f0b3470ba502075c9504e71"
+    },
+    {
+      "path": "AI/camera_debug_pq/Q_horizontal/20260920T164544_197603Z_overlay.png",
+      "bytes": 324769,
+      "sha256": "32537c768ef4cbdc92512f13720eeee40ace8012c309c3d261f5bbaf4884f469"
+    },
+    {
+      "path": "AI/camera_debug_pq/Q_horizontal/20260920T164544_197603Z_raw.png",
+      "bytes": 322154,
+      "sha256": "299c449c09424ad3364265c019077af2ad4321831c332aea278a5fda587f9f5b"
+    },
+    {
+      "path": "AI/camera_debug_pq/Q_horizontal/20260920T164545_496032Z.json",
+      "bytes": 6466,
+      "sha256": "774a7ceac3535d07a5ee5ca0f96b00daa883e16e507542bda8bc326ff42baabe"
+    },
+    {
+      "path": "AI/camera_debug_pq/Q_horizontal/20260920T164545_496032Z_overlay.png",
+      "bytes": 327654,
+      "sha256": "ecae3d97fface0d3c789c86834921012830069a21e8cb1e40cda05cd213873d0"
+    },
+    {
+      "path": "AI/camera_debug_pq/Q_horizontal/20260920T164545_496032Z_raw.png",
+      "bytes": 325471,
+      "sha256": "98186e8073d7bce67527f72d9019c3c473c2bceab56f2e2337382f3b8fc61ab9"
+    },
+    {
+      "path": "AI/camera_debug_pq/Q_horizontal/20260920T164549_828313Z.json",
+      "bytes": 6457,
+      "sha256": "b7bfdfc9e613fd154e51ed757cdf2b97fad7bc65c2e99c28ae1916986027ce1f"
+    },
+    {
+      "path": "AI/camera_debug_pq/Q_horizontal/20260920T164549_828313Z_overlay.png",
+      "bytes": 323004,
+      "sha256": "e836311cfd8e1d893e77588b964ce55dd1592015a0ce1941fe81fff331710d5b"
+    },
+    {
+      "path": "AI/camera_debug_pq/Q_horizontal/20260920T164549_828313Z_raw.png",
+      "bytes": 320459,
+      "sha256": "d3074a37e79061619c5980a83b6f6031bcf9ab22c2ffce8478341543be1022c2"
+    },
+    {
+      "path": "AI/camera_debug_pq/Q_horizontal/20260920T164552_501002Z.json",
+      "bytes": 6451,
+      "sha256": "ec1ad893831b614a872b7b4186806821524ad397913e45b5d366697790c8fea8"
+    },
+    {
+      "path": "AI/camera_debug_pq/Q_horizontal/20260920T164552_501002Z_overlay.png",
+      "bytes": 320146,
+      "sha256": "648473214a17522a2376be5143fd4f4262e30720426ec77f3313b27253a3a24c"
+    },
+    {
+      "path": "AI/camera_debug_pq/Q_horizontal/20260920T164552_501002Z_raw.png",
+      "bytes": 317647,
+      "sha256": "17e3ee3de1e39d8a77148e29366d98d8ccc1c053d89eef0d29c6dfa189aabce3"
+    },
+    {
+      "path": "AI/camera_debug_pq/Q_horizontal/20260920T164555_445769Z.json",
+      "bytes": 6455,
+      "sha256": "86929d4dd0510d9c14eb0a5dd424dff1cf1071f1b500e6c75733e054f5075169"
+    },
+    {
+      "path": "AI/camera_debug_pq/Q_horizontal/20260920T164555_445769Z_overlay.png",
+      "bytes": 326209,
+      "sha256": "011e85dfcccccbaa8f6609ff60d699c71bdeaf176fcd016618c92ecdb0a98151"
+    },
+    {
+      "path": "AI/camera_debug_pq/Q_horizontal/20260920T164555_445769Z_raw.png",
+      "bytes": 323855,
+      "sha256": "69f0463518af6fb782f4eb80a7ea1fcfc9daf2a8d245a96ab039afa8c61122b7"
+    },
+    {
+      "path": "AI/camera_debug_pq/Q_horizontal/20260920T164600_200015Z.json",
+      "bytes": 6468,
+      "sha256": "5a8787f6c012655162b1d290b504a352ae9d79dad138a516b6a854c64209fd9c"
+    },
+    {
+      "path": "AI/camera_debug_pq/Q_horizontal/20260920T164600_200015Z_overlay.png",
+      "bytes": 323612,
+      "sha256": "707e5afc4e923ea1f1e622d0aeac33d19ef3806c976d205a50814342a398e598"
+    },
+    {
+      "path": "AI/camera_debug_pq/Q_horizontal/20260920T164600_200015Z_raw.png",
+      "bytes": 321425,
+      "sha256": "30f84c9c1ac4b772bf9d814ef3e7670a25bfc96807511004a5b9138181f85af8"
+    },
+    {
+      "path": "AI/camera_debug_pq/Q_horizontal/20260920T164601_840594Z.json",
+      "bytes": 6459,
+      "sha256": "3dfc74ba10ad9eb99629f4553a90f84a9cdc5e770d12e72496df7407cda4acff"
+    },
+    {
+      "path": "AI/camera_debug_pq/Q_horizontal/20260920T164601_840594Z_overlay.png",
+      "bytes": 322915,
+      "sha256": "ed16f4839720f13c4f2025ea1c147c34b04e2daa12c83a6bb2508eb743c9e60b"
+    },
+    {
+      "path": "AI/camera_debug_pq/Q_horizontal/20260920T164601_840594Z_raw.png",
+      "bytes": 320139,
+      "sha256": "dcb5a5d282456fcd98033951c0cb5b60b0c830b6db3e580723689f595f73acee"
+    },
+    {
+      "path": "AI/camera_debug_pq/Q_horizontal/20260920T164626_661394Z.json",
+      "bytes": 6461,
+      "sha256": "5fec8f9ff70e1cf8e1066205c38d692a5d155a161c0a53bd51531b7768653901"
+    },
+    {
+      "path": "AI/camera_debug_pq/Q_horizontal/20260920T164626_661394Z_overlay.png",
+      "bytes": 327699,
+      "sha256": "1446be4c9e6929210ab60bc6c3c42aaadbc57d4fbddf23ddcc7cc48cbb3f5d03"
+    },
+    {
+      "path": "AI/camera_debug_pq/Q_horizontal/20260920T164626_661394Z_raw.png",
+      "bytes": 325044,
+      "sha256": "2c101066780fb53b776dbf3c368196fe285153c24349a067dd797e5574b3efcf"
+    },
+    {
+      "path": "AI/camera_debug_pq/Q_horizontal/20260920T164628_204147Z.json",
+      "bytes": 6469,
+      "sha256": "81bca3b366d1fe69c2cd7e5ba0d75e87ee1b563b18be1a1b3f0f0c6cf70efdd3"
+    },
+    {
+      "path": "AI/camera_debug_pq/Q_horizontal/20260920T164628_204147Z_overlay.png",
+      "bytes": 328608,
+      "sha256": "a8478ae9c2c622ffc70772258047824ec9748d7eaa2fbe12d5449a7e875e6fcb"
+    },
+    {
+      "path": "AI/camera_debug_pq/Q_horizontal/20260920T164628_204147Z_raw.png",
+      "bytes": 326409,
+      "sha256": "e8ec061f410e17151426e7da6cc098166b24cbda84d396980050ef251644fe2e"
+    },
+    {
+      "path": "AI/camera_debug_pq/Q_horizontal/20260920T164629_434719Z.json",
+      "bytes": 6460,
+      "sha256": "812c09f250c873a063db4704581cdae1f4fc8c87c7867eb039cfa8ecb8e96e38"
+    },
+    {
+      "path": "AI/camera_debug_pq/Q_horizontal/20260920T164629_434719Z_overlay.png",
+      "bytes": 330274,
+      "sha256": "b5a0ffd988d4a8f7e391246bb8fb6fffb1c5b4298d4fbb641a07e298949e4c9e"
+    },
+    {
+      "path": "AI/camera_debug_pq/Q_horizontal/20260920T164629_434719Z_raw.png",
+      "bytes": 327991,
+      "sha256": "34ff75d44d8d80280f9505cd6f70eb15a997f697e88c7932ac92e521c872b50e"
+    },
+    {
+      "path": "AI/camera_debug_pq/Q_horizontal/20260920T164634_661547Z.json",
+      "bytes": 6457,
+      "sha256": "0a7d11ea3e1f1f9d811a947240f52255b0bf553d815ec2cddbfecfd11a649a28"
+    },
+    {
+      "path": "AI/camera_debug_pq/Q_horizontal/20260920T164634_661547Z_overlay.png",
+      "bytes": 323056,
+      "sha256": "ba3147b0d0864afdc61e804c0797982c99fbed4b5b56302e7fb09b5b13e9778f"
+    },
+    {
+      "path": "AI/camera_debug_pq/Q_horizontal/20260920T164634_661547Z_raw.png",
+      "bytes": 320605,
+      "sha256": "baefe0b8756c45a64dd9bf15e30d405671037e6beee8f65558904c6a4d1b38ae"
+    },
+    {
+      "path": "AI/camera_debug_pq/Q_horizontal/20260920T164637_844262Z.json",
+      "bytes": 6443,
+      "sha256": "0aa9cb592f252ae0829c871957e9175c5a88bc95d2d6506595453d68257f2842"
+    },
+    {
+      "path": "AI/camera_debug_pq/Q_horizontal/20260920T164637_844262Z_overlay.png",
+      "bytes": 319884,
+      "sha256": "b66200d554fba37fdfc0a66e439264c29a8f3fd8ca9183fbbcee578b70bec324"
+    },
+    {
+      "path": "AI/camera_debug_pq/Q_horizontal/20260920T164637_844262Z_raw.png",
+      "bytes": 317715,
+      "sha256": "e85fb2d383e15dc0cc3646402b604d0815afb66934eb64eab32368144a1ae406"
+    },
+    {
+      "path": "AI/camera_debug_pq/Q_horizontal/captures.csv",
+      "bytes": 4033,
+      "sha256": "d7d6afa1dfe349bc6972aa767094869d529c0526a2d1cc5af45fef2dc43c11dd"
+    },
+    {
+      "path": "AI/dataset/mlp_validation_comparison_v1/baseline_model.joblib",
+      "bytes": 218842,
+      "sha256": "a70b20f3168e180ade068e30e5a6e81711cf9ea1f1e0a6075fa4628e33b2a078"
+    },
+    {
+      "path": "AI/dataset/mlp_validation_comparison_v1/evaluation_summary.json",
+      "bytes": 22264,
+      "sha256": "a979e10a8c50f9d33fa48f7944c555eb49f07cfac9532097e8e31b3a6e06090b"
+    },
+    {
+      "path": "AI/dataset/mlp_validation_comparison_v1/label_mapping.json",
+      "bytes": 1035,
+      "sha256": "4e5898c75ee8fbb06de49b6f185ba1802416749c8369e4c882ab1396ae82a2d7"
+    },
+    {
+      "path": "AI/dataset/mlp_validation_comparison_v1/scaler.joblib",
+      "bytes": 1889,
+      "sha256": "8ef70e9518406d3e56d6492a4f2dd7975c2736c825843347c0c98169d5403f0a"
+    },
+    {
+      "path": "AI/dataset/mlp_validation_comparison_v1/selected_model.joblib",
+      "bytes": 218842,
+      "sha256": "a70b20f3168e180ade068e30e5a6e81711cf9ea1f1e0a6075fa4628e33b2a078"
+    },
+    {
+      "path": "AI/dataset/mlp_validation_comparison_v1/selected_model.json",
+      "bytes": 602,
+      "sha256": "ef02538cc345dc2700bac3935e7a30a9e6c3be9c5a8fa24c58cf344e3ed711ad"
+    },
+    {
+      "path": "AI/dataset/mlp_validation_comparison_v1/training_config.json",
+      "bytes": 5596,
+      "sha256": "80c6b4e57aa5a705f29a72a3354aa2ed6f68041968d5739ab7d0d35367392117"
+    },
+    {
+      "path": "AI/dataset/mlp_validation_comparison_v1/training_manifest.json",
+      "bytes": 5454,
+      "sha256": "9fe33ffefc705fa0b5ba9249013bd052747c420a6f78589543f0f43ed46742cc"
+    },
+    {
+      "path": "AI/dataset/pq_debug_data_audit_v1/P_front_contact_sheet.jpg",
+      "bytes": 718102,
+      "sha256": "ae9166e83e9a6809be4cf4df99fd68292e5bd64e81bac737e7a946f59c01890a"
+    },
+    {
+      "path": "AI/dataset/pq_debug_data_audit_v1/P_horizontal_contact_sheet.jpg",
+      "bytes": 731951,
+      "sha256": "0955518bd6c68cb102058ac77964ab116e0ab64fe8427d6d0eccccc8d3272003"
+    },
+    {
+      "path": "AI/dataset/pq_debug_data_audit_v1/Q_horizontal_contact_sheet.jpg",
+      "bytes": 682541,
+      "sha256": "74283031f9b9175a393d04cf45e6f5576e41e591231a7ed34c8cbf71d8210bc3"
+    },
+    {
+      "path": "AI/dataset/pq_debug_data_audit_v1/audit_summary.json",
+      "bytes": 2347,
+      "sha256": "6171ef4391e6e0bc07cadc81b0ab5f1ec956d27c461d5c7e1262df007d3434e6"
+    },
+    {
+      "path": "AI/dataset/pq_debug_data_audit_v1/debug_sample_audit.csv",
+      "bytes": 41570,
+      "sha256": "6abb11b5e2fd386f63a4d5e969e286ab7001163b5e71b5fb54716e9d76e1e180"
+    },
+    {
+      "path": "AI/dataset/pq_debug_data_audit_v1/input_hashes.json",
+      "bytes": 29189,
+      "sha256": "7376e7682b38e5d5a2ef646081c3ef66ef9bd7bdc59cb8b4828429f82fd3b51f"
+    },
+    {
+      "path": "AI/dataset/pq_debug_data_audit_v1/integrity_report.json",
+      "bytes": 500,
+      "sha256": "25504e8df52a382904dcbb4946f898ff585f929b7cfd871fcfa9c09b318f8089"
+    },
+    {
+      "path": "AI/dataset/pq_debug_data_audit_v1/inventory_summary.json",
+      "bytes": 943,
+      "sha256": "faf6bafe823c5b044b26413f79bab21f13e4ae3b388d07806314bcad99017b33"
+    },
+    {
+      "path": "AI/dataset/pq_debug_data_audit_v1/manifest.json",
+      "bytes": 1789,
+      "sha256": "48dac01b0b2ebd3d2a02adf0fc0e29b1c1c952bdf421da12c40d168c5863e635"
+    },
+    {
+      "path": "AI/dataset/pq_debug_data_audit_v1/possible_near_duplicate_review_contact_sheet.jpg",
+      "bytes": 935593,
+      "sha256": "f1b4b9f1b9c1c5e0a43005a34479b6236fc80c0a1bfcb1feeb6607e1d2581190"
+    },
+    {
+      "path": "AI/dataset/pq_debug_model_analysis_v1/REPORT.md",
+      "bytes": 704,
+      "sha256": "14549b53d535e53078417de361ad1a042f3fdd781f982200658e6a3cc2866363"
+    },
+    {
+      "path": "AI/dataset/pq_debug_model_analysis_v1/analysis_summary.json",
+      "bytes": 7968,
+      "sha256": "fe8f7c8a521d88a39ecd1a3f11da21506b78823bca88085208f7ec804766f6a1"
+    },
+    {
+      "path": "AI/dataset/pq_debug_model_analysis_v1/condition_metrics.csv",
+      "bytes": 348,
+      "sha256": "820a8baab63d8161f4b43e3cc8425edc76f969f915da13c34b2cbc907e005936"
+    },
+    {
+      "path": "AI/dataset/pq_debug_model_analysis_v1/feature_distance_summary.csv",
+      "bytes": 297,
+      "sha256": "b50296e76ba0e8209fb50b424d86d57f06eb7b755f14992da69f49296ec23072"
+    },
+    {
+      "path": "AI/dataset/pq_debug_model_analysis_v1/landmark_geometry_summary.csv",
+      "bytes": 1731,
+      "sha256": "840f942216e8d6bc7dce7e544c77dc8d65caacfce7ea1ea19b2d6a27909590fe"
+    },
+    {
+      "path": "AI/dataset/pq_debug_model_analysis_v1/manifest.json",
+      "bytes": 1951,
+      "sha256": "845da302571d64c892954b5bb4e4fa38caf616416fc3e1d5adaf89321a94ef3b"
+    },
+    {
+      "path": "AI/dataset/pq_debug_model_analysis_v1/near_duplicate_group_analysis.csv",
+      "bytes": 1384,
+      "sha256": "1fb4a98436631fb863594431b882f6459f3f4f10ed9a2d726027f5dbfc81c617"
+    },
+    {
+      "path": "AI/dataset/pq_debug_model_analysis_v1/p_horizontal_cases.csv",
+      "bytes": 2157,
+      "sha256": "fa563abcca05009b900e2097484ddb30318e77ccbf1243c5167afcdfaaec231f"
+    },
+    {
+      "path": "AI/dataset/pq_view_audit_v1/train_pq_summary.json",
+      "bytes": 1757,
+      "sha256": "d905e705b8a7d5d3148937f6dfd21af8061821fab911280274e1ba3a3591ae1d"
+    },
+    {
+      "path": "AI/landmark_utils.py",
+      "bytes": 1144,
+      "sha256": "d8adab0193f76abb607c60d998e294fb2d1b3f0ce80859c16600319338554bf7"
+    },
+    {
+      "path": "AI/static_asl_camera.py",
+      "bytes": 25593,
+      "sha256": "1fae52a730ba81f6b13d6b71cfc2c64ffc46d12790a17f4713b9c449226428b9"
+    },
+    {
+      "path": "AI/train_compare_mlp_validation.py",
+      "bytes": 32778,
+      "sha256": "e007d2bbd2798f3239e288f4785f0304b8117d30e872838d8742ec53df179b17"
+    }
+  ],
+  "scope_limits": [
+    "Protected legacy split/frozen directory listing denied; no escalation needed for documentation task.",
+    "Legacy CSV contents were not opened; historical TRAIN counts are attributed to saved manifests/reports.",
+    "TEST v1 CSV and evaluation were not reopened, rerun or used for design selection.",
+    "No new visual review, MediaPipe, extraction, feature pipeline, data collection, model inference or training was executed in this design task."
+  ],
+  "references": [
+    {
+      "title": "ASL University: fingerspelling",
+      "url": "https://www.lifeprint.com/asl101/pages-layout/fingerspelling.htm",
+      "accessed": "2026-09-23",
+      "supports": "ASL orientation distinctions P/K, Q/G and H/U; not performance or quotas."
+    },
+    {
+      "title": "Google Hand Landmarker Python guide",
+      "url": "https://developers.google.com/edge/mediapipe/solutions/vision/hand_landmarker/python",
+      "accessed": "2026-09-23",
+      "supports": "Distinction between image normalized xyz and world landmarks; not camera-invariance guarantees."
+    }
+  ],
+  "proposal_scope": "All numbers for future signers/bouts/metrics are planning recommendations, not collected observations or deployed thresholds."
+}

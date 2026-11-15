@@ -1,0 +1,36 @@
+{
+  "task": "dynamic_asl",
+  "static_architecture_name": "A-Y",
+  "dynamic_labels": ["J", "Z", "NONE"],
+  "raw_external_root": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data",
+  "metadata_dir": "data/metadata/dynamic",
+  "processed_dir": "data/processed/dynamic",
+  "splits_dir": "data/splits/dynamic",
+  "models_dir": "models/dynamic",
+  "sequence_extraction": {
+    "feature_schema": "baseline_b_v1",
+    "sequence_length": 16,
+    "feature_dim": 69,
+    "sampling_policy_status": "VALID_LANDMARK_FRAMES_V1",
+    "coverage_audit_csv": "data/metadata/dynamic/landmark_coverage_audit_v1.csv",
+    "coverage_summary_json": "data/metadata/dynamic/landmark_coverage_summary_v1.json",
+    "mediapipe_model": "models/mediapipe/hand_landmarker.task",
+    "output_jsonl": "data/experiments/dynamic_jz_v1/processed/signnteam_jz_baseline_b_v1.jsonl",
+    "audit_csv": "data/experiments/dynamic_jz_v1/metadata/signnteam_jz_extraction_audit_v1.csv"
+  },
+  "motion_preview": {
+    "source_preview_manifest": "data/experiments/dynamic_jz_v1/preview/preview_manifest.json",
+    "output_dir": "data/experiments/dynamic_jz_v1/motion_preview",
+    "median_window": 5,
+    "mean_window": 3,
+    "min_valid_fraction": 0.9,
+    "min_peak_score": 0.04,
+    "min_peak_noise_ratio": 2.5,
+    "noise_mad_multiplier": 3.0,
+    "relative_peak_fraction": 0.25,
+    "min_active_edges": 3,
+    "max_gap_frames": 6,
+    "secondary_mass_ratio": 0.35,
+    "margin_frames": 3
+  }
+}

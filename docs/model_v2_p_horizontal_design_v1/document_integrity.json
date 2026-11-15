@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "checks_run": 25,
+  "checks": {
+    "source_sha256_unchanged": true,
+    "174_source_files_tracked": true,
+    "prior_manifest_checks_all_pass": true,
+    "24_static_labels_exact": true,
+    "40_unique_planned_signers": true,
+    "collection_row_multiplication": true,
+    "frame_count_multiplication": true,
+    "9600_bouts_28800_frames": true,
+    "cohort_bouts_exact": true,
+    "cohort_frames_exact": true,
+    "test_PQ_horizontal_240_each": true,
+    "test_other_class_72_each": true,
+    "six_factorial_arms_and_reference": true,
+    "parameter_counts_consistent": true,
+    "18_planned_runs_no_training": true,
+    "R1_R2_dimension_sums": true,
+    "metadata_field_names_unique": true,
+    "metadata_required_identity_and_semantic_fields": true,
+    "csv_shapes_valid": true,
+    "primary_failures_accounted": true,
+    "degenerate_CI_guard_present": true,
+    "point_nonregression_gates": true,
+    "no_test_v1_or_debug_selection": true,
+    "orientation_preserved_no_rotation_augmentation": true,
+    "fresh_docs_only": true
+  },
+  "source_files_checked": 174,
+  "source_files_modified": 0,
+  "protected_dataset_csv_contents_reverified": false,
+  "protected_data_access_note": "No access required for design; counts attributed to existing manifests. No TEST v1 CSV accessed.",
+  "new_documents": [
+    {
+      "path": "docs/model_v2_p_horizontal_design_v1/collection_plan.csv",
+      "bytes": 471,
+      "sha256": "51bd3639460ea1685cd81e0bae4daff78877f2bbdaefa4892bcc355d53349d95"
+    },
+    {
+      "path": "docs/model_v2_p_horizontal_design_v1/DESIGN.md",
+      "bytes": 24776,
+      "sha256": "bf7d8b7249c40f254cc47baa8808aa6ff1072b62f2ba2405b86c7678e4a8241c"
+    },
+    {
+      "path": "docs/model_v2_p_horizontal_design_v1/evaluation_protocol.json",
+      "bytes": 6664,
+      "sha256": "8f00a93230723b9250afd19116deddb8edf7fcefe6b3333e91368c2ffc183f8a"
+    },
+    {
+      "path": "docs/model_v2_p_horizontal_design_v1/evidence_manifest.json",
+      "bytes": 35977,
+      "sha256": "624428663b2840ad00126296c8706f3848a73315471f75aba3673df532158141"
+    },
+    {
+      "path": "docs/model_v2_p_horizontal_design_v1/experiment_matrix.csv",
+      "bytes": 803,
+      "sha256": "7f61df9cb261ea5422e49bd53300d554c9509e0a64a8710f79bcb9358820179b"
+    },
+    {
+      "path": "docs/model_v2_p_horizontal_design_v1/metadata_dictionary.csv",
+      "bytes": 6002,
+      "sha256": "60f62206f75df2808285ab42498fea3e66e45447899fd19c14f5acda041f6511"
+    }
+  ],
+  "cohort_bouts": {
+    "TRAIN": 4800,
+    "DEV": 1920,
+    "TEST_NEW": 2880
+  },
+  "cohort_frames_max": {
+    "TRAIN": 14400,
+    "DEV": 5760,
+    "TEST_NEW": 8640
+  },
+  "future_training_runs_executed": 0,
+  "data_collected": 0,
+  "new_splits_created": 0,
+  "review": "Two independent read-only design reviews; FRONT quota clarification, NO_PREDICTION column, training-only eligibility and bootstrap boundary guard incorporated."
+}

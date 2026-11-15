@@ -1,0 +1,203 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-09-26T12:20:00.077836+00:00",
+  "status": "UVW_VALIDATION_COMPARISON_COMPLETE",
+  "selection": {
+    "validation_winner": "uvw_medium",
+    "recommended_for_camera_test": "uvw_medium",
+    "status": "CAMERA_TEST_RECOMMENDED",
+    "criterion": "Highest VALIDATION v1 macro-F1; ties use minimum recall then accuracy.",
+    "significant_recall_drop_threshold": 0.02,
+    "significant_recall_regressions": [],
+    "deployment_authorized": false,
+    "camera_error_fixed_claimed": false,
+    "test_used": false
+  },
+  "integrity": {
+    "status": "PASS",
+    "checks_run": 29,
+    "train_samples": 62648,
+    "validation_samples": 13412,
+    "features_used": 63,
+    "labels": 24,
+    "train_validation_sample_overlap": 0,
+    "train_validation_group_overlap": 0,
+    "scaler_train_rows": {
+      "uvw_low": 62648,
+      "uvw_medium": 62648
+    },
+    "candidate_scalers_identical": true,
+    "sample_weight_native": true,
+    "weight_class_totals_equal": true,
+    "supplement_group_budgets_pass": true,
+    "near_duplicate_control": "PASS",
+    "models_scalers_reload_inference": "PASS",
+    "unit_tests": "PASS",
+    "test_csv_access": "SIZE_AND_SHA256_ONLY",
+    "test_evaluated": false,
+    "pq_data_used": false,
+    "extra_variants_trained": false,
+    "protected_inputs_hashes_unchanged": true,
+    "static_camera_modified": false,
+    "model_v1_modified": false,
+    "frozen_or_split_data_modified": false
+  },
+  "test_evaluated": false,
+  "remaining_limitations": [
+    "VALIDATION v1 lacks camera-view metadata.",
+    "The 57 supplement rows are training data.",
+    "A new unseen-bout camera challenge is required before deployment."
+  ],
+  "outputs": [
+    {
+      "path": "checkpoints/uvw_low/state.joblib",
+      "bytes": 439700,
+      "sha256": "59da9c4e158092c8316c917d26e2ceb6834abbd4afc76ee8174833baf581ff00"
+    },
+    {
+      "path": "checkpoints/uvw_medium/state.joblib",
+      "bytes": 440144,
+      "sha256": "7452670559bc28ec181ffd7e449f2e868619deda31feafb837dc9bf9a0d15a33"
+    },
+    {
+      "path": "evaluation_summary.json",
+      "bytes": 14795,
+      "sha256": "4f41c05f4b0148104c9adb90cbc95ae5b18964efe94d779c2983df26ce6db75f"
+    },
+    {
+      "path": "integrity_report.json",
+      "bytes": 832,
+      "sha256": "0d68322b0fc7588e187350a75899fe18746b5dd52c443710fe67118ef5cd1e88"
+    },
+    {
+      "path": "label_mapping.json",
+      "bytes": 957,
+      "sha256": "3a86d183c0a071782aef9f31054db396a8ad454706137dc7b5017a1024428876"
+    },
+    {
+      "path": "per_class_comparison_to_v1.csv",
+      "bytes": 8936,
+      "sha256": "737d79ac0764baa7eb68ed6be809782c0f97fa573f1b819c9392fe428199d2f3"
+    },
+    {
+      "path": "pretraining_weight_audit.csv",
+      "bytes": 3809,
+      "sha256": "b102d74043957bacb58bd104e84dcbe85eddcc93cce1776e6d3328e6560c578e"
+    },
+    {
+      "path": "pretraining_weight_audit.json",
+      "bytes": 15170,
+      "sha256": "b6ef0cff9fa3a5384ba40a0536b4c0ff155b44bf310ef0a5fed9cc1518e090c6"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 381,
+      "sha256": "17879738e2a839c8640b514ca652dfb2ed9a1ef4e230695fbe5b1442ff3812d2"
+    },
+    {
+      "path": "run_state.json",
+      "bytes": 174,
+      "sha256": "f64ec5684533d7c29b2b38ed6a5fd477338ee312d175402537816af55e942d93"
+    },
+    {
+      "path": "selected_candidate.json",
+      "bytes": 802,
+      "sha256": "78605e21b23b2d6ba2f4df7842dd43d52360daf723dc5cc397ece6567ff2b308"
+    },
+    {
+      "path": "supplement_training_diagnostic_predictions.csv",
+      "bytes": 15866,
+      "sha256": "76be0417ae105ea01d3570f680d2d9d921c50a961b411612c0ab4ebfeabd2946"
+    },
+    {
+      "path": "supplement_training_diagnostic_summary.json",
+      "bytes": 2203,
+      "sha256": "d5b2461bcf26241298317251a42d89e718234576111f47c7956c55230b4f856f"
+    },
+    {
+      "path": "test_report.json",
+      "bytes": 258,
+      "sha256": "8744cdb87e1fbfcdccfb1c6248ff83008040d1f2350c7dc7000bd425a81167a7"
+    },
+    {
+      "path": "training_config.json",
+      "bytes": 10457,
+      "sha256": "196c47cb654125a738273355542140c7a1a824dc353fc26ddb2c7fe0603596b3"
+    },
+    {
+      "path": "uvw_class_comparison.csv",
+      "bytes": 997,
+      "sha256": "80e6a52da324bd620ca5851de5431bfea4bc8f7c6e0e1702f37047e5a3fa9f0d"
+    },
+    {
+      "path": "uvw_low_confusion_matrix.csv",
+      "bytes": 1338,
+      "sha256": "e6842387aab817f41824c4d27dad8d7e6667b396944693f61669b7929ab0d684"
+    },
+    {
+      "path": "uvw_low_model.joblib",
+      "bytes": 218419,
+      "sha256": "90894afd285d19ad10417926abd0ab63d317a5e902d6798c5486141ced591109"
+    },
+    {
+      "path": "uvw_low_per_class_metrics.csv",
+      "bytes": 1519,
+      "sha256": "065f59e972f10ec586f1ed91362f8c7ddfd4948dd46ac158f1974886728ecb51"
+    },
+    {
+      "path": "uvw_low_scaler.joblib",
+      "bytes": 1887,
+      "sha256": "93a0ddf102e456fef90cc54ddfa8cfadde60b72cce30e4f3c7810a0309fe0d4c"
+    },
+    {
+      "path": "uvw_low_training_history.csv",
+      "bytes": 16616,
+      "sha256": "724d66c19fec580d465cef1b117a9ebd4d3a2c67bbfb2723ca0bf40ab353e045"
+    },
+    {
+      "path": "uvw_low_validation_predictions.csv",
+      "bytes": 752670,
+      "sha256": "0813454c872b365b47c9d9d8a91b61e6486b4ae0d8c7ed056f102e66dba911bc"
+    },
+    {
+      "path": "uvw_medium_confusion_matrix.csv",
+      "bytes": 1336,
+      "sha256": "75e2aa11ce0155802395ebaf4c6ad592181dd79633a09d9ac127975f29072747"
+    },
+    {
+      "path": "uvw_medium_model.joblib",
+      "bytes": 218456,
+      "sha256": "88ea2f270cd75575d8914650265aa00193ffe451eb1a72d3ce70970bb1525a45"
+    },
+    {
+      "path": "uvw_medium_per_class_metrics.csv",
+      "bytes": 1505,
+      "sha256": "1317c768c78b971e73eb134881a47fc7ba9977f2ff6c257be281b4753aad886f"
+    },
+    {
+      "path": "uvw_medium_scaler.joblib",
+      "bytes": 1887,
+      "sha256": "93a0ddf102e456fef90cc54ddfa8cfadde60b72cce30e4f3c7810a0309fe0d4c"
+    },
+    {
+      "path": "uvw_medium_training_history.csv",
+      "bytes": 17799,
+      "sha256": "218c8c4553be5987163f2295c62e14161ac062a6ae914ebcadd1a63d38615409"
+    },
+    {
+      "path": "uvw_medium_validation_predictions.csv",
+      "bytes": 752610,
+      "sha256": "89ffd7ca60edade077041a3515fca9cdcf503953726507923e056c1c522eefe2"
+    },
+    {
+      "path": "validation_winner_model.joblib",
+      "bytes": 218456,
+      "sha256": "88ea2f270cd75575d8914650265aa00193ffe451eb1a72d3ce70970bb1525a45"
+    },
+    {
+      "path": "validation_winner_scaler.joblib",
+      "bytes": 1887,
+      "sha256": "93a0ddf102e456fef90cc54ddfa8cfadde60b72cce30e4f3c7810a0309fe0d4c"
+    }
+  ]
+}

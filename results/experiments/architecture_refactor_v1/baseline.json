@@ -1,0 +1,361 @@
+{
+  "schema_version": 1,
+  "git_status": "NOT_A_GIT_REPOSITORY",
+  "scope": "A/B/C adapter migration; no data/model movement",
+  "files": {
+    "README.md": {
+      "sha256": "7fb5f3ddbdf5b16d19f77e08940d78020b5ee029f580c69c119b7bc552859aed",
+      "size": 1439
+    },
+    "SYSTEM_CONTEXT.md": {
+      "sha256": "5a86f8eb46e126f1403ff01c15023aec68cb4681c7f60e09b60260a3b185a1b5",
+      "size": 35147
+    },
+    "ai/feature_extraction/__init__.py": {
+      "sha256": "bd71609ba830ae5409d28ecdaa2894f1351b01caa6c4187b2d9da784c53ffb82",
+      "size": 60
+    },
+    "ai/feature_extraction/dynamic_sequence.py": {
+      "sha256": "8b2cccb37e7a872a1c7cfb542bcba0b1697230f51fb74cc9f05f401587f1a29c",
+      "size": 10992
+    },
+    "ai/feature_extraction/hand_landmarks.py": {
+      "sha256": "ca1ce6584fa3326f8041abde8ed750a753870bc4af8908ebd30036826fbe0e1a",
+      "size": 2883
+    },
+    "ai/preprocessing/__init__.py": {
+      "sha256": "5efc8984c8f292a0655b5288585d514bc561ef22f9d5f2ab19f6637c0feacbeb",
+      "size": 65
+    },
+    "ai/preprocessing/hand_centric_2d.py": {
+      "sha256": "3aca63bdb27e43f82636c7ba90d406723243375a679ec937bf881f0ffb6e94f1",
+      "size": 3235
+    },
+    "ai/preprocessing/landmark_utils.py": {
+      "sha256": "d8adab0193f76abb607c60d998e294fb2d1b3f0ce80859c16600319338554bf7",
+      "size": 1144
+    },
+    "ai/preprocessing/orientation_2d_experimental.py": {
+      "sha256": "2b5b864fd3859e05e08670f45ced6ca67aea13a17c8f4f4c56dc82df1bb965ea",
+      "size": 3254
+    },
+    "app/camera/__init__.py": {
+      "sha256": "029ef6d7e8ed969a6d0b07cb14ef8bcf12d01e1838e557ed821551842fcc1203",
+      "size": 32
+    },
+    "app/camera/realtime_inference.py": {
+      "sha256": "7a8636983d3c2e547e974478175013b16b1fb8be659540abc36219709e1164a6",
+      "size": 1853
+    },
+    "app/inference/__init__.py": {
+      "sha256": "b7b05e33bef1314c33ef8a020cda80ac45f5029837e096bfb673b2b2f10c7457",
+      "size": 65
+    },
+    "app/inference/automatic_jz_experiment.py": {
+      "sha256": "ee8f522fd4ccd85e24e5aa271fa9e2707659d3c3dc7aaa27cc932eb3b47684ab",
+      "size": 33697
+    },
+    "app/inference/digit_inference.py": {
+      "sha256": "0018a8094ae868a2b3877c2c371ebe997ac674fc308d85f97030a4dc4dd0b735",
+      "size": 6356
+    },
+    "app/inference/dynamic_jz_auto_camera_experiment.py": {
+      "sha256": "b6862d550cca69078f3f3e6cd72721576f35ab03bee00e0dcff439b32078c0af",
+      "size": 36384
+    },
+    "app/inference/dynamic_jz_auto_camera_experiment_v1.py": {
+      "sha256": "04a77ef5e84ed9da919c4e376d7458945122d85799c361342ff231d808b58ca5",
+      "size": 18006
+    },
+    "app/inference/dynamic_jz_auto_camera_first16_v1.py": {
+      "sha256": "015d5598935741774f70492200eff558b9f3a66e71fb85dea8cd7a3e378d6a16",
+      "size": 33917
+    },
+    "app/inference/dynamic_jz_auto_diagnostics.py": {
+      "sha256": "ed3a3d633234feb9367fe055803cf20fc08505f97e5cc6af6a51e770cd111a75",
+      "size": 7186
+    },
+    "app/inference/dynamic_jz_camera_test.py": {
+      "sha256": "a43e01e19db1762df7edfa1289968784c3341db068b92e497618c4c5d8ebdcc3",
+      "size": 14076
+    },
+    "app/inference/first16_jz_segmenter.py": {
+      "sha256": "547002e6bcad421a8074e7f76fe0a42394386298e37540062a8d08d9629a1228",
+      "size": 8434
+    },
+    "app/inference/first16_jz_segmenter_v1.py": {
+      "sha256": "18eb0859cd245661e1adcab122876ac6197b381f1f34286142c533f3ad28a81c",
+      "size": 3038
+    },
+    "app/inference/hold_confirmation_camera_test.py": {
+      "sha256": "db266083ec9c3d07657b09c404b865674aed1db507929985ce283aa660dfad8e",
+      "size": 9512
+    },
+    "app/inference/integrated_jz_validation.py": {
+      "sha256": "a8a8eb8c86662973bd94cc16251c0e15fe20d905ce3aa1bb933533b4a9c60614",
+      "size": 4164
+    },
+    "app/inference/jz_attempt_capture.py": {
+      "sha256": "4f437fa2ee904d462d3be454b040a9fe40fe1a49ececd8d7964d309fd9d2aac0",
+      "size": 19242
+    },
+    "app/inference/jz_shadow_diagnostics.py": {
+      "sha256": "9b57a120766f3faa5b54bd61342e1769040aa38f9203fbd9f1f400fa87442d2b",
+      "size": 8699
+    },
+    "app/inference/letter_inference.py": {
+      "sha256": "b3b4b10b63de45ccb6c5987b7f00a0ef3c2f4193e6b53d9316727999658d826a",
+      "size": 35884
+    },
+    "app/inference/push_confirmation_camera_reconstructed_pre_apple.py": {
+      "sha256": "c15a5cc4a5538559ee8ea956f6825470c222d440c5b3ed70507bcc3f86f38a45",
+      "size": 17902
+    },
+    "app/inference/push_confirmation_camera_reconstructed_return_fix.py": {
+      "sha256": "5f4748a86304dc6639094003d982904716cfb7ddd3e2a80689651b9001dac4a3",
+      "size": 18028
+    },
+    "app/inference/push_confirmation_camera_test.py": {
+      "sha256": "b5775c25223a05ff98362f9eb184c7d3ec0d73c012e544d9f69fa809d5cc949c",
+      "size": 18584
+    },
+    "app/inference/unified_abc123_jz_auto_coordinator.py": {
+      "sha256": "694a94e2f34fbaaccf37a538f462a83692b4ff6b4d5662b9b5f66a2624f36be8",
+      "size": 33161
+    },
+    "app/inference/unified_abc123_jz_auto_experiment.py": {
+      "sha256": "8fb00d4e812267c6d3977bc0d5b3f77ef20b6263e1450493a346d2ed6de5b355",
+      "size": 14660
+    },
+    "app/inference/unified_abc_dynamic_experiment.py": {
+      "sha256": "0b6b6c35a0ba0afc4b11d10b0e999e587709708a93ec1f5ebe0648d07a031a50",
+      "size": 18878
+    },
+    "app/inference/unified_camera_experiment.py": {
+      "sha256": "9bbfa047ffffeee6c328f7ede0ee9e5039b0133b271c41595e9c0f83c546df9b",
+      "size": 8982
+    },
+    "app/inference/unified_static_coordinator.py": {
+      "sha256": "669f1fa2daea794b4c7d7cde6a0a7c3bf9b3146c1f2ba0b57aeb73c5ac356092",
+      "size": 6575
+    },
+    "app/inference/word_builder.py": {
+      "sha256": "3eef0b6cf1e675536e0437b76b1b9ddc53900787c544dfad344739d397ce1e61",
+      "size": 521
+    },
+    "app/inference/z_start_pose_experimental.py": {
+      "sha256": "edee0fab24cfab6b1dfa5eda931f16024e327bc175f8d3110dbe7e178f41ad61",
+      "size": 25531
+    },
+    "app/interaction/down_confirmation.py": {
+      "sha256": "24edaafb3135775b12f0a55fbfaea42efdcfffd48248320ad7a2f90074f29baf",
+      "size": 10162
+    },
+    "app/interaction/down_confirmation_reconstructed_return_fix.py": {
+      "sha256": "75d0a569fdc69c9adba4bed4daa38f0cf28d9ac74d69608e1f42a11b51075625",
+      "size": 3749
+    },
+    "app/interaction/hold_confirmation.py": {
+      "sha256": "bc5ad2152067fc592efc0cbec150ccb37cef2d4ea5af9a619d9ef6b454d9667a",
+      "size": 8819
+    },
+    "app/interaction/tap_confirmation.py": {
+      "sha256": "39b06a32741d1b023326193a53429bf7e2d76b6699666d665bcd63f638c41244",
+      "size": 9544
+    },
+    "configs/camera.json": {
+      "sha256": "465f11b164706460bf3bf330a7c21f64a1dbeceed8f450554265999649427400",
+      "size": 490
+    },
+    "configs/digits.json": {
+      "sha256": "a722e5f58a41b0112face4a5eb2c67501e91387f800cdeca2bf7affd7445b1b2",
+      "size": 990
+    },
+    "configs/digits_evaluation.json": {
+      "sha256": "0d3e84a11eaf8c7ebc1215bcb4092ab0e550bdeafc1aca3d48330d33f4064a37",
+      "size": 317
+    },
+    "configs/digits_training.json": {
+      "sha256": "20c81bec9ce8f288461695bf86236af253be8b101db8acfa0c3eac8a95a62fc2",
+      "size": 1343
+    },
+    "configs/dynamic.json": {
+      "sha256": "256cd6ab86cd588efdb890745719cd9a5e6ecfde16a50326197cb8385ab10ccb",
+      "size": 1459
+    },
+    "configs/dynamic_capture.json": {
+      "sha256": "a54b84e1f15df5ef2896cea382b313e1fb9bd47edd0c1ac33e9b788d495d2a76",
+      "size": 306
+    },
+    "configs/dynamic_training.json": {
+      "sha256": "7a33413cd1cdcd6c51333fcab13abe40c88ac86ed632e2a9c6d2f4d7934fadfe",
+      "size": 1558
+    },
+    "configs/letters.json": {
+      "sha256": "b9dbfba2df8a5d573c671777263c78b17f93e541aec1275f39fd1a49ab1c1461",
+      "size": 2096
+    },
+    "data/experiments/dynamic_jz_binary_baseline_v1/config_snapshot.json": {
+      "sha256": "104a7442abbfe52345c0a78e6813b8f4165e65c7744db66a92542add335edb08",
+      "size": 1729
+    },
+    "data/experiments/dynamic_jz_binary_baseline_v1/metrics.json": {
+      "sha256": "4c6559ede6da7c694d4e6da627630a998615bb5cb3332e1a86749764df13eecb",
+      "size": 2851
+    },
+    "data/experiments/dynamic_jz_binary_baseline_v1/model_pipeline.joblib": {
+      "sha256": "8878b0c0cd04a1ff8bbfc263cb3d49b4c7bc92706140b71c99a36e37bc33c497",
+      "size": 36657
+    },
+    "data/experiments/dynamic_jz_binary_baseline_v1/scaler.joblib": {
+      "sha256": "93804d73f4fc63aee7f2da08c1f0a879dc6d2bdc50ec27c0f5cfa4011b6fad7c",
+      "size": 27079
+    },
+    "data/experiments/dynamic_jz_binary_baseline_v1/split_manifest.json": {
+      "sha256": "8a0bdc86f2b695e6cdfa30a254260d6e6e0b8685cd75b1cc1883d50909f0cd7d",
+      "size": 86126
+    },
+    "data/experiments/dynamic_jz_binary_baseline_v1/training_manifest.json": {
+      "sha256": "c432b4871e26ed9062ab758781d9032e65896b735d81e29f2eab5ec2b623ce2f",
+      "size": 1570
+    },
+    "models/digits/fallback/mlp_large_v2a_pre_digits_final.joblib": {
+      "sha256": "d64acc7bc44449c7186f70b221d123581f786efdbd53885edc2ae70bf0968ad3",
+      "size": 464073
+    },
+    "models/digits/production/deployment_manifest_v1.json": {
+      "sha256": "a29ec512464b6568191388204fd7373967496bd5b3efe001c6e907e1dbf4d6e3",
+      "size": 3219
+    },
+    "models/digits/production/deployment_manifest_v2.json": {
+      "sha256": "e459f22658d16b6f60609ae43c4cea5f9b1a4490b33bdb7312e18f8016e56a51",
+      "size": 3373
+    },
+    "models/digits/production/digits_final.joblib": {
+      "sha256": "43c7e87a287daf7e2c4958f037a91c128f97ab381ccb4f0ae40c7c096776b25c",
+      "size": 464265
+    },
+    "models/digits/production/mlp_large_v2a.joblib": {
+      "sha256": "d64acc7bc44449c7186f70b221d123581f786efdbd53885edc2ae70bf0968ad3",
+      "size": 464073
+    },
+    "models/letters/fallback/baseline_model.joblib": {
+      "sha256": "a70b20f3168e180ade068e30e5a6e81711cf9ea1f1e0a6075fa4628e33b2a078",
+      "size": 218842
+    },
+    "models/letters/fallback/evaluation_manifest.json": {
+      "sha256": "de66093fba596f14144357afd2c64852670ab43fd34dd15e7dc71d5022807cbc",
+      "size": 15566
+    },
+    "models/letters/fallback/label_mapping.json": {
+      "sha256": "4e5898c75ee8fbb06de49b6f185ba1802416749c8369e4c882ab1396ae82a2d7",
+      "size": 1035
+    },
+    "models/letters/fallback/scaler.joblib": {
+      "sha256": "8ef70e9518406d3e56d6492a4f2dd7975c2736c825843347c0c98169d5403f0a",
+      "size": 1889
+    },
+    "models/letters/fallback/selected_model.joblib": {
+      "sha256": "a70b20f3168e180ade068e30e5a6e81711cf9ea1f1e0a6075fa4628e33b2a078",
+      "size": 218842
+    },
+    "models/letters/fallback/selected_model.json": {
+      "sha256": "ef02538cc345dc2700bac3935e7a30a9e6c3be9c5a8fa24c58cf344e3ed711ad",
+      "size": 602
+    },
+    "models/letters/fallback/training_config.json": {
+      "sha256": "80c6b4e57aa5a705f29a72a3354aa2ed6f68041968d5739ab7d0d35367392117",
+      "size": 5596
+    },
+    "models/letters/fallback/training_manifest.json": {
+      "sha256": "9fe33ffefc705fa0b5ba9249013bd052747c420a6f78589543f0f43ed46742cc",
+      "size": 5454
+    },
+    "models/letters/production/deployment_manifest_v3.json": {
+      "sha256": "ab2f58840759fcb998c9c18aceb26733b1800ab34c5c0c67e85513e6ac5edf05",
+      "size": 5304
+    },
+    "models/letters/production/evaluation_summary.json": {
+      "sha256": "4f41c05f4b0148104c9adb90cbc95ae5b18964efe94d779c2983df26ce6db75f",
+      "size": 14795
+    },
+    "models/letters/production/label_mapping.json": {
+      "sha256": "3a86d183c0a071782aef9f31054db396a8ad454706137dc7b5017a1024428876",
+      "size": 957
+    },
+    "models/letters/production/selected_candidate.json": {
+      "sha256": "78605e21b23b2d6ba2f4df7842dd43d52360daf723dc5cc397ece6567ff2b308",
+      "size": 802
+    },
+    "models/letters/production/training_config.json": {
+      "sha256": "196c47cb654125a738273355542140c7a1a824dc353fc26ddb2c7fe0603596b3",
+      "size": 10457
+    },
+    "models/letters/production/training_manifest.json": {
+      "sha256": "9a8b5b5a14a20261c897a477fac61908c6851088a2793eaad73b607eb73150ef",
+      "size": 6587
+    },
+    "models/letters/production/uvw_medium_model.joblib": {
+      "sha256": "88ea2f270cd75575d8914650265aa00193ffe451eb1a72d3ce70970bb1525a45",
+      "size": 218456
+    },
+    "models/letters/production/uvw_medium_scaler.joblib": {
+      "sha256": "93a0ddf102e456fef90cc54ddfa8cfadde60b72cce30e4f3c7810a0309fe0d4c",
+      "size": 1887
+    },
+    "models/mediapipe/hand_landmarker.task": {
+      "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1",
+      "size": 7819105
+    },
+    "requirements.txt": {
+      "sha256": "52e9da7da0d8758020a19b91ef815c4c8dd61d7909ca680ff1662875d42cb33e",
+      "size": 250
+    },
+    "run.py": {
+      "sha256": "72c46e6d8138525c2af3de4113d678eab63cff27ebc0aae21a9018f4dc0d0be2",
+      "size": 808
+    },
+    "training/digits/evaluate_chuso_validation_v2.py": {
+      "sha256": "ba211f151aa0176c7fb6c11e7fe58ac9a8677b3d8c20e8e71bc0f24b2049e818",
+      "size": 10533
+    },
+    "training/digits/evaluate_digits.py": {
+      "sha256": "c3d68862233f3099610d78d5b5908909012d17e5ce176acf45adfc26aac1e158",
+      "size": 7555
+    },
+    "training/digits/freeze_chuso_dataset_v1.py": {
+      "sha256": "e48e2dc08d8c2fe3674c400e780cce1d5fb45aed60f20fc626086baf9e880906",
+      "size": 9038
+    },
+    "training/digits/merge_chuso_clean_v1.py": {
+      "sha256": "1ffdde99cb038f084b522fcf6545b5009b5484b477fe3362b7f28b299e2c6c9c",
+      "size": 10266
+    },
+    "training/digits/split_chuso_dataset_v1.py": {
+      "sha256": "fca5e54e0494cbd7a8579ea4d20503baf6dd67db7b7bad30fc338ced7a6d2c6d",
+      "size": 12388
+    },
+    "training/digits/train_chuso_mlp_candidates_v2.py": {
+      "sha256": "7cc2af2325d79f1a991215318c59336b45c09ba0610ee1cdbad7575696a08b7a",
+      "size": 6833
+    },
+    "training/digits/train_digits.py": {
+      "sha256": "34cf936e9bcd003868727784e250ffab4bf4c7a2fee1ba2d5afa2768dd97a5e6",
+      "size": 40249
+    },
+    "training/dynamic/evaluate_dynamic.py": {
+      "sha256": "7b35a720f30f920aa728405716600f211840d8d93e0270ecc057785869e492a7",
+      "size": 7850
+    },
+    "training/dynamic/train_dynamic.py": {
+      "sha256": "e6e23a164d1872b742c6e3f3c5abda865e61f292b3a8d58b52832acc23d171b5",
+      "size": 15896
+    }
+  },
+  "rollback_sources": {
+    "run.py": "\"\"\"Primary entry point for the NhanDienCuChi realtime recognizers.\n\nUsage (from the project root):\n    python run.py --mode letters --check-only\n    python run.py --mode letters --camera-index 0\n    python run.py --mode digits\n    python run.py --mode letters --model v1       # fallback letter model\n\nArguments after ``--mode`` are forwarded unchanged to the selected program, so\neach program can still be run and tested directly, e.g.\n``python app/inference/digit_inference.py``.\n\"\"\"\nfrom __future__ import annotations\n\nimport sys\nfrom pathlib import Path\n\nROOT = Path(__file__).resolve().parent\nif str(ROOT) not in sys.path:\n    sys.path.insert(0, str(ROOT))\n\nfrom app.camera.realtime_inference import main  # noqa: E402\n\n\nif __name__ == \"__main__\":\n    raise SystemExit(main())\n",
+    "README.md": "# NhanDienCuChi\n\nHand-gesture recognition for **static ASL letters** (`A–I, K–Y`; J and Z are dynamic) and\n**static digits** (`0–9`), using MediaPipe Hand Landmarker plus scikit-learn MLP models.\n\nFor the full architecture, data-flow, and constraints, read **[SYSTEM_CONTEXT.md](SYSTEM_CONTEXT.md)**.\n\n## Layout\n\n```\napp/        runtime: camera dispatch + inference programs\nai/         shared preprocessing (landmark_utils), feature extraction, constants\nmodels/     mediapipe task, letter and digit model artifacts\ntraining/   training / evaluation scripts (not run automatically)\ntools/      extraction / audit / analysis utilities\ntests/      unit tests\nconfigs/    runtime configuration\ndocs/       architecture / dataset / model notes\nreports/    reports and figures\n```\n\n## Run\n\n```powershell\n# Letters: verify artifacts only (no camera)\npython run.py --mode letters --check-only\n\n# Letters: live camera (default model uvw_medium, fallback v1)\npython run.py --mode letters --camera-index 0\n\n# Digits: live camera (no frame flip before MediaPipe)\npython run.py --mode digits\n```\n\nEach program can still be run directly, e.g. `python app/inference/digit_inference.py`.\n\n## Test\n\n```powershell\npython -m unittest discover -s tests -q\n```\n\n## Environment\n\nCreate a Python 3.11 environment and install `requirements.txt`. The project was developed with a\nconda environment named `nn`.\n",
+    "app/camera/realtime_inference.py": "\"\"\"Runtime camera dispatcher.\n\nLaunches one of the two frozen inference programs without importing it as a\nmodule, so a program's top-level setup/loop behavior is preserved exactly:\n\n* ``letters`` -> ``app/inference/letter_inference.py`` (24 static ASL classes)\n* ``digits``  -> ``app/inference/digit_inference.py``  (0-9)\n\nBoth programs remain independently runnable; this module only forwards argv.\n\"\"\"\nfrom __future__ import annotations\n\nimport argparse\nimport runpy\nimport sys\nfrom pathlib import Path\nfrom typing import Sequence\n\nROOT = Path(__file__).resolve().parents[2]\n\nPROGRAMS = {\n    \"letters\": ROOT / \"app\" / \"inference\" / \"letter_inference.py\",\n    \"digits\": ROOT / \"app\" / \"inference\" / \"digit_inference.py\",\n}\n\n\ndef main(argv: Sequence[str] | None = None) -> int:\n    parser = argparse.ArgumentParser(\n        description=\"NhanDienCuChi realtime camera dispatcher\",\n        add_help=True,\n    )\n    parser.add_argument(\n        \"--mode\",\n        choices=tuple(PROGRAMS),\n        default=\"letters\",\n        help=\"Which recognizer to run (default: letters).\",\n    )\n    mode, passthrough = parser.parse_known_args(argv)\n\n    program = PROGRAMS[mode.mode]\n    if not program.is_file():\n        print(f\"ERROR: Program not found: {program}\", file=sys.stderr)\n        return 2\n\n    if str(ROOT) not in sys.path:\n        sys.path.insert(0, str(ROOT))\n    sys.argv = [str(program), *passthrough]\n    try:\n        runpy.run_path(str(program), run_name=\"__main__\")\n    except SystemExit as exc:  # forwarded from the target program\n        code = exc.code\n        if code is None:\n            return 0\n        if isinstance(code, int):\n            return code\n        print(code, file=sys.stderr)\n        return 1\n    return 0\n\n\nif __name__ == \"__main__\":\n    raise SystemExit(main())\n",
+    "app/inference/unified_abc123_jz_auto_experiment.py": "\"\"\"Separate EXPERIMENTAL two-button ABC (24 static + latest auto J/Z) / 123.\n\nOne camera, independent mirrored VIDEO and raw IMAGE passes. J/Z commits are\nOFF by default: binary probabilities and motion gates are not a NONE model.\nNo production dispatcher, baseline camera, model or HOLD implementation changes.\n\"\"\"\nfrom __future__ import annotations\n\nimport argparse\nfrom contextlib import ExitStack\nfrom datetime import datetime,timezone\nimport json\nfrom pathlib import Path\nimport sys\nimport time\nfrom uuid import uuid4\n\nimport cv2\nimport mediapipe as mp\n\nROOT = Path(__file__).resolve().parents[2]\nif str(ROOT) not in sys.path:\n    sys.path.insert(0,str(ROOT))\n\nfrom ai.feature_extraction.hand_landmarks import create_hand_landmarker,landmarks_to_array  # noqa: E402\nfrom app.inference.dynamic_jz_auto_camera_experiment import detect_frame  # noqa: E402\nfrom app.inference.dynamic_jz_auto_diagnostics import DebugTrace  # noqa: E402\nfrom app.inference.dynamic_jz_camera_test import load_experiment_model,_synthetic_feature_check  # noqa: E402\nfrom app.inference.hold_confirmation_camera_test import _panel  # noqa: E402\nfrom app.inference.letter_inference import (  # noqa: E402\n    HAND_MODEL_PATH,DEFAULT_MODEL,IntegrationError,StaticAslInference,\n    load_official_artifacts,_validate_deployment_config,\n)\nfrom app.inference.unified_camera_experiment import prepare_inference_frame,render_mirrored_frame  # noqa: E402\nfrom app.inference.unified_static_coordinator import DigitPredictor,load_digit_model  # noqa: E402\nfrom app.inference.unified_abc123_jz_auto_coordinator import UnifiedAutoCoordinator  # noqa: E402\nfrom app.inference.jz_attempt_capture import AttemptCapture,checked_output  # noqa: E402\n\nWINDOW = \"EXPERIMENTAL ABC A-Z / 123 - latest automatic J/Z\"\n\n\ndef mode_from_click(x,y,width):\n    if 8 <= y <= 47:\n        if 14 <= x-width <= 145:\n            return \"ABC\"\n        if 165 <= x-width <= 296:\n            return \"123\"\n    return None\n\n\ndef render(inference_frame,mode,static_hand,raw_frame,raw_hand,coordinator,now):\n    if mode == \"ABC\" and static_hand is None and raw_hand is not None:\n        # Raw overlays are drawn BEFORE mirroring the display, not by changing\n        # landmark coordinates used by J/Z or borrowing the VIDEO observation.\n        frame = render_mirrored_frame(raw_frame,\"123\",raw_hand)\n    else:\n        frame = render_mirrored_frame(inference_frame,mode,static_hand)\n    display = _panel(frame,coordinator.hold,coordinator.display_label,now)\n    width = frame.shape[1]\n    for label,left,right in ((\"ABC\",14,145),(\"123\",165,296)):\n        color = (218,240,218) if mode == label else (235,235,235)\n        cv2.rectangle(display,(width+left,8),(width+right,47),color,-1)\n        cv2.rectangle(display,(width+left,8),(width+right,47),(65,65,65),1)\n        cv2.putText(display,label,(width+left+34,36),cv2.FONT_HERSHEY_SIMPLEX,.75,(0,0,0),2,cv2.LINE_AA)\n    def text(value,y,scale=.36):\n        cv2.putText(display,value,(width+8,y),cv2.FONT_HERSHEY_SIMPLEX,scale,(0,0,0),1,cv2.LINE_AA)\n    text(coordinator.status,61,.42)\n    text(\"JZ PAUSED IN 123\" if mode == \"123\" else\n         \"JZ commits: \"+(\"EXPERIMENTAL ON\" if coordinator.enable_experimental_jz else \"OFF / DIAGNOSTIC\"),76)\n    if coordinator.z_start_pose_shadow is not None and mode == \"ABC\":\n        report=coordinator.z_start_pose_report or {}\n        pose=report.get(\"pose\") or {}\n        text(f\"Z POSE SHADOW: {pose.get('pose_status','UNCERTAIN')} / {report.get('state','IDLE')}\",91,.33)\n    if coordinator.display_dynamic_result:\n        result = coordinator.display_dynamic_result\n        text(f\"P(J)={result['probability_J']:.3f}  P(Z)={result['probability_Z']:.3f}\",244,.42)\n        text(\"Technical candidate / ASL unverified\",260,.35)\n    elif coordinator.raw_dynamic_prediction:\n        result = coordinator.raw_dynamic_prediction\n        text(f\"RAW {result['prediction']} / NOT A CANDIDATE\",244,.39)\n        text(f\"P(J)={result['probability_J']:.3f} P(Z)={result['probability_Z']:.3f}\",260,.36)\n    elif mode == \"ABC\" and coordinator.session.segmenter.active:\n        text(f\"JZ valid={coordinator.session.valid_frames}  gap={coordinator.session.segmenter.missing_frames}\",244,.40)\n    text(\"Binary score is NOT gesture validity\",display.shape[0]-80,.36)\n    return display\n\n\ndef detect_static(task,frame,timestamp_ms):\n    \"\"\"Baseline VIDEO input contract; failures do not gate the raw IMAGE pass.\"\"\"\n    rgb = cv2.cvtColor(frame,cv2.COLOR_BGR2RGB)\n    result = task.detect_for_video(mp.Image(image_format=mp.ImageFormat.SRGB,data=rgb),timestamp_ms)\n    if len(result.hand_landmarks) != 1:\n        return None\n    hand = result.hand_landmarks[0]\n    landmarks_to_array(hand)\n    return hand\n\n\ndef run_camera(coordinator,camera_index):\n    camera = None\n    requested = [coordinator.mode]\n    width = [0]\n    def on_mouse(event,x,y,_flags,_userdata):\n        if event == cv2.EVENT_LBUTTONDOWN:\n            selected = mode_from_click(x,y,width[0])\n            if selected:\n                requested[0] = selected\n    try:\n        with ExitStack() as stack:\n            video_task = stack.enter_context(create_hand_landmarker(\n                model_path=HAND_MODEL_PATH,running_mode=\"VIDEO\",num_hands=1,\n                min_hand_detection_confidence=.5,min_hand_presence_confidence=.5,min_tracking_confidence=.5))\n            image_task = stack.enter_context(create_hand_landmarker(HAND_MODEL_PATH,running_mode=\"IMAGE\",num_hands=1))\n            camera = cv2.VideoCapture(camera_index)  # The ONLY physical capture.\n            if not camera.isOpened():\n                raise OSError(\"Cannot open camera\")\n            cv2.namedWindow(WINDOW)\n            cv2.setMouseCallback(WINDOW,on_mouse)\n            started = time.monotonic()\n            last_timestamp = -1\n            previous_time = None\n            last_debug = -float(\"inf\")\n            index = failed_reads = 0\n            shape = (480,640,3)\n            while True:\n                coordinator.switch_mode(requested[0])\n                ok,raw = camera.read()\n                now = time.monotonic()\n                if not ok or raw is None:\n                    failed_reads += 1\n                    coordinator.update(index,None,None,shape,now,dynamic_error=\"CAMERA_READ_FAILED\",raw_hand_count=0)\n                    index += 1\n                    if failed_reads >= 10:\n                        return 4\n                    continue\n                failed_reads = 0\n                shape = raw.shape\n                inference_frame = prepare_inference_frame(raw,coordinator.mode)\n                width[0] = raw.shape[1]\n                timestamp = max(int((now-started)*1000),last_timestamp+1)\n                last_timestamp = timestamp\n                static_hand = None\n                video_error = \"\"\n                try:\n                    static_hand = detect_static(video_task,inference_frame,timestamp)\n                except (ValueError,RuntimeError,TypeError,AttributeError) as exc:\n                    video_error = str(exc)\n                # This call is independent of static_hand/video_error. No\n                # cross-pass correspondence gate and no mirrored substitutes.\n                raw_hand,count,error = (detect_frame(image_task,raw) if coordinator.mode == \"ABC\"\n                                        else (None,None,\"\"))\n                _prediction,committed = coordinator.update(index,static_hand,raw_hand,shape,now,\n                                                          dynamic_error=error,raw_hand_count=count,static_error=video_error)\n                if committed:\n                    print(f\"CONFIRMED={committed} TEXT={coordinator.composer.text}\",flush=True)\n                display = render(inference_frame,coordinator.mode,static_hand,raw,raw_hand,coordinator,now)\n                cv2.imshow(WINDOW,display)\n                key = cv2.waitKey(1)&0xff\n                coordinator.note_displayed(now)\n                if coordinator.event_sink and now-last_debug >= .5:\n                    fps = 1/(now-previous_time) if previous_time is not None and now>previous_time else 0.\n                    coordinator.emit(\"RUNTIME_SAMPLE\",now,fps=fps,video_error=video_error,\n                                     jz_state=coordinator.session.state,hold_state=coordinator.hold.state)\n                    last_debug = now\n                previous_time = now\n                if key in (ord(\"q\"),27):\n                    return 0\n                index += 1\n    finally:\n        try:\n            if coordinator.event_sink:\n                coordinator.session.close_debug_session(time.monotonic())\n                coordinator.emit(\"UNIFIED_SESSION_END\",time.monotonic(),text=coordinator.composer.text)\n        finally:\n            if camera is not None:\n                camera.release()\n            cv2.destroyAllWindows()\n\n\ndef main(argv=None):\n    parser = argparse.ArgumentParser(description=__doc__)\n    parser.add_argument(\"--check-only\",action=\"store_true\")\n    parser.add_argument(\"--camera-index\",type=int,default=0)\n    parser.add_argument(\"--enable-experimental-jz\",action=\"store_true\",help=\"Opt in to J/Z endpoint HOLD commits; unvalidated\")\n    parser.add_argument(\"--debug\",action=\"store_true\",help=\"Temporary buffered event JSONL, never per-frame Terminal logs\")\n    parser.add_argument(\"--capture-jz-diagnostics\",action=\"store_true\",\n                        help=\"Opt in to landmark/feature-only diagnostic capture; no images/video or training data\")\n    parser.add_argument(\"--z-start-pose-shadow\",action=\"store_true\",\n                        help=\"Phase-A Z pose/READY/onset diagnostics ONLY; no acceptance effect, not a gate\")\n    parser.add_argument(\"--jz-diagnostics-dir\",type=Path,\n                        default=ROOT/\"data/experiments/dynamic_jz_v1/diagnostics\",\n                        help=\"Temporary output inside dynamic_jz_v1; exclusive session/attempt paths\")\n    args = parser.parse_args(argv)\n    try:\n        diagnostic_output=checked_output(args.jz_diagnostics_dir)\n        _validate_deployment_config()\n        artifacts = load_official_artifacts(DEFAULT_MODEL)\n        letters = StaticAslInference(artifacts)\n        digits = DigitPredictor(load_digit_model())\n        model,model_hash = load_experiment_model()\n        _synthetic_feature_check(model)\n        coordinator = UnifiedAutoCoordinator(letters,digits,model,enable_experimental_jz=args.enable_experimental_jz,\n                                             z_start_pose_shadow=args.z_start_pose_shadow)\n        if args.check_only:\n            print(json.dumps({\"status\":\"PASS\",\"experimental\":True,\"camera_opened\":False,\n                \"mediapipe_executed\":False,\"files_written\":0,\"modes\":[\"ABC\",\"123\"],\n                \"camera_count_when_running\":1,\"landmarker_count_when_running\":2,\n                \"letters_model\":artifacts.model_name,\"letters_epoch\":artifacts.best_epoch,\n                \"digits_model\":\"models/digits/production/digits_final.joblib\",\n                \"dynamic_model_sha256\":model_hash,\"dynamic_feature_shape\":[16,69],\n                \"dynamic_implementation\":\"AutoJzSession + First16Segmenter / latest motion gate\",\n                \"dynamic_pipeline\":\"IMAGE/raw/no-flip/independent of static VIDEO\",\n                \"static_pipeline\":\"baseline VIDEO/mirrored ABC, raw 123; mirrored display always\",\n                \"motion_gate\":vars(coordinator.session.segmenter.motion_gate),\n                \"gap_frames\":coordinator.session.segmenter.settings.max_missing_frames,\n                \"gap_ms\":1000*coordinator.session.segmenter.settings.max_frame_gap_seconds,\n                \"hold_seconds\":coordinator.hold.settings.hold_seconds,\n                \"jz_hold_requires_observed_endpoint\":True,\"jz_commits_enabled\":args.enable_experimental_jz,\n                \"candidate_validation\":\"single coherent motion run + capture-bound endpoint; semantic UNVERIFIED\",\n                \"geometry_gate\":\"SHADOW_ONLY_NOT_RECALL_VALIDATED\",\n                \"z_start_pose_mode\":\"SHADOW\" if args.z_start_pose_shadow else \"OFF\",\n                \"z_start_pose_acceptance_gate\":False,\n                \"z_temporal_evidence\":\"SHADOW comparison / same-onset-frame boundary; no calibrated TTL\",\n                \"diagnostic_capture_enabled\":args.capture_jz_diagnostics,\n                \"diagnostic_output\":str(diagnostic_output),\"diagnostic_capture_writes_images_or_video\":False,\n                \"raw_prediction_overrides_static\":False,\n                \"no_none_class\":True,\"mirror_display\":True}))\n            return 0\n        print(\"EXPERIMENTAL: J/Z motion gating is unvalidated; binary scores do not prove J/Z.\")\n        with ExitStack() as stack:\n            if args.debug:\n                root = ROOT/\"data/experiments/dynamic_jz_v1\"\n                path = root/\"metadata\"/(\"unified_abc123_jz_events_\"+datetime.now(timezone.utc).strftime(\"%Y%m%dT%H%M%SZ_\")\n                                        +uuid4().hex[:8]+\".jsonl\")\n                trace=stack.enter_context(DebugTrace(path,root))\n                print(f\"UNIFIED_JZ_TRACE={path}\",flush=True)\n                coordinator.event_sink=trace\n                coordinator.session.event_sink=trace\n            if args.capture_jz_diagnostics:\n                capture=AttemptCapture(diagnostic_output,model_sha256=model_hash,config={\n                    \"motion_gate\":vars(coordinator.session.segmenter.motion_gate),\n                    \"segment_settings\":vars(coordinator.session.segmenter.settings),\n                    \"hold_settings\":vars(coordinator.hold.settings),\n                    \"z_start_pose_shadow\":args.z_start_pose_shadow,\n                    \"z_start_pose_settings\":vars(coordinator.z_start_pose_shadow.settings) if coordinator.z_start_pose_shadow else None,\n                    \"enable_experimental_jz\":args.enable_experimental_jz,\"collection_mode\":\"first16\"})\n                def close_capture():\n                    capture.close()\n                    if capture.errors:\n                        print(\"JZ_DIAGNOSTIC_ERRORS=\"+json.dumps(capture.errors),file=sys.stderr)\n                stack.callback(close_capture)\n                print(f\"JZ_DIAGNOSTIC_SESSION={capture.path}\",flush=True)\n                coordinator=UnifiedAutoCoordinator(letters,digits,model,\n                    enable_experimental_jz=args.enable_experimental_jz,event_sink=coordinator.event_sink,diagnostics=capture,\n                    z_start_pose_shadow=args.z_start_pose_shadow)\n            return run_camera(coordinator,args.camera_index)\n    except (OSError,ValueError,RuntimeError,IntegrationError) as exc:\n        print(f\"ERROR: {exc}\",file=sys.stderr)\n        return 2\n\n\nif __name__ == \"__main__\":\n    raise SystemExit(main())\n"
+  }
+}

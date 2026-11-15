@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-09-19",
+  "alphabet_convention": "Alphabet convention: Standard ASL manual alphabet A-Z; J and Z handled as dynamic gestures; M and N use standard ASL forms.",
+  "authority": "User explicitly authorized excluding samples whose saved landmarks do not follow the hand or miss important fingertips, while preserving all original images. Missing-blur cases were re-evaluated individually.",
+  "method": "Inspect existing original images, saved landmark contact sheets and saved HTML SVG coordinates. No extraction, MediaPipe, model inference, threshold change or pipeline rerun. Exclusion concerns landmark/image correspondence, not relabeling. Static overlays do not measure stability.",
+  "observations": [
+    {
+      "file": "dulieu\\chucai\\k\\color_10_0460 (3).png",
+      "decision": "EXCLUDE_CORRESPONDENCE",
+      "saved_overlay": "AI/dataset/wrong_label_audit_visuals/high_contact_sheet_1.jpg",
+      "evidence": "The saved overlay concentrates on the folded/palm region and terminates below the two clearly visible extended upper digits. It does not trace their full length or important tips. Exclude the landmark sample; do not convert its K label to T."
+    },
+    {
+      "file": "dulieu\\chucai\\c\\color_2_0119 (3).png",
+      "decision": "EXCLUDE_CORRESPONDENCE",
+      "saved_overlay": "AI/dataset/wrong_label_audit_visuals/possible_contact_sheet_1.jpg",
+      "evidence": "In the C-to-G panel, most of the saved skeleton is at the lower-left edge beside the face rather than spanning the raised cupped hand. Major finger/palm correspondence is displaced. The user's correct C label does not make this feature vector valid."
+    },
+    {
+      "file": "dulieu\\chucai\\q\\hand2_q_left_seg_2_cropped.jpeg",
+      "decision": "EXCLUDE_CORRESPONDENCE",
+      "saved_overlay": "AI/dataset/wrong_label_audit_visuals/possible_contact_sheet_1.jpg",
+      "evidence": "In the Q-to-C panel, the saved skeleton occupies the folded central fingers and does not reach the two long downward index/thumb tips visible in the original. Their major segments are absent. Preserve confirmed Q semantics but exclude the malformed landmark vector."
+    },
+    {
+      "file": "dulieu\\chucai\\d\\D4 (6).jpg",
+      "decision": "EXCLUDE_CORRESPONDENCE",
+      "saved_overlay": "AI/dataset/wrong_label_audit_visuals/possible_contact_sheet_1.jpg",
+      "evidence": "In the D-to-O panel, the skeleton ends among the curled fingers below the clearly raised index fingertip; the extended index is not followed to its tip. Preserve the user's D label but exclude the landmark sample."
+    },
+    {
+      "file": "dulieu\\chucai\\a\\color_0_0256.png",
+      "decision": "EXCLUDE_CORRESPONDENCE",
+      "saved_overlay": "AI/dataset/preprocessing_final_review_v1/semantic_review.html",
+      "evidence": "Original image is 104 by 120 pixels. All 21 saved overlay points lie in x=12.6125744581..17.3087134361, y=22.7621912956..45.1990807056: a narrow left-edge strip, not the visible fist/palm extending substantially to the right. The saved wrist is at (15.2367739677,45.1990807056), not at the visible wrist. The 7 by 33 landmark-derived ROI is small because correspondence is wrong, not merely because a valid hand is small. Exclude the landmark sample; do not invent a hand-blur pass.",
+      "image_width": 104,
+      "image_height": 120,
+      "saved_point_count": 21,
+      "saved_point_bounds_pixels": [12.612574458122246, 22.76219129562378, 17.308713436126705, 45.19908070564269],
+      "roi_width": 7,
+      "roi_height": 33,
+      "roi_invalid_due_to_correspondence": true,
+      "blur_hand_usable": false,
+      "blur_hand": null,
+      "blur_recomputed": false,
+      "blur_resolution": "Sample excluded for invalid correspondence; hand-region blur is inapplicable to retained canonical membership. Missing value is never treated as PASS."
+    },
+    {
+      "file": "dulieu\\chucai\\c\\mrinnec2.png",
+      "decision": "EXCLUDE_CORRESPONDENCE",
+      "saved_overlay": "AI/dataset/preprocessing_final_review_v1/semantic_review.html",
+      "evidence": "Original image is 128 by 128 pixels. All 21 saved points lie in x=70.9236450195..99.9493942261, y=50.1767959595..57.1041221619, along the upper finger strip, while the visible thumb, palm and wrist extend much lower. The saved wrist (70.9236450195,55.3273963928) sits near the upper fingers rather than the actual wrist. The 43 by 9 ROI is therefore caused by incorrect correspondence. Exclude the sample; a blur value from that strip cannot qualify the hand.",
+      "image_width": 128,
+      "image_height": 128,
+      "saved_point_count": 21,
+      "saved_point_bounds_pixels": [70.92364501953125, 50.176795959472656, 99.94939422607422, 57.10412216186523],
+      "roi_width": 43,
+      "roi_height": 9,
+      "roi_invalid_due_to_correspondence": true,
+      "blur_hand_usable": false,
+      "blur_hand": null,
+      "blur_recomputed": false,
+      "blur_resolution": "Sample excluded for invalid correspondence; hand-region blur is inapplicable to retained canonical membership. Missing value is never treated as PASS."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "experiment_name": "digits_final_replay_v1",
+  "data_mode": "frozen_replay",
+  "preprocessing": {"id": "hand_centric_2d_v1", "axis_epsilon": 0.000001},
+  "train_data": "data/processed/digits/digits_final_train_frozen.csv",
+  "sample_map": "data/metadata/digits/digits_final_sample_map.csv",
+  "freeze_manifest": "data/metadata/digits/digits_final_freeze_manifest.json",
+  "replay_spec": "data/metadata/digits/digits_final_replay_spec.json",
+  "lineage_manifest": "data/metadata/digits/digits_final_repro/training_manifest_digits_final.json",
+  "random_seed": 42,
+  "validation_data": "data/splits/digits/validation_reference.csv",
+  "output_dir": "data/experiments/digits_final_replay/verification_v1",
+  "report_version": "digits_final_replay_v1",
+  "report_filename": "candidate_comparison_digits_final_replay_v1.json",
+  "manifest_filename": "training_manifest_digits_final_replay_v1.json",
+  "feature_count": 63,
+  "selection_metric": "validation_macro_f1",
+  "training": {
+    "activation": "relu",
+    "solver": "adam",
+    "batch_size": 32,
+    "max_iter": 1000,
+    "early_stopping": true,
+    "validation_fraction": 0.15,
+    "n_iter_no_change": 40,
+    "random_state": 42
+  },
+  "candidates": {
+    "mlp_large_v2a": {
+      "hidden_layer_sizes": [128, 64, 32],
+      "alpha": 0.001,
+      "learning_rate_init": 0.001
+    }
+  }
+}

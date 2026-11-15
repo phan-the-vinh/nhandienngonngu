@@ -1,0 +1,21 @@
+{
+  "validation_winner": "uvw_medium",
+  "recommended_for_camera_test": "uvw_medium",
+  "model_path": "validation_winner_model.joblib",
+  "scaler_path": "validation_winner_scaler.joblib",
+  "source_model_path": "uvw_medium_model.joblib",
+  "source_scaler_path": "uvw_medium_scaler.joblib",
+  "label_mapping_path": "label_mapping.json",
+  "deployment_authorized": false,
+  "selection": {
+    "validation_winner": "uvw_medium",
+    "recommended_for_camera_test": "uvw_medium",
+    "status": "CAMERA_TEST_RECOMMENDED",
+    "criterion": "Highest VALIDATION v1 macro-F1; ties use minimum recall then accuracy.",
+    "significant_recall_drop_threshold": 0.02,
+    "significant_recall_regressions": [],
+    "deployment_authorized": false,
+    "camera_error_fixed_claimed": false,
+    "test_used": false
+  }
+}

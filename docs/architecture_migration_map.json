@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "implementation_stage": "A_B_C_ADAPTERS",
+  "data_models_moved": false,
+  "entries": [
+    {
+      "old_path": "app/inference/letter_inference.py",
+      "new_path": "src/recognition/letters.py",
+      "relation": "alias: StaticAslInference, Prediction, labels",
+      "old_path_removed": false,
+      "physical_move": false
+    },
+    {
+      "old_path": "app/inference/unified_static_coordinator.py",
+      "new_path": "src/recognition/digits.py",
+      "relation": "alias: DigitPredictor",
+      "old_path_removed": false,
+      "physical_move": false
+    },
+    {
+      "old_path": "app/inference/dynamic_jz_camera_test.py",
+      "new_path": "src/recognition/dynamic_jz.py",
+      "relation": "alias: predict_attempt; original 16x69 builder",
+      "old_path_removed": false,
+      "physical_move": false
+    },
+    {
+      "old_path": "app/inference/dynamic_jz_auto_camera_experiment.py",
+      "new_path": "src/recognition/dynamic_jz.py",
+      "relation": "alias: AutoJzSession",
+      "old_path_removed": false,
+      "physical_move": false
+    },
+    {
+      "old_path": "app/inference/unified_abc123_jz_auto_coordinator.py",
+      "new_path": "src/recognition/alphabet.py",
+      "relation": "subclass facade; inherited methods unchanged",
+      "old_path_removed": false,
+      "physical_move": false
+    },
+    {
+      "old_path": "ai/preprocessing/landmark_utils.py",
+      "new_path": "src/preprocessing/landmarks.py",
+      "relation": "same normalization function",
+      "old_path_removed": false,
+      "physical_move": false
+    },
+    {
+      "old_path": "ai/preprocessing/hand_centric_2d.py",
+      "new_path": "src/preprocessing/hand_centric.py",
+      "relation": "alias only; old joblib module path retained",
+      "old_path_removed": false,
+      "physical_move": false
+    },
+    {
+      "old_path": "ai/feature_extraction/dynamic_sequence.py",
+      "new_path": "src/preprocessing/dynamic_sequence.py",
+      "relation": "same builder/sampler",
+      "old_path_removed": false,
+      "physical_move": false
+    },
+    {
+      "old_path": "app/interaction/hold_confirmation.py",
+      "new_path": "src/interaction/hold.py",
+      "relation": "same classes",
+      "old_path_removed": false,
+      "physical_move": false
+    },
+    {
+      "old_path": "app/inference/unified_static_coordinator.py",
+      "new_path": "src/interaction/coordinator.py",
+      "relation": "same TextComposer and static coordinator",
+      "old_path_removed": false,
+      "physical_move": false
+    },
+    {
+      "old_path": "app/inference/unified_abc123_jz_auto_experiment.py",
+      "new_path": "src/camera/realtime.py",
+      "relation": "existing lifecycle via optional factory/loader hooks",
+      "old_path_removed": false,
+      "physical_move": false
+    },
+    {
+      "old_path": "app/inference/unified_abc123_jz_auto_experiment.py",
+      "new_path": "src/ui/camera_interface.py",
+      "relation": "same rendering/click functions",
+      "old_path_removed": false,
+      "physical_move": false
+    },
+    {
+      "old_path": "training/digits/train_digits.py",
+      "new_path": "src/train.py --module digits",
+      "relation": "explicit user-only delegation",
+      "old_path_removed": false,
+      "physical_move": false
+    },
+    {
+      "old_path": "training/dynamic/train_dynamic.py",
+      "new_path": "src/train.py --module dynamic",
+      "relation": "explicit user-only delegation",
+      "old_path_removed": false,
+      "physical_move": false
+    },
+    {
+      "old_path": "training/dynamic/evaluate_dynamic.py",
+      "new_path": "src/evaluate.py --module dynamic",
+      "relation": "explicit user-only delegation; existing metrics not overwritten",
+      "old_path_removed": false,
+      "physical_move": false
+    },
+    {
+      "old_path": "training/digits/evaluate_digits.py",
+      "new_path": "src/evaluate.py --module digits",
+      "relation": "BLOCKED: evaluator incompatible with digits_final orientation pipeline",
+      "old_path_removed": false,
+      "physical_move": false
+    },
+    {
+      "old_path": "training/letters/",
+      "new_path": "src/train.py / src/evaluate.py --module letters",
+      "relation": "BLOCKED: no unified compatible implementation",
+      "old_path_removed": false,
+      "physical_move": false
+    },
+    {
+      "old_path": "data/; ai/dataset/",
+      "new_path": "dataset/",
+      "relation": "DEFERRED: inventory/hash/lineage review and approval before migration",
+      "old_path_removed": false,
+      "physical_move": false
+    },
+    {
+      "old_path": "data/experiments/dynamic_jz_binary_baseline_v1/",
+      "new_path": "models/dynamic/experimental/ (proposed)",
+      "relation": "DEFERRED: no copy/promotion; current manifest dependencies retained",
+      "old_path_removed": false,
+      "physical_move": false
+    },
+    {
+      "old_path": "reports/; data/experiments/ diagnostics",
+      "new_path": "results/metrics/; results/diagnostics/ (proposed)",
+      "relation": "DEFERRED: old output guards and replay paths retained",
+      "old_path_removed": false,
+      "physical_move": false
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "status": "ACTIVE",
+  "task": "10_static_digits",
+  "model_name": "digits_final",
+  "model_path": "models/digits/production/digits_final.joblib",
+  "deployment_manifest_path": "models/digits/production/deployment_manifest_v2.json",
+  "fallback_model_path": "models/digits/fallback/mlp_large_v2a_pre_digits_final.joblib",
+  "fallback_model_sha256": "d64acc7bc44449c7186f70b221d123581f786efdbd53885edc2ae70bf0968ad3",
+  "pipeline": ["HandCentric2DAligner", "StandardScaler", "MLPClassifier"],
+  "classes": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"],
+  "feature_count": 63,
+  "hand_landmarker_path": "models/mediapipe/hand_landmarker.task",
+  "normalization": "ai/preprocessing/landmark_utils.py::normalize_landmarks",
+  "mirror_before_mediapipe": false,
+  "notes": "Digit runtime loads one sklearn Pipeline containing hand-centric 2D alignment, StandardScaler, and MLPClassifier. The former production model is retained as an explicit fallback."
+}

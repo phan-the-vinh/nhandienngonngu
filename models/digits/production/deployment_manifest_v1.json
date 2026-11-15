@@ -1,0 +1,43 @@
+{
+  "version": "chuso_production_deployment_v1",
+  "status": "CHUSO_PRODUCTION_PROMOTION_COMPLETE",
+  "model_name": "mlp_large_v2a",
+  "selection_source": "AI/models/kytuso/candidates/candidate_comparison_v2.json",
+  "model": {
+    "path": "AI/models/kytuso/production/mlp_large_v2a.joblib",
+    "source_path": "AI/models/kytuso/candidates/mlp_large_v2a.joblib",
+    "sha256": "d64acc7bc44449c7186f70b221d123581f786efdbd53885edc2ae70bf0968ad3",
+    "format": "joblib",
+    "pipeline": ["StandardScaler", "MLPClassifier"]
+  },
+  "classes": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"],
+  "feature_count": 63,
+  "feature_columns": ["f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8", "f9", "f10", "f11", "f12", "f13", "f14", "f15", "f16", "f17", "f18", "f19", "f20", "f21", "f22", "f23", "f24", "f25", "f26", "f27", "f28", "f29", "f30", "f31", "f32", "f33", "f34", "f35", "f36", "f37", "f38", "f39", "f40", "f41", "f42", "f43", "f44", "f45", "f46", "f47", "f48", "f49", "f50", "f51", "f52", "f53", "f54", "f55", "f56", "f57", "f58", "f59", "f60", "f61", "f62", "f63"],
+  "mediapipe": {
+    "path": "AI/models/mediapipe/hand_landmarker.task",
+    "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1",
+    "reference": "AI/extract_chuso.py"
+  },
+  "dataset": {
+    "path": "AI/dataset/kytuso/datasetsach/dataset_chuso_clean_v1.csv",
+    "sha256": "cec17700dda7163d12a344e948be602b35b02e2edbf536570ea9483628eb1aef",
+    "samples": 699
+  },
+  "split": {
+    "strategy": "group_split_by_hand_id",
+    "train": {"path": "AI/dataset/kytuso/datatrain/train_v1.csv", "samples": 349, "sha256": "558f86ccedf9deae8710fd76ce410bf2f59d277e0cf2d120558ac2481aea17b2"},
+    "validation": {"path": "AI/dataset/kytuso/datatrain/validation_v1.csv", "samples": 100, "sha256": "623463a3eedc4f5e66f9ba028fcd638bef0453222a956b0fbcf055bd978257a3"},
+    "test": {"path": "AI/dataset/kytuso/datatrain/test_v1.csv", "samples": 250, "sha256": "a4f4ac064bdcd45f13f65091e800baf551129677ec96892a0bac00757d185a32"}
+  },
+  "validation_metrics": {"samples": 100, "accuracy": 0.9, "macro_f1": 0.8950580997949418},
+  "final_test_metrics": {"samples": 250, "accuracy": 0.868, "macro_f1": 0.8628557327038994, "errors": 33},
+  "test_used_for_tuning": false,
+  "training_performed_during_promotion": false,
+  "source_artifacts": {
+    "final_freeze_manifest_v1.json": {"path": "AI/dataset/kytuso/datasetsach/final_freeze_manifest_v1.json", "sha256": "360f8c4e81394496e7ccd529aa6237f2581bda921b389fcdd4536ef7d5cb8279"},
+    "split_manifest_v1.json": {"path": "AI/dataset/kytuso/datatrain/split_manifest_v1.json", "sha256": "8f6a6a46a2be95fb93cebc511044493eec49c768ec6179179470b7ae5a7427b6"},
+    "candidate_comparison_v2.json": {"path": "AI/models/kytuso/candidates/candidate_comparison_v2.json", "sha256": "0051d32934a474241fa79c0164d7b5777c19ae463f09a1a2cc1fa3ac8dabc0bb"},
+    "validation_analysis_v2.json": {"path": "AI/models/kytuso/candidates/validation_analysis_v2.json", "sha256": "8967b54d760248a301f8611bf3dc8b6faabece4d74e2fd1ca367d8c696f2ddc6"},
+    "test_evaluation_v1.json": {"path": "AI/models/kytuso/candidates/test_evaluation_v1.json", "sha256": "b64461f061b7dc7828bf31ca75156b0c3b5cd8c444d5385b27bea01e532c1be1"}
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "status": "ACTIVE",
+  "task": "space_gesture_recognition",
+  "model_path": "models/space/production/final_space_model.joblib",
+  "model_sha256": "453162d8aa0212016216a6c02798d3dcaa445c1fbb7a6340c896bb828e076121",
+  "threshold": 0.889063295339523,
+  "feature_count": 63,
+  "normalization": "ai/preprocessing/landmark_utils.py::normalize_landmarks",
+  "enable_space": true,
+  "apply_abc_x_flip": true,
+  "notes": "Additive SPACE recognition candidate from Phase 3.9.8. Reuses existing MediaPipe static_hand; applies X-flip adapter in ABC mode to align mirrored frame with unmirrored training dataset."
+}

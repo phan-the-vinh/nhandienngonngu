@@ -1,0 +1,275 @@
+﻿{
+    "schema_version":  1,
+    "created_utc":  "2026-09-20T12:08:47.821186+00:00",
+    "status":  "TEST_EVALUATION_COMPLETE",
+    "model":  {
+                  "name":  "baseline",
+                  "checkpoint_epoch":  143,
+                  "selected_before_test":  true,
+                  "model_path":  "AI/dataset/mlp_validation_comparison_v1/selected_model.joblib",
+                  "model_sha256":  "a70b20f3168e180ade068e30e5a6e81711cf9ea1f1e0a6075fa4628e33b2a078",
+                  "scaler_path":  "AI/dataset/mlp_validation_comparison_v1/scaler.joblib",
+                  "scaler_sha256":  "8ef70e9518406d3e56d6492a4f2dd7975c2736c825843347c0c98169d5403f0a",
+                  "label_mapping_path":  "AI/dataset/mlp_validation_comparison_v1/label_mapping.json",
+                  "label_mapping_sha256":  "4e5898c75ee8fbb06de49b6f185ba1802416749c8369e4c882ab1396ae82a2d7"
+              },
+    "test":  {
+                 "path":  "AI/dataset/train_validation_test_split_v1/test.csv",
+                 "sha256":  "cc612b03caf4578cd1d234bd9b310e1ea3f57ecbc92d72d5d607233593881639",
+                 "samples":  13412,
+                 "groups":  12855
+             },
+    "metrics":  {
+                    "samples":  13412,
+                    "accuracy":  0.9905308678795108,
+                    "macro_f1":  0.9894313758471368,
+                    "log_loss":  0.059428383098538706,
+                    "minimum_class_recall":  0.9607843137254902,
+                    "minimum_recall_labels":  [
+                                                  "T"
+                                              ],
+                    "M_recall":  0.9757085020242915,
+                    "N_recall":  0.9676375404530745,
+                    "T_recall":  0.9607843137254902
+                },
+    "integrity":  {
+                      "status":  "PASS",
+                      "checks_passed":  105,
+                      "checks_total":  105,
+                      "failed_checks":  [
+
+                                        ],
+                      "model":  "baseline",
+                      "checkpoint_epoch":  143,
+                      "test_samples":  13412,
+                      "test_groups":  12855,
+                      "features":  63,
+                      "classes":  24,
+                      "model_scaler_mapping_hashes_verified":  true,
+                      "training_outputs_hash_verified":  25,
+                      "split_outputs_hash_verified":  8,
+                      "frozen_sources_hash_verified":  3,
+                      "source_files_modified":  0,
+                      "training_performed":  false,
+                      "scaler_fit_or_update_performed":  false,
+                      "checkpoint_or_model_selection_changed":  false,
+                      "test_used_for_tuning_or_selection":  false,
+                      "group_id_cross_split_violations":  0,
+                      "limitations":  [
+                                          "TEST is group-disjoint for detected duplicate/variant groups, but performer/person and session metadata are unavailable; this is not proof of generalization to entirely new people."
+                                      ]
+                  },
+    "runtime":  {
+                    "python":  "3.11.15",
+                    "numpy":  "2.4.6",
+                    "pandas":  "3.0.5",
+                    "scikit_learn":  "1.9.0",
+                    "joblib_distribution":  "1.5.3",
+                    "joblib_module":  "1.5.3"
+                },
+    "inputs":  [
+                   {
+                       "path":  "AI/dataset/mlp_validation_comparison_v1/REPORT.md",
+                       "sha256":  "8b58f77d8344912e0a9f0d5bfee5e97471e49205882fe227f20b95c570091f7f"
+                   },
+                   {
+                       "path":  "AI/dataset/mlp_validation_comparison_v1/baseline_confusion_analysis.json",
+                       "sha256":  "de555e4a1acbd0f9eb84d4771697662ca8e34e7ce91ea18d8304f28211bbb6e7"
+                   },
+                   {
+                       "path":  "AI/dataset/mlp_validation_comparison_v1/baseline_confusion_matrix.csv",
+                       "sha256":  "4a6a5242e0f2a25a02a3be85ace52309dc1591b0d4ccb4a858227ebe028f2939"
+                   },
+                   {
+                       "path":  "AI/dataset/mlp_validation_comparison_v1/baseline_model.joblib",
+                       "sha256":  "a70b20f3168e180ade068e30e5a6e81711cf9ea1f1e0a6075fa4628e33b2a078"
+                   },
+                   {
+                       "path":  "AI/dataset/mlp_validation_comparison_v1/baseline_per_class_metrics.csv",
+                       "sha256":  "309b45fca5b3be39f96851fb49c9b64ee173e05fb965c350c3480578abb58fa4"
+                   },
+                   {
+                       "path":  "AI/dataset/mlp_validation_comparison_v1/baseline_training_history.csv",
+                       "sha256":  "d9b81d224c1671d85750050e775699eb18d53e6915e7f89f9985882642e97670"
+                   },
+                   {
+                       "path":  "AI/dataset/mlp_validation_comparison_v1/baseline_validation_predictions.csv",
+                       "sha256":  "756ba4e5d2929baa5dee3d8920b9b5bf6ef50d767c499bf86ea9eeef1fae8fc9"
+                   },
+                   {
+                       "path":  "AI/dataset/mlp_validation_comparison_v1/checkpoints/baseline/state.joblib",
+                       "sha256":  "903d67472da078acbe236350c0777f60ada32830ddfc3de32165183e8da23502"
+                   },
+                   {
+                       "path":  "AI/dataset/mlp_validation_comparison_v1/checkpoints/weighted/state.joblib",
+                       "sha256":  "c24d03144e4434854b038dfa20b40ac38064e624dcbb420c4ca915de853b7d99"
+                   },
+                   {
+                       "path":  "AI/dataset/mlp_validation_comparison_v1/evaluation_summary.json",
+                       "sha256":  "a979e10a8c50f9d33fa48f7944c555eb49f07cfac9532097e8e31b3a6e06090b"
+                   },
+                   {
+                       "path":  "AI/dataset/mlp_validation_comparison_v1/integrity_report.json",
+                       "sha256":  "2bafb005a61041aa2d8b7bc4bcbec6fe8cd53688a7f4ca3a06c015e25f19f1b1"
+                   },
+                   {
+                       "path":  "AI/dataset/mlp_validation_comparison_v1/label_mapping.json",
+                       "sha256":  "4e5898c75ee8fbb06de49b6f185ba1802416749c8369e4c882ab1396ae82a2d7"
+                   },
+                   {
+                       "path":  "AI/dataset/mlp_validation_comparison_v1/run_state.json",
+                       "sha256":  "d2267a510b2ec1b5dcad95d2bc3fed10e8ce6e18e870b878de2c66f31490885a"
+                   },
+                   {
+                       "path":  "AI/dataset/mlp_validation_comparison_v1/scaler.joblib",
+                       "sha256":  "8ef70e9518406d3e56d6492a4f2dd7975c2736c825843347c0c98169d5403f0a"
+                   },
+                   {
+                       "path":  "AI/dataset/mlp_validation_comparison_v1/selected_model.joblib",
+                       "sha256":  "a70b20f3168e180ade068e30e5a6e81711cf9ea1f1e0a6075fa4628e33b2a078"
+                   },
+                   {
+                       "path":  "AI/dataset/mlp_validation_comparison_v1/selected_model.json",
+                       "sha256":  "ef02538cc345dc2700bac3935e7a30a9e6c3be9c5a8fa24c58cf344e3ed711ad"
+                   },
+                   {
+                       "path":  "AI/dataset/mlp_validation_comparison_v1/test_report.json",
+                       "sha256":  "735ab5c3c7a10dcf83d9a8f24904c1167b2cc62714a26683ee5d751cab9d48f2"
+                   },
+                   {
+                       "path":  "AI/dataset/mlp_validation_comparison_v1/training_config.json",
+                       "sha256":  "80c6b4e57aa5a705f29a72a3354aa2ed6f68041968d5739ab7d0d35367392117"
+                   },
+                   {
+                       "path":  "AI/dataset/mlp_validation_comparison_v1/training_manifest.json",
+                       "sha256":  "9fe33ffefc705fa0b5ba9249013bd052747c420a6f78589543f0f43ed46742cc"
+                   },
+                   {
+                       "path":  "AI/dataset/mlp_validation_comparison_v1/training_weights.csv",
+                       "sha256":  "1165171ce75b83a64d885774e2a0c008070039e873083bf836bb0d2980cc3693"
+                   },
+                   {
+                       "path":  "AI/dataset/mlp_validation_comparison_v1/weighted_confusion_analysis.json",
+                       "sha256":  "772444e9d288dbd6fdae88d4fe547af32daf5af939a64c3914dfbb6922e096dc"
+                   },
+                   {
+                       "path":  "AI/dataset/mlp_validation_comparison_v1/weighted_confusion_matrix.csv",
+                       "sha256":  "63cf3071a2dad34262d00821d18a00691e5ebb2d7e292c4a8a0ebfe245929247"
+                   },
+                   {
+                       "path":  "AI/dataset/mlp_validation_comparison_v1/weighted_model.joblib",
+                       "sha256":  "e288c20f91f2641190761cc2afe5a26676bb530f538c7789c02f8ca98705b7c4"
+                   },
+                   {
+                       "path":  "AI/dataset/mlp_validation_comparison_v1/weighted_per_class_metrics.csv",
+                       "sha256":  "2d95a5b1e47ae41bb7b3e1ba8df539240512903e95bceafccc8262a10e5c5615"
+                   },
+                   {
+                       "path":  "AI/dataset/mlp_validation_comparison_v1/weighted_training_history.csv",
+                       "sha256":  "8fc5afddb29f6280966527e405e6fffa95ddea3d9804d9799c1949e223101c84"
+                   },
+                   {
+                       "path":  "AI/dataset/mlp_validation_comparison_v1/weighted_validation_predictions.csv",
+                       "sha256":  "f12938980f2f53c1e951bde85dbc887466cfbe0d9fcdb5ffd6bd082ba1b72a9c"
+                   },
+                   {
+                       "path":  "AI/dataset/preprocessing_frozen_v3/dataset_chucai_clean_frozen_v3.csv",
+                       "sha256":  "3b43179663184844a8570b0ea32484491b7fa8e3597aeaba1b215b91b0198f8a"
+                   },
+                   {
+                       "path":  "AI/dataset/preprocessing_frozen_v3/final_freeze_manifest.json",
+                       "sha256":  "a297367eb186b9f9b4c6b856cc738058a7ddb2c64ade70639df26b2f2e3ea45c"
+                   },
+                   {
+                       "path":  "AI/dataset/preprocessing_frozen_v3/sample_group_map_frozen_v3.csv",
+                       "sha256":  "5279661b67f209d938d43fd458325f7fd7d42a1ddea17233293996c1e27aacf1"
+                   },
+                   {
+                       "path":  "AI/dataset/train_validation_test_split_v1/README.md",
+                       "sha256":  "6eb942c6d4d735e307af2bc167a2985c04cf606bf2c20bda07c31b123209ec91"
+                   },
+                   {
+                       "path":  "AI/dataset/train_validation_test_split_v1/group_assignments.csv",
+                       "sha256":  "d1b116812351ecac957d3a8b0e311a9d98ef4f187c3e9ca346d20d5193fa2225"
+                   },
+                   {
+                       "path":  "AI/dataset/train_validation_test_split_v1/integrity_report.json",
+                       "sha256":  "1e54f17e7c6ff9f1138a39b1290aa40ab55282088c3fd1bb527907591216215c"
+                   },
+                   {
+                       "path":  "AI/dataset/train_validation_test_split_v1/split_assignments.csv",
+                       "sha256":  "0cc2baa05973bf85abf370aa4ee65c2901a2fda6c0d5735406b1fde5fd85fd2d"
+                   },
+                   {
+                       "path":  "AI/dataset/train_validation_test_split_v1/split_manifest.json",
+                       "sha256":  "09c5f103908bef7b9e6346eca15cbf245523491a87b971dd5dee2c99f88b3d25"
+                   },
+                   {
+                       "path":  "AI/dataset/train_validation_test_split_v1/split_summary.json",
+                       "sha256":  "13a01859244112ed436335a650095ca8b5d97b3e49bc58b1e116ba80a82ee97b"
+                   },
+                   {
+                       "path":  "AI/dataset/train_validation_test_split_v1/test.csv",
+                       "sha256":  "cc612b03caf4578cd1d234bd9b310e1ea3f57ecbc92d72d5d607233593881639"
+                   },
+                   {
+                       "path":  "AI/dataset/train_validation_test_split_v1/train.csv",
+                       "sha256":  "9a95d4e13779f85d4da28775c8df23851f77f5f67ad980ed1c295a90e116913d"
+                   },
+                   {
+                       "path":  "AI/dataset/train_validation_test_split_v1/validation.csv",
+                       "sha256":  "15c6f343d94b7ca3836d80a15a13862a925622918e8c37761d5854f70ed6cf76"
+                   },
+                   {
+                       "path":  "AI/test/test_train_compare_mlp_validation.py",
+                       "sha256":  "5880394582a684fbdb9f63f3aa5e20220e709991cbf64508a6881bef94ff3012"
+                   },
+                   {
+                       "path":  "AI/train_compare_mlp_validation.py",
+                       "sha256":  "e007d2bbd2798f3239e288f4785f0304b8117d30e872838d8742ec53df179b17"
+                   }
+               ],
+    "outputs":  [
+                    {
+                        "path":  "integrity_report.json",
+                        "bytes":  864,
+                        "sha256":  "cd84f346a820318e64b16050c7b276daafcd971bf2100874732c87ac849a94d2"
+                    },
+                    {
+                        "path":  "REPORT.md",
+                        "bytes":  480,
+                        "sha256":  "b4af82455edad057ae4231344cad04c1321f1ff5c89103cf8d0b3a4a63b223fb"
+                    },
+                    {
+                        "path":  "test_confusion_analysis.json",
+                        "bytes":  16110,
+                        "sha256":  "d856a6682a75651b10d462ac847909cf9257add732a408ae9919a9632a58a43a"
+                    },
+                    {
+                        "path":  "test_confusion_matrix.csv",
+                        "bytes":  1336,
+                        "sha256":  "5fccd93ca772ef06a52b9412e79079638aa1e1e5aab00098c9bf5c3139f6b905"
+                    },
+                    {
+                        "path":  "test_metrics.json",
+                        "bytes":  4412,
+                        "sha256":  "fbf149459a6c549ce8737c321fe83430b2db9e673e9c64997f92ad8d8272f3e2"
+                    },
+                    {
+                        "path":  "test_per_class_metrics.csv",
+                        "bytes":  1483,
+                        "sha256":  "518e784d8e5cefcb8c1ed1b77bce09a2141fb960ab3dd5dc583c20323180c49f"
+                    },
+                    {
+                        "path":  "test_predictions.csv",
+                        "bytes":  748614,
+                        "sha256":  "b191dbec6df9deff7579d1755c0462f9035c3f6f89357f0e8a68d3ceceb790ec"
+                    }
+                ],
+    "remaining_blockers":  [
+
+                           ],
+    "limitations":  [
+                        "TEST is group-disjoint for detected duplicate/variant groups, but performer/person and session metadata are unavailable; this is not proof of generalization to entirely new people."
+                    ]
+}

@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "default_mode": "letters",
+  "camera_index": 0,
+  "letters": {
+    "mirror_before_mediapipe": true,
+    "smoothing_window": 7,
+    "smoothing_min_votes": 4,
+    "model_default": "uvw_medium",
+    "model_fallback": "v1"
+  },
+  "digits": {
+    "mirror_before_mediapipe": false
+  },
+  "notes": "Documentation only: the frozen camera programs do not read this file yet. Keep digits mirror_before_mediapipe=false to preserve current digit accuracy."
+}

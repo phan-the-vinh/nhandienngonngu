@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-09-20T09:25:59.822860+00:00",
+  "status": "VALIDATION_COMPARISON_COMPLETE",
+  "selection": {
+    "macro_f1_winner": "baseline",
+    "selected_model": "baseline",
+    "selection_status": "SELECTED",
+    "criterion": "Highest VALIDATION macro-F1; ties use minimum recall then accuracy.",
+    "recall_guard_floor": 0.8,
+    "material_recall_regression_threshold": 0.1,
+    "recall_guard_pass": true,
+    "material_recall_regressions": [],
+    "test_used": false
+  },
+  "integrity": {
+    "status": "PASS",
+    "train_samples": 62591,
+    "validation_samples": 13412,
+    "test_csv_access": "SIZE_AND_SHA256_ONLY",
+    "test_evaluated": false,
+    "train_validation_sample_overlap": 0,
+    "train_validation_group_overlap": 0,
+    "features_used": 63,
+    "labels": 24,
+    "scaler_train_rows": 62591,
+    "sample_weight_supported_natively": true,
+    "sample_weight_fallback_used": false,
+    "weighted_mean": 1.0000000000000002,
+    "weighted_class_totals_equal": true,
+    "weighted_group_totals_equal_within_class": true,
+    "source_files_modified": 0,
+    "old_model_files_modified": 0,
+    "augmentation_or_row_resampling": false,
+    "unit_tests": "PASS"
+  },
+  "test_evaluated": false,
+  "remaining_blockers": [],
+  "outputs": [
+    {
+      "path": "baseline_confusion_analysis.json",
+      "bytes": 15531,
+      "sha256": "de555e4a1acbd0f9eb84d4771697662ca8e34e7ce91ea18d8304f28211bbb6e7"
+    },
+    {
+      "path": "baseline_confusion_matrix.csv",
+      "bytes": 1336,
+      "sha256": "4a6a5242e0f2a25a02a3be85ace52309dc1591b0d4ccb4a858227ebe028f2939"
+    },
+    {
+      "path": "baseline_model.joblib",
+      "bytes": 218842,
+      "sha256": "a70b20f3168e180ade068e30e5a6e81711cf9ea1f1e0a6075fa4628e33b2a078"
+    },
+    {
+      "path": "baseline_per_class_metrics.csv",
+      "bytes": 1490,
+      "sha256": "309b45fca5b3be39f96851fb49c9b64ee173e05fb965c350c3480578abb58fa4"
+    },
+    {
+      "path": "baseline_training_history.csv",
+      "bytes": 22503,
+      "sha256": "d9b81d224c1671d85750050e775699eb18d53e6915e7f89f9985882642e97670"
+    },
+    {
+      "path": "baseline_validation_predictions.csv",
+      "bytes": 748762,
+      "sha256": "756ba4e5d2929baa5dee3d8920b9b5bf6ef50d767c499bf86ea9eeef1fae8fc9"
+    },
+    {
+      "path": "checkpoints/baseline/state.joblib",
+      "bytes": 441735,
+      "sha256": "903d67472da078acbe236350c0777f60ada32830ddfc3de32165183e8da23502"
+    },
+    {
+      "path": "checkpoints/weighted/state.joblib",
+      "bytes": 440046,
+      "sha256": "c24d03144e4434854b038dfa20b40ac38064e624dcbb420c4ca915de853b7d99"
+    },
+    {
+      "path": "evaluation_summary.json",
+      "bytes": 22264,
+      "sha256": "a979e10a8c50f9d33fa48f7944c555eb49f07cfac9532097e8e31b3a6e06090b"
+    },
+    {
+      "path": "integrity_report.json",
+      "bytes": 663,
+      "sha256": "2bafb005a61041aa2d8b7bc4bcbec6fe8cd53688a7f4ca3a06c015e25f19f1b1"
+    },
+    {
+      "path": "label_mapping.json",
+      "bytes": 1035,
+      "sha256": "4e5898c75ee8fbb06de49b6f185ba1802416749c8369e4c882ab1396ae82a2d7"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 411,
+      "sha256": "8b58f77d8344912e0a9f0d5bfee5e97471e49205882fe227f20b95c570091f7f"
+    },
+    {
+      "path": "run_state.json",
+      "bytes": 121,
+      "sha256": "d2267a510b2ec1b5dcad95d2bc3fed10e8ce6e18e870b878de2c66f31490885a"
+    },
+    {
+      "path": "scaler.joblib",
+      "bytes": 1889,
+      "sha256": "8ef70e9518406d3e56d6492a4f2dd7975c2736c825843347c0c98169d5403f0a"
+    },
+    {
+      "path": "selected_model.joblib",
+      "bytes": 218842,
+      "sha256": "a70b20f3168e180ade068e30e5a6e81711cf9ea1f1e0a6075fa4628e33b2a078"
+    },
+    {
+      "path": "selected_model.json",
+      "bytes": 602,
+      "sha256": "ef02538cc345dc2700bac3935e7a30a9e6c3be9c5a8fa24c58cf344e3ed711ad"
+    },
+    {
+      "path": "test_report.json",
+      "bytes": 106,
+      "sha256": "735ab5c3c7a10dcf83d9a8f24904c1167b2cc62714a26683ee5d751cab9d48f2"
+    },
+    {
+      "path": "training_config.json",
+      "bytes": 5596,
+      "sha256": "80c6b4e57aa5a705f29a72a3354aa2ed6f68041968d5739ab7d0d35367392117"
+    },
+    {
+      "path": "training_weights.csv",
+      "bytes": 5188688,
+      "sha256": "1165171ce75b83a64d885774e2a0c008070039e873083bf836bb0d2980cc3693"
+    },
+    {
+      "path": "weighted_confusion_analysis.json",
+      "bytes": 14411,
+      "sha256": "772444e9d288dbd6fdae88d4fe547af32daf5af939a64c3914dfbb6922e096dc"
+    },
+    {
+      "path": "weighted_confusion_matrix.csv",
+      "bytes": 1338,
+      "sha256": "63cf3071a2dad34262d00821d18a00691e5ebb2d7e292c4a8a0ebfe245929247"
+    },
+    {
+      "path": "weighted_model.joblib",
+      "bytes": 219552,
+      "sha256": "e288c20f91f2641190761cc2afe5a26676bb530f538c7789c02f8ca98705b7c4"
+    },
+    {
+      "path": "weighted_per_class_metrics.csv",
+      "bytes": 1506,
+      "sha256": "2d95a5b1e47ae41bb7b3e1ba8df539240512903e95bceafccc8262a10e5c5615"
+    },
+    {
+      "path": "weighted_training_history.csv",
+      "bytes": 8176,
+      "sha256": "8fc5afddb29f6280966527e405e6fffa95ddea3d9804d9799c1949e223101c84"
+    },
+    {
+      "path": "weighted_validation_predictions.csv",
+      "bytes": 752753,
+      "sha256": "f12938980f2f53c1e951bde85dbc887466cfbe0d9fcdb5ffd6bd082ba1b72a9c"
+    }
+  ]
+}

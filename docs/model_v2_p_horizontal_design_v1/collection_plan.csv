@@ -1,0 +1,10 @@
+cohort,signers,sessions_per_signer,label_block,number_of_classes,conditions_per_class,bouts_per_condition_per_session,total_bouts,max_frames_per_bout,max_frames
+TRAIN,20,2,P_Q,2,3,5,1200,3,3600
+TRAIN,20,2,K_G,2,3,5,1200,3,3600
+TRAIN,20,2,OTHER_20,20,3,1,2400,3,7200
+DEV,8,2,P_Q,2,3,5,480,3,1440
+DEV,8,2,K_G,2,3,5,480,3,1440
+DEV,8,2,OTHER_20,20,3,1,960,3,2880
+TEST_NEW,12,2,P_Q,2,3,5,720,3,2160
+TEST_NEW,12,2,K_G,2,3,5,720,3,2160
+TEST_NEW,12,2,OTHER_20,20,3,1,1440,3,4320

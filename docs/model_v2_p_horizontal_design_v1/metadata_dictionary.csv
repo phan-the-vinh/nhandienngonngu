@@ -1,0 +1,61 @@
+field,level,type,required,validation_or_meaning
+schema_version,all,string,yes,immutable version of collector metadata schema
+protocol_version,all,string,yes,links preregistered collection and evaluation protocol
+signer_id,signer,string,yes,pseudonymous globally unique stable across sessions hands and devices
+consent_record_id,signer,string,yes,reference stored separately from images without personal identifiers in training files
+asl_proficiency,signer,string,yes,self_reported plus reviewer note; not classifier truth
+dominant_hand,signer,enum,yes,LEFT|RIGHT|AMBIDEXTROUS|UNKNOWN
+legacy_participation_status,signer,enum,yes,VERIFIED_NON_OVERLAP|KNOWN_OVERLAP|UNVERIFIED; IDs alone do not prove absence from legacy
+provenance_evidence_ref,signer,string_or_null,yes,null means no verified non_overlap evidence
+assigned_cohort,signer,enum,yes,TRAIN|DEV|TEST_NEW assigned before model feedback; all descendant rows inherit
+session_id,session,string,yes,globally unique and linked to one signer
+session_started_utc,session,datetime,yes,ISO8601 UTC; second session on different local date
+device_id,session,string,yes,camera model plus pseudonymous unit ID; avoid device_label confounding
+camera_settings,session,object,yes,resolution FPS exposure focus and orientation; null individual fields if unavailable
+lighting,session,object,yes,source direction category and optional measured lux; no guessed measurement
+background,session,string,yes,plain|cluttered plus scene identifier
+session_notes,session,string,yes,record distance setup deviations interruptions and cohort quota shortfalls
+gesture_bout_id,bout,string,yes,new only after hand relaxed and sign deliberately reformed; multiple S presses do not create new bout
+multi_view_event_id,bout,string_or_null,yes,same event across synchronized cameras; null for single_view capture
+group_id,bout,string,yes,derived source_component of bout and confirmed duplicates; signer remains split unit
+source_component_id,bout,string,yes,all copied frames and approved variants share component
+prompt_label,bout,enum,yes,one of 24 static labels; never overwrite during semantic review
+verified_asl_label,bout,enum_or_null,yes,one of 24 static labels when semantic_confirmed else null; J/Z disallowed
+semantic_status,bout,enum,yes,CONFIRMED|UNCERTAIN|MISMATCH_PENDING_ADJUDICATION|INVALID
+semantic_reviewer_ids,bout,array,yes,independent ASL reviewers; two for P/Q/K/G and disagreements
+semantic_adjudication,bout,object_or_null,yes,decision evidence timestamp and corrected_label if manually agreed; preserve prompt and prior entries
+review_blinded_to_prediction,bout,boolean,yes,must be true for semantic ground_truth
+target_condition,bout,enum,yes,FRONT|HORIZONTAL_LEFT|HORIZONTAL_RIGHT|OBLIQUE_LEFT|OBLIQUE_RIGHT; target is not verified actual condition
+camera_view,bout,enum,yes,FRONTAL|OBLIQUE_LEFT|OBLIQUE_RIGHT|ELEVATED|OTHER|UNKNOWN relative to signer
+camera_yaw_pitch_roll_deg,bout,object,yes,three numeric_or_null values plus measured|rig_estimate|unknown method; not inferred from label
+hand_orientation_body,bout,object,yes,palm/finger directions relative to torso and intended viewer reviewed semantically; nullable numeric angles
+image_presentation,bout,enum,yes,FRONT|HORIZONTAL|OBLIQUE|UNCERTAIN reviewed without model scores; actual analysis stratum
+view_review_status,bout,enum,yes,CONFIRMED|UNCERTAIN|TARGET_MISMATCH
+handedness_actual,bout,enum,yes,LEFT|RIGHT|UNKNOWN before mirror from manual confirmation
+distance_m,bout,number_or_null,yes,measured_or_estimated distance plus measurement method; null if unknown
+occlusion_note,bout,string,yes,thumb/index/middle visibility and partial body/hand cropping
+hold_start_ms,bout,integer_or_null,yes,reviewed static interval start independent of prediction; null if invalid
+hold_end_ms,bout,integer_or_null,yes,reviewed static interval end; minimum hold protocol 1500ms
+clip_path,bout,string,yes,relative path to original recording including hand reset and hold
+clip_sha256,bout,sha256,yes,immutable original clip hash
+capture_id,sample,string,yes,globally unique frame/capture identifier independent of filename order
+captured_utc,sample,datetime,yes,ISO8601 UTC
+frame_index,sample,integer,yes,index in original clip
+frame_timestamp_ms,sample,integer,yes,timestamp relative to clip; links chosen offsets to bout
+selection_offset_ms,sample,enum,yes,250|750|1250; never selected using confidence
+raw_image_path,sample,string,yes,original decoded capture before overlays
+raw_sha256,sample,sha256,yes,hash for duplicate and integrity checking
+overlay_path,sample,string_or_null,yes,null if detection failed; never replace raw
+overlay_sha256,sample,sha256_or_null,yes,null when overlay absent
+image_width_height,sample,array,yes,two positive integers for coordinate conventions
+mirrored_before_mediapipe,sample,boolean,yes,explicit actual pipeline operation; keep compatible with v1 inference
+handedness_mediapipe,sample,enum_or_null,yes,LEFT|RIGHT|null; do not confuse mirrored category with actual hand
+extractor_version,sample,object,yes,MediaPipe library version task SHA256 settings and running_mode
+normalizer_version,sample,object,yes,function path source hash feature order and coordinate_space
+raw_image_landmarks,sample,array_or_null,yes,21 ordered xyz points or null when detector fails
+world_landmarks,sample,array_or_null,no,optional output if saved in future; cannot substitute silently for image landmarks
+feature_f1_f63,sample,array_or_null,yes,63 finite values from canonical v1 function or null; preserve raw
+landmark_review_status,sample,enum,yes,CONFIRMED|INCORRECT|NEEDS_MANUAL_REVIEW|NO_DETECTION; tips4/8/12 explicitly checked
+landmark_review_notes,sample,string,yes,correspondence evidence and occlusion/depth uncertainty
+capture_attempt_status,sample,enum,yes,OK|NO_HAND|INVALID_LANDMARK|MISSING_FRAME|CAMERA_ERROR; keep failures in attempt log
+model_predictions_ref,sample,string_or_null,no,separate file with model/scaler/mapping hashes; hidden from ground_truth reviewers

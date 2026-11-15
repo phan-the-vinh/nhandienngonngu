@@ -1,0 +1,18 @@
+{
+  "selected": "baseline",
+  "model_path": "selected_model.joblib",
+  "source_model_path": "baseline_model.joblib",
+  "scaler_path": "scaler.joblib",
+  "label_mapping_path": "label_mapping.json",
+  "selection": {
+    "macro_f1_winner": "baseline",
+    "selected_model": "baseline",
+    "selection_status": "SELECTED",
+    "criterion": "Highest VALIDATION macro-F1; ties use minimum recall then accuracy.",
+    "recall_guard_floor": 0.8,
+    "material_recall_regression_threshold": 0.1,
+    "recall_guard_pass": true,
+    "material_recall_regressions": [],
+    "test_used": false
+  }
+}

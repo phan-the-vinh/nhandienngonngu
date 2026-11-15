@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "output_root": "data/raw/dynamic",
+  "labels": ["J", "Z", "NONE"],
+  "hands": ["tayphai", "taytrai", "khongro"],
+  "views": ["gocchinh", "gocngang", "goccheo", "khac"],
+  "camera_index": 0,
+  "requested_width": 1280,
+  "requested_height": 720,
+  "fps": 30.0,
+  "codec": "mp4v"
+}

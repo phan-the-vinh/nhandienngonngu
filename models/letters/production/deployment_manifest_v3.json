@@ -1,0 +1,58 @@
+{
+  "schema_version": 3,
+  "status": "STATIC_ASL_RUNTIME_ARTIFACTS_VERIFIED",
+  "created_date": "2026-10-01",
+  "scope": "24 static ASL letters; J and Z are dynamic gestures",
+  "migration_method": "copy_then_switch; originals retained without modification",
+  "supersedes_without_overwriting": {
+    "path": "AI/dataset/static_asl_camera_deployment_v2/deployment_manifest.json",
+    "sha256": "30744dde36204e5cb66d0fd7b6cc404bdc5a6eae73e4e1d99aa068b069564f62"
+  },
+  "runtime": {
+    "entry_path": "AI/static_asl_camera.py",
+    "entry_sha256": "5fb37c60a07f8edb4fca12e7a8f9da1698170d09788b64b66e7f225d45caadb5",
+    "config_path": "AI/static_asl_model_config.json",
+    "config_sha256": "810a21d3c5b5602640be7928218462b888ff0016d00475a4ecdff730038ed841",
+    "default_model": "uvw_medium",
+    "default_epoch": 81,
+    "fallback_model": "v1_baseline",
+    "fallback_epoch": 143,
+    "features": 63,
+    "classes": 24,
+    "normalization": "AI/landmark_utils.py::normalize_landmarks",
+    "webcam_opened_by_verification": false
+  },
+  "production_artifacts": [
+    {"path": "AI/models/letters_static/production/uvw_medium_model.joblib", "source": "AI/dataset/mlp_uvw_validation_comparison_v1/uvw_medium_model.joblib", "bytes": 218456, "sha256": "88ea2f270cd75575d8914650265aa00193ffe451eb1a72d3ce70970bb1525a45"},
+    {"path": "AI/models/letters_static/production/uvw_medium_scaler.joblib", "source": "AI/dataset/mlp_uvw_validation_comparison_v1/uvw_medium_scaler.joblib", "bytes": 1887, "sha256": "93a0ddf102e456fef90cc54ddfa8cfadde60b72cce30e4f3c7810a0309fe0d4c"},
+    {"path": "AI/models/letters_static/production/label_mapping.json", "source": "AI/dataset/mlp_uvw_validation_comparison_v1/label_mapping.json", "bytes": 957, "sha256": "3a86d183c0a071782aef9f31054db396a8ad454706137dc7b5017a1024428876"},
+    {"path": "AI/models/letters_static/production/training_manifest.json", "source": "AI/dataset/mlp_uvw_validation_comparison_v1/training_manifest.json", "bytes": 6587, "sha256": "9a8b5b5a14a20261c897a477fac61908c6851088a2793eaad73b607eb73150ef"},
+    {"path": "AI/models/letters_static/production/training_config.json", "source": "AI/dataset/mlp_uvw_validation_comparison_v1/training_config.json", "bytes": 10457, "sha256": "196c47cb654125a738273355542140c7a1a824dc353fc26ddb2c7fe0603596b3"},
+    {"path": "AI/models/letters_static/production/selected_candidate.json", "source": "AI/dataset/mlp_uvw_validation_comparison_v1/selected_candidate.json", "bytes": 802, "sha256": "78605e21b23b2d6ba2f4df7842dd43d52360daf723dc5cc397ece6567ff2b308"},
+    {"path": "AI/models/letters_static/production/evaluation_summary.json", "source": "AI/dataset/mlp_uvw_validation_comparison_v1/evaluation_summary.json", "bytes": 14795, "sha256": "4f41c05f4b0148104c9adb90cbc95ae5b18964efe94d779c2983df26ce6db75f"}
+  ],
+  "fallback_artifacts": [
+    {"path": "AI/models/letters_static/fallback/selected_model.joblib", "source": "AI/dataset/mlp_validation_comparison_v1/selected_model.joblib", "bytes": 218842, "sha256": "a70b20f3168e180ade068e30e5a6e81711cf9ea1f1e0a6075fa4628e33b2a078"},
+    {"path": "AI/models/letters_static/fallback/baseline_model.joblib", "source": "AI/dataset/mlp_validation_comparison_v1/baseline_model.joblib", "bytes": 218842, "sha256": "a70b20f3168e180ade068e30e5a6e81711cf9ea1f1e0a6075fa4628e33b2a078"},
+    {"path": "AI/models/letters_static/fallback/scaler.joblib", "source": "AI/dataset/mlp_validation_comparison_v1/scaler.joblib", "bytes": 1889, "sha256": "8ef70e9518406d3e56d6492a4f2dd7975c2736c825843347c0c98169d5403f0a"},
+    {"path": "AI/models/letters_static/fallback/label_mapping.json", "source": "AI/dataset/mlp_validation_comparison_v1/label_mapping.json", "bytes": 1035, "sha256": "4e5898c75ee8fbb06de49b6f185ba1802416749c8369e4c882ab1396ae82a2d7"},
+    {"path": "AI/models/letters_static/fallback/training_manifest.json", "source": "AI/dataset/mlp_validation_comparison_v1/training_manifest.json", "bytes": 5454, "sha256": "9fe33ffefc705fa0b5ba9249013bd052747c420a6f78589543f0f43ed46742cc"},
+    {"path": "AI/models/letters_static/fallback/training_config.json", "source": "AI/dataset/mlp_validation_comparison_v1/training_config.json", "bytes": 5596, "sha256": "80c6b4e57aa5a705f29a72a3354aa2ed6f68041968d5739ab7d0d35367392117"},
+    {"path": "AI/models/letters_static/fallback/selected_model.json", "source": "AI/dataset/mlp_validation_comparison_v1/selected_model.json", "bytes": 602, "sha256": "ef02538cc345dc2700bac3935e7a30a9e6c3be9c5a8fa24c58cf344e3ed711ad"},
+    {"path": "AI/models/letters_static/fallback/evaluation_manifest.json", "source": "AI/dataset/mlp_baseline_test_evaluation_v1/evaluation_manifest.json", "bytes": 15566, "sha256": "de66093fba596f14144357afd2c64852670ab43fd34dd15e7dc71d5022807cbc"}
+  ],
+  "mediapipe_artifact": {
+    "path": "AI/models/mediapipe/hand_landmarker.task",
+    "source": "AI/models/hand_landmarker.task",
+    "bytes": 7819105,
+    "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+  },
+  "verification": {
+    "unit_tests": "PASS_83_OF_83",
+    "default_check_only": "PASS_uvw_medium_epoch_81",
+    "fallback_check_only": "PASS_v1_baseline_epoch_143",
+    "mediapipe_create_close": "PASS",
+    "model_scaler_mapping_hashes": "PASS",
+    "preexisting_frozen_v3_readme_hash_issue": "UNCHANGED"
+  }
+}
