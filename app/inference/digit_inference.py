@@ -61,6 +61,17 @@ def main(argv=None):
         default=DIGIT_MODEL,
         help=f"Digit model to use (default: {DIGIT_MODEL})",
     )
+    parser.add_argument(
+        "--camera-index",
+        type=int,
+        default=0,
+        help="OpenCV camera device index (default: 0)",
+    )
+    parser.add_argument(
+        "--check-only",
+        action="store_true",
+        help="Validate model and MediaPipe initialization without opening camera",
+    )
     args = parser.parse_args(argv)
     model_path = resolve_model_path(args.model_path)
 
@@ -79,6 +90,7 @@ def main(argv=None):
     if set(map(str, model.classes_)) != {str(i) for i in range(10)}:
         raise ValueError("Digit model must have classes 0-9")
     alignment_error_type = None
+    transformer_module = None
     if "orientation_2d" in getattr(model, "named_steps", {}):
         # Each saved Pipeline owns its transformer. Keep old experimental
         # checkpoints loadable while final models import the stable module.
@@ -89,6 +101,18 @@ def main(argv=None):
     print("Digit model loaded:", model_path)
     print("Classes:", model.classes_)
     print("Features:", model.n_features_in_)
+
+    if args.check_only:
+        import json
+        print(json.dumps({
+            "status": "DIGIT_INFERENCE_CHECK_PASS",
+            "model": str(model_path.name),
+            "features": model.n_features_in_,
+            "classes": [str(c) for c in model.classes_],
+            "alignment_module": transformer_module,
+            "camera_opened": False
+        }))
+        return 0
 
     base_options = python.BaseOptions(model_asset_path=str(MEDIAPIPE_MODEL))
     options = vision.HandLandmarkerOptions(
@@ -101,7 +125,7 @@ def main(argv=None):
     landmarker = vision.HandLandmarker.create_from_options(options)
     camera = None
     try:
-        camera = cv2.VideoCapture(0)
+        camera = cv2.VideoCapture(args.camera_index)
         if not camera.isOpened():
             raise RuntimeError("Khong mo duoc camera.")
 

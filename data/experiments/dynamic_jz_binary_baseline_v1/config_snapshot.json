@@ -1,0 +1,53 @@
+{
+  "experiment_name": "dynamic_jz_binary_baseline_v1",
+  "input_jsonl": "data/experiments/dynamic_jz_v1/processed/signnteam_jz_exclude_j40_v1.jsonl",
+  "j40_manifest": "data/experiments/dynamic_jz_v1/metadata/signnteam_jz_exclude_j40_manifest_v1.json",
+  "batch1_decisions": "data/experiments/dynamic_jz_v1/review/j_remaining_38_v1/batch_01/user_confirmed_decisions_v1.json",
+  "output_dir": "data/experiments/dynamic_jz_binary_baseline_v1",
+  "source_rights": {
+    "status": "VERIFIED_FOR_ACADEMIC_ML_TRAINING",
+    "evidence_path": "data/experiments/dynamic_jz_v1/metadata/signnteam_kaggle_cc0_license.png",
+    "dataset_url": "https://www.kaggle.com/datasets/signnteam/asl-sign-language-alphabet-videos-j-z",
+    "license": "CC0: Public Domain",
+    "license_terms_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "provenance": "USER_ATTESTED_DIRECT_KAGGLE_DOWNLOAD",
+    "provenance_record_path": "data/experiments/dynamic_jz_v1/metadata/signnteam_source_rights_evidence_v1.json",
+    "individual_video_match": "UNVERIFIED_NO_ORIGINAL_KAGGLE_HASH_OR_MANIFEST"
+  },
+  "labels": [
+    "J",
+    "Z"
+  ],
+  "sequence_length": 16,
+  "feature_dim": 69,
+  "expected_source_counts": {
+    "J": 268,
+    "Z": 375
+  },
+  "expected_final_counts": {
+    "J": 265,
+    "Z": 375
+  },
+  "confirmed_additional_exclusions": [
+    "J/99.avi",
+    "J/103.avi",
+    "J/250.avi"
+  ],
+  "split": {
+    "train": 0.8,
+    "validation": 0.1,
+    "test": 0.1,
+    "seed": 42,
+    "stratified": true
+  },
+  "model": {
+    "pipeline": [
+      "StandardScaler",
+      "LogisticRegression"
+    ],
+    "C": 1.0,
+    "max_iter": 1000,
+    "solver": "lbfgs",
+    "random_state": 42
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "experiment_name": "dynamic_jz_binary_baseline_v1",
+  "status": "EXPERIMENTAL_NOT_PRODUCTION",
+  "data": {
+    "source_counts": {
+      "J": 268,
+      "Z": 375
+    },
+    "final_counts": {
+      "J": 265,
+      "Z": 375
+    },
+    "excluded": [
+      "J/103.avi",
+      "J/250.avi",
+      "J/99.avi"
+    ],
+    "input_sha256": "b6904562621a6249303637d7ed4730f0ca93441924f402f32f59c15a47c695b1",
+    "decision_sha256": "2bd67514ce66a82ef6380a98cb6719959814454613676169a8a9843eea34d483",
+    "signer_session_metadata": "ABSENT; source-video split is not signer-independent",
+    "decision_source": "USER_CONFIRMED"
+  },
+  "feature_shape": [
+    16,
+    69
+  ],
+  "flattened_feature_count": 1104,
+  "flatten_order": "C: chronological frame 0..15, feature 0..68 within each frame",
+  "pipeline": [
+    "StandardScaler",
+    "LogisticRegression"
+  ],
+  "scaler_fit_on": "train_only",
+  "test_used_for_model_selection": false,
+  "rights_evidence_path": "data/experiments/dynamic_jz_v1/metadata/signnteam_kaggle_cc0_license.png",
+  "versions": {
+    "python": "3.11.15",
+    "numpy": "2.4.6",
+    "scikit_learn": "1.9.0"
+  },
+  "artifacts": {
+    "model_pipeline.joblib": "8878b0c0cd04a1ff8bbfc263cb3d49b4c7bc92706140b71c99a36e37bc33c497",
+    "scaler.joblib": "93804d73f4fc63aee7f2da08c1f0a879dc6d2bdc50ec27c0f5cfa4011b6fad7c",
+    "split_manifest.json": "8a0bdc86f2b695e6cdfa30a254260d6e6e0b8685cd75b1cc1883d50909f0cd7d",
+    "config_snapshot.json": "104a7442abbfe52345c0a78e6813b8f4165e65c7744db66a92542add335edb08"
+  }
+}

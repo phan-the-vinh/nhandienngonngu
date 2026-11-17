@@ -1,0 +1,28 @@
+# Default pattern for all text files
+* text=auto
+
+# Preserve exact LF line endings for checksum-verified and size-checked text files
+*.json text eol=lf
+*.tsv text eol=lf
+*.md text eol=lf
+*.py text eol=lf
+*.txt text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# Explicitly ensure models, dictionary, and configs keep LF
+data/dictionary/*.tsv text eol=lf
+models/letters/production/*.json text eol=lf
+models/letters/fallback/*.json text eol=lf
+configs/*.json text eol=lf
+data/experiments/**/*.json text eol=lf
+
+# Binary files
+*.joblib binary
+*.task binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.pptx binary
+*.pdf binary
+

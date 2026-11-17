@@ -1,95 +1,107 @@
 # Model Distribution and Provenance Policy
 
-This document details the model distribution policy for the **NhanDienCuChi** public open-source repository.
+This document details the official model distribution policy for the **NhanDienCuChi** open-source sign language recognition system.
+
+- **GitHub Repository**: [https://github.com/phan-the-vinh/nhandienngonngu](https://github.com/phan-the-vinh/nhandienngonngu)
+- **Dataset Documentation**: [https://github.com/phan-the-vinh/nhandienngonngu/blob/main/docs/dataset.md](https://github.com/phan-the-vinh/nhandienngonngu/blob/main/docs/dataset.md)
+- **Google Drive Backup Folder**: [https://drive.google.com/drive/u/0/folders/11dG6JtCcgB_fniRazOeujuJPRiJl9m10](https://drive.google.com/drive/u/0/folders/11dG6JtCcgB_fniRazOeujuJPRiJl9m10)
 
 ---
 
-## 1. Distribution Policy Overview (Source-Only Release)
+## 1. Distribution Policy Overview (Batteries-Included Model Distribution)
 
-This repository is distributed as **Public Source-Only (Option B)**.
+This repository is distributed with a **Batteries-Included** runtime policy:
 
-- **Included:** Complete Python source code, MediaPipe landmark processors, feature normalization algorithms, dynamic trajectory verifiers, interaction coordinators, word/sentence completion engines, configuration manifests, test suites, and reproducible training pipelines.
-- **Excluded:** Unverified pre-trained model weights (`.joblib` binary artifacts) whose upstream training dataset licenses are unrecorded or pending explicit owner release declarations.
+- **Included in Git Tree:** Complete Python source code, pre-trained model checkpoints (`.joblib` for static letters, digits, dynamic J/Z, and space gestures), MediaPipe landmark processor (`hand_landmarker.task`), feature normalization algorithms, dynamic trajectory verifiers, interaction coordinators, word/sentence completion engines, configuration manifests, test suites, and reproducible training scripts.
+- **Hosted on Google Drive:** Heavy raw training datasets (source video recordings, extracted static frames, full multi-gigabyte coordinate archives, and dataset zip files) are maintained on the [Google Drive Dataset Archive](https://drive.google.com/drive/u/0/folders/11dG6JtCcgB_fniRazOeujuJPRiJl9m10).
 
-By decoupling the source code from unverified proprietary or third-party datasets, the project maintains strict open-source licensing integrity while allowing users, researchers, and developers full freedom to inspect, run, train, and validate the system.
-
----
-
-## 2. Model Asset Classification & Provenance
-
-| Asset Name | Canonical Path | Size | Upstream Origin & License | Repository Status |
-|---|---|---|---|---|
-| **MediaPipe Hand Landmarker** | `models/mediapipe/hand_landmarker.task` | ~7.8 MB | Google LLC (Apache 2.0) | **Included** (or via `python tools/download_models.py`) |
-| **Dynamic J/Z Baseline Pipeline** | `data/experiments/dynamic_jz_binary_baseline_v1/model_pipeline.joblib` | ~37 KB | SigNN ASL Video Dataset (CC0 1.0 Universal Public Domain) | **Included** (Tracked in Git) |
-| **Word Suggestion Dictionary** | `data/dictionary/english_words_25k.tsv` | ~333 KB | SUBTLEX-US Corpus (CC BY-SA 4.0 with attribution) | **Included** (Tracked in Git) |
-| **Static ASL Letters Model** | `models/letters/production/uvw_medium_model.joblib` | ~218 KB | Web image scrape dataset (License unrecorded) | **Excluded** (`.gitignore`) |
-| **Static ASL Scaler** | `models/letters/production/uvw_medium_scaler.joblib` | ~1.2 KB | Derived from letter training set | **Included** (Feature normalization contract) |
-| **Static Digits Model** | `models/digits/production/digits_final.joblib` | ~464 KB | Private author capture dataset | **Excluded** (`.gitignore`) |
-| **SPACE Gesture Model** | `models/space/production/final_space_model.joblib` | ~1.4 KB | Private author capture dataset | **Excluded** (`.gitignore`) |
-| **Experimental / Fallback Checkpoints** | `models/letters/fallback/*.joblib`, `models/digits/candidates/` | Various | Development iterations | **Excluded** (`.gitignore`) |
+All production model weights combined comprise less than 1 Megabyte, enabling immediate, out-of-the-box execution upon cloning while keeping repository bloat minimal.
 
 ---
 
-## 3. Instructions for Users on a Fresh Clone
+## 2. Model Asset Classification & Provenance Matrix
 
-When cloning this repository to a fresh machine without pre-trained model weights, the system provides clear, descriptive feedback:
+| Asset Name | Canonical File Path | Size | Upstream Origin & License | Repository & Distribution Status | Public Availability |
+|---|---|---:|---|---|:---:|
+| **MediaPipe Hand Landmarker** | `models/mediapipe/hand_landmarker.task` | 7.819.105 B | Google LLC (Apache License 2.0) | **Included** (Tracked in Git & downloadable via script) | **Publicly Available** (Google Cloud Storage) |
+| **Word Suggestion Dictionary** | `data/dictionary/english_words_25k.tsv` | 291.528 B | SUBTLEX-US Corpus (CC BY-SA 4.0 with attribution) | **Included** (Tracked in Git) | **Publicly Available** (In Git tree) |
+| **Static ASL Scaler** | `models/letters/production/uvw_medium_scaler.joblib` | 1.887 B | Fitted standard normalizer (63 coordinates) | **Included** (Tracked in Git) | **Publicly Available** (In Git tree) |
+| **Static ASL Letters Model** | `models/letters/production/uvw_medium_model.joblib` | 218.456 B | 45,236 Kaggle ASL (GPL-2.0) + 41,676 color-coded images (`LICENSE_UNKNOWN`) | **Included** (Tracked in Git) | **Publicly Available** (In Git tree) |
+| **Static Digits Model** | `models/digits/production/digits_final.joblib` | 464.265 B | 349 base author captures + 170 Arda Mavi (Apache 2.0) + 30 ASL-HG (CC BY 4.0) | **Included** (Tracked in Git) | **Publicly Available** (In Git tree) |
+| **SPACE Gesture Model** | `models/space/production/final_space_model.joblib` | 1.375 B | 1,049 positive author captures + 63,140 negative samples (ABC & Digits) | **Included** (Tracked in Git) | **Publicly Available** (In Git tree) |
+| **Dynamic J/Z Baseline Pipeline** | `data/experiments/dynamic_jz_binary_baseline_v1/model_pipeline.joblib` | 36.657 B | SigNN ASL Video (CC0 1.0 Universal; Section 2(d) non-waiver) | **Included** (Tracked in Git) | **Publicly Available** (In Git tree) |
+| **Dynamic J/Z Scaler** | `data/experiments/dynamic_jz_binary_baseline_v1/scaler.joblib` | 27.079 B | SigNN training set normalizer | **Included** (Tracked in Git) | **Publicly Available** (In Git tree) |
+
+---
+
+## 3. Clone & Verification Instructions
+
+When cloning this repository, all required production models and assets are pre-installed. Running `python run.py --check-only` or `python tools/download_models.py --check-only` verifies that all components are intact and matching expected cryptographic signatures:
 
 ```text
-ERROR: Missing required pre-trained model file(s):
-  Static ASL letter model (models/letters/production/uvw_medium_model.joblib)
-  Static digit model (models/digits/production/digits_final.joblib)
+=== NhanDienCuChi Model Asset Manager ===
+[EXISTS] hand_landmarker.task: Verified matching SHA-256 at models\mediapipe\hand_landmarker.task
+
+--- Verifying Project Production Runtime Assets ---
+[OK] ASL Static Letters Model (uvw_medium) (models\letters\production\uvw_medium_model.joblib): Verified SHA-256
+[OK] Static Digits Model (digits_final) (models\digits\production\digits_final.joblib): Verified SHA-256
+[OK] SPACE Gesture Model (final_space_model) (models\space\production\final_space_model.joblib): Verified SHA-256
+[OK] Dynamic J/Z Baseline Model (model_pipeline) (data\experiments\dynamic_jz_binary_baseline_v1\model_pipeline.joblib): Verified SHA-256
+[OK] Offline English Word Suggestion Dictionary (25k words) (data\dictionary\english_words_25k.tsv): Verified SHA-256
+
+[SUCCESS] All runtime models and assets are present and verified!
+```
 
 This public repository is distributed source-only without unverified pre-trained weights.
 Please refer to docs/MODEL_DISTRIBUTION.md for instructions.
 ```
 
-To run full character and digit inference, you have two options:
+To run full character, digit, and gesture inference, you have two options:
 
-### Option A: Provide Existing Pre-trained Checkpoints
-If you have authorized access to pre-trained model weights (e.g., from a private backup or author release):
-1. Place the letter classifier at:
-   `models/letters/production/uvw_medium_model.joblib`
-2. Place the digit classifier at:
-   `models/digits/production/digits_final.joblib`
-3. (Optional) Place the SPACE classifier at:
-   `models/space/production/final_space_model.joblib`
+### Option A: Download from Authorized Google Drive Backup
+If you are an authorized collaborator or have access to the project's external Google Drive:
+1. Navigate to: [https://drive.google.com/drive/u/0/folders/11dG6JtCcgB_fniRazOeujuJPRiJl9m10](https://drive.google.com/drive/u/0/folders/11dG6JtCcgB_fniRazOeujuJPRiJl9m10)
+2. Download the `.joblib` model bundle.
+3. Place files into their respective directories:
+   - `models/letters/production/uvw_medium_model.joblib`
+   - `models/digits/production/digits_final.joblib`
+   - `models/space/production/final_space_model.joblib`
+4. Run `python tools/download_models.py --check-only` to verify all SHA-256 checksums.
 
-These files match `.gitignore` and will never be accidentally committed to your public git tree.
-
-### Option B: Train Your Own Models Using Provided Scripts
-The repository includes complete scripts for training compatible models from custom landmark data:
-- **Digits (0-9):**
-  See `training/digits/train_digits.py` or the dataset preparation pipelines in `training/digits/`.
-- **Letters (24 ASL classes):**
-  See `training/` and `ai/dataset/` for feature extraction and training templates.
-- **Dynamic J/Z:**
-  See `training/dynamic/train_dynamic.py`.
+### Option B: Train Custom Replacement Models Using Clean Datasets
+The repository includes complete scripts for training compatible models:
+- **Digits (0–9)**: Execute `training/digits/` pipelines on verified datasets.
+- **Letters (24 ASL Classes)**: Feature extraction and training templates in `training/`.
+- **Dynamic J/Z**: Trajectory training scripts in `training/dynamic/`.
 
 ---
 
-## 4. Expected Model Input/Output Contracts
+## 4. Expected Model Input/Output Architectural Contracts
 
-If you train custom replacement models, they must satisfy the following architectural contracts:
+Any custom replacement model must satisfy the following architectural contracts:
 
-- **Feature Vector:** Exactly 63 features (`f1`..`f63`), representing 21 normalized 3D hand landmarks produced by `ai.preprocessing.landmark_utils.normalize_landmarks`.
-- **Letters Classifier:**
+- **Feature Vector**: Exactly 63 features (`f1..f63`), representing 21 normalized 3D hand landmarks produced by `ai.preprocessing.landmark_utils.normalize_landmarks`.
+- **Letters Classifier (`uvw_medium`)**:
   - Classes: 24 classes: `A, B, C, D, E, F, G, H, I, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y` (J and Z are dynamic).
-  - Implementation: Scikit-learn estimator or Pipeline implementing `predict_proba`.
-- **Digits Classifier:**
-  - Classes: 10 classes: `'0'`, `'1'`, `'2'`, `'3'`, `'4'`, `'5'`, `'6'`, `'7'`, `'8'`, `'9'`.
-  - Implementation: Scikit-learn Pipeline with steps `['orientation_2d', 'scaler', 'mlp']` implementing `predict_proba`.
-- **SPACE Classifier:**
+  - Architecture: Scikit-learn MLPClassifier or Pipeline implementing `predict_proba`.
+- **Digits Classifier (`digits_final`)**:
+  - Classes: 10 classes: `'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'`.
+  - Architecture: Scikit-learn Pipeline with steps `['orientation_2d', 'scaler', 'mlp']` implementing `predict_proba`.
+- **SPACE Classifier (`final_space_model`)**:
   - Classes: Binary `[0, 1]` (0 = non-space, 1 = space).
-  - Feature invariance: Zero or near-zero weight on wrist landmarks (features 0, 1, 2).
+  - Architecture: Scikit-learn LogisticRegression with wrist invariance.
 
 ---
 
 ## 5. Verification Checksums
 
-For developers working with the original private checkpoints, the expected SHA-256 hashes are:
+For developers validating model artifacts against the official project manifests, the verified SHA-256 hashes are:
 
-- `uvw_medium_model.joblib`: `88ea2f270cd75575d8914650265aa00193ffe451eb1a72d3ce70970bb1525a45`
-- `digits_final.joblib`: `43c7e87a287daf7e2c4958f037a91c128f97ab381ccb4f0ae40c7c096776b25c`
-- `final_space_model.joblib`: `453162d8aa0212016216a6c02798d3dcaa445c1fbb7a6340c896bb828e076121`
-- `hand_landmarker.task`: `2a2fb49132512adbfb471fb6244ab742398547f877ce5d57d77b6392b45050be`
-- `model_pipeline.joblib` (J/Z baseline): `8878b0c0cd04a1ff8bbfc263cb3d49b4c7bc92706140b71c99a36e37bc33c497`
+- **`hand_landmarker.task`**: `fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1` (7,819,105 bytes)
+- **`uvw_medium_model.joblib`**: `88ea2f270cd75575d8914650265aa00193ffe451eb1a72d3ce70970bb1525a45` (218,456 bytes)
+- **`uvw_medium_scaler.joblib`**: `93a0ddf102e456fef90cc54ddfa8cfadde60b72cce30e4f3c7810a0309fe0d4c` (1,887 bytes)
+- **`digits_final.joblib`**: `43c7e87a287daf7e2c4958f037a91c128f97ab381ccb4f0ae40c7c096776b25c` (464,265 bytes)
+- **`final_space_model.joblib`**: `453162d8aa0212016216a6c02798d3dcaa445c1fbb7a6340c896bb828e076121` (1,375 bytes)
+- **`model_pipeline.joblib`** (J/Z baseline): `8878b0c0cd04a1ff8bbfc263cb3d49b4c7bc92706140b71c99a36e37bc33c497` (36,657 bytes)
+- **`scaler.joblib`** (J/Z dynamic): `93804d73f4fc63aee7f2da08c1f0a879dc6d2bdc50ec27c0f5cfa4011b6fad7c` (27,079 bytes)
+- **`english_words_25k.tsv`**: `986eead866a09df979d0c95a8250f235cb4bdf0bdadd5b3699db610e3ad4525e` (340,540 bytes)

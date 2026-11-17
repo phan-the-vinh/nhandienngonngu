@@ -42,7 +42,11 @@ desktop.ini
 *.rar
 *.7z
 *.log
+*.pptx
+*.pdf
 jz_motion_log.txt
+scratch/
+staging_distribution/
 
 # Heavy datasets and intermediate artifacts in ai/
 dulieu/
@@ -62,10 +66,7 @@ models/digits/candidates/
 models/dynamic_jz/dtw_templates/
 models/**/*.tmp
 
-# Unverified production and fallback models (Public Source-Only policy)
-models/letters/production/uvw_medium_model.joblib
-models/digits/production/digits_final.joblib
-models/space/production/final_space_model.joblib
+# Fallback and experimental candidate models (production models are included)
 models/letters/fallback/*.joblib
 models/digits/fallback/*.joblib
 models/digits/production/mlp_large_v2a.joblib
@@ -78,11 +79,12 @@ data/dictionary/source/
 data/experiments/*
 !data/experiments/dynamic_jz_binary_baseline_v1/
 data/experiments/dynamic_jz_binary_baseline_v1/*
+!data/experiments/dynamic_jz_binary_baseline_v1/*.json
 !data/experiments/dynamic_jz_binary_baseline_v1/model_pipeline.joblib
 !data/experiments/dynamic_jz_binary_baseline_v1/scaler.joblib
-!data/experiments/dynamic_jz_binary_baseline_v1/metadata.json
 
 # Reports runtime data
 reports/figures/
 reports/data/*.json
+reports/data/*.jsonl
 !reports/data/README.md

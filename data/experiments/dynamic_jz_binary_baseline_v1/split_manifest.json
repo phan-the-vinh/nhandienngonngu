@@ -1,0 +1,2593 @@
+{
+  "seed": 42,
+  "strategy": "stratified_by_label_at_source_video_level",
+  "ratios": {
+    "train": 0.8,
+    "validation": 0.1,
+    "test": 0.1
+  },
+  "group_metadata": "ABSENT; source-video split is not signer-independent",
+  "splits": {
+    "train": [
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/161.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/255.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/167.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/306.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/234.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/66.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/263.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/22.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/27.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/168.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/224.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/101.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/141.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/143.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/64.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/306.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/102.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/93.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/59.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/217.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/107.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/308.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/177.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/265.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/262.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/78.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/79.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/88.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/139.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/130.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/137.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/367.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/33.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/41.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/25.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/44.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/264.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/144.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/180.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/341.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/259.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/275.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/96.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/223.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/243.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/303.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/92.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/316.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/137.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/151.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/207.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/155.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/21.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/114.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/165.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/272.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/145.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/302.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/34.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/226.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/123.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/72.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/126.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/165.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/190.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/169.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/301.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/222.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/150.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/267.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/3.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/283.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/338.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/293.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/116.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/56.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/375.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/133.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/43.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/8.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/337.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/166.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/109.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/3.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/260.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/105.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/94.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/197.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/211.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/362.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/31.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/81.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/382.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/311.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/80.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/53.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/352.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/76.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/304.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/231.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/324.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/91.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/331.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/390.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/122.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/63.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/192.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/140.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/68.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/297.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/309.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/51.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/239.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/242.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/77.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/140.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/77.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/270.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/23.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/84.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/280.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/259.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/250.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/201.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/203.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/216.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/99.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/257.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/311.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/307.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/126.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/104.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/69.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/219.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/230.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/58.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/74.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/34.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/65.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/153.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/156.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/6.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/39.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/162.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/237.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/248.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/229.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/277.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/5.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/122.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/219.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/227.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/379.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/278.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/136.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/315.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/279.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/335.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/246.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/329.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/123.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/174.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/227.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/368.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/392.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/229.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/195.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/37.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/82.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/260.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/258.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/184.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/284.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/268.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/288.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/87.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/387.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/159.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/315.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/212.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/70.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/12.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/142.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/1.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/67.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/106.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/171.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/345.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/305.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/47.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/223.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/38.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/125.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/17.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/14.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/16.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/128.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/286.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/242.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/212.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/295.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/356.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/19.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/319.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/81.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/289.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/66.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/323.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/247.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/56.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/141.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/134.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/261.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/243.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/281.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/169.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/144.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/120.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/35.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/138.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/396.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/152.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/215.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/155.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/370.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/216.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/357.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/188.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/245.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/194.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/68.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/61.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/318.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/307.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/168.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/282.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/299.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/105.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/348.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/18.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/372.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/73.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/378.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/211.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/176.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/48.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/129.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/36.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/116.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/32.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/320.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/291.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/353.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/204.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/201.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/183.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/225.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/89.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/153.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/108.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/175.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/305.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/266.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/96.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/110.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/272.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/154.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/274.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/381.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/62.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/355.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/113.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/365.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/49.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/214.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/346.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/278.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/164.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/119.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/386.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/334.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/291.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/263.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/67.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/190.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/71.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/326.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/330.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/160.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/149.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/16.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/336.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/118.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/107.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/108.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/251.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/72.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/210.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/360.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/354.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/112.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/247.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/54.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/313.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/283.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/196.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/136.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/232.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/241.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/166.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/2.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/271.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/292.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/343.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/287.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/38.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/28.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/147.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/240.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/321.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/71.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/75.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/279.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/95.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/111.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/308.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/53.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/178.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/339.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/269.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/271.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/264.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/226.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/284.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/60.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/145.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/40.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/389.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/48.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/281.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/292.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/113.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/294.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/158.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/185.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/244.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/289.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/156.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/252.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/73.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/391.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/220.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/11.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/238.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/181.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/132.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/298.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/276.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/239.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/200.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/235.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/268.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/286.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/41.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/236.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/42.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/182.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/133.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/147.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/300.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/186.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/45.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/232.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/312.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/366.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/295.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/83.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/115.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/97.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/117.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/373.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/33.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/273.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/202.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/302.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/220.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/163.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/20.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/131.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/186.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/340.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/49.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/380.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/395.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/266.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/383.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/359.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/303.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/29.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/39.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/215.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/249.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/98.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/208.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/142.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/88.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/50.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/199.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/214.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/61.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/252.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/218.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/294.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/167.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/236.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/125.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/254.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/110.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/179.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/42.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/347.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/89.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/90.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/253.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/274.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/313.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/109.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/63.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/394.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/221.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/280.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/82.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/276.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/117.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/187.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/91.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/333.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/325.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/118.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/385.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/238.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/30.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/300.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/15.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/172.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/76.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/161.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/173.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/270.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/148.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/255.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/233.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/86.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/36.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/248.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/65.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/222.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/146.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/46.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/314.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/131.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/273.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/163.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/4.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/128.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/129.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/377.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/297.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/358.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/52.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/47.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/160.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/350.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/267.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/296.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/290.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/301.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/364.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/138.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/18.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/127.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/225.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/111.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/299.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/314.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/241.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/112.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/296.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/45.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/100.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/44.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/213.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/332.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/55.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/52.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/51.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/376.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/384.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/344.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/256.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/40.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/2.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/304.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/127.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/26.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/349.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/159.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/361.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/1.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/121.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/189.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/87.avi",
+        "label": "J"
+      }
+    ],
+    "validation": [
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/309.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/224.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/327.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/57.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/198.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/154.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/288.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/151.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/139.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/310.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/287.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/374.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/240.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/119.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/114.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/249.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/371.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/10.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/231.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/7.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/132.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/275.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/261.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/312.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/179.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/170.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/121.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/235.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/95.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/293.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/277.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/146.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/60.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/322.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/30.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/134.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/221.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/316.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/310.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/209.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/57.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/43.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/351.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/265.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/78.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/228.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/143.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/213.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/256.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/157.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/74.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/254.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/393.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/253.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/230.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/6.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/237.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/17.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/85.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/285.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/193.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/205.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/158.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/92.avi",
+        "label": "Z"
+      }
+    ],
+    "test": [
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/124.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/54.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/103.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/5.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/9.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/162.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/115.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/50.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/98.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/58.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/84.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/31.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/85.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/93.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/258.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/164.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/217.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/120.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/191.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/244.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/64.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/257.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/75.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/10.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/206.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/342.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/32.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/285.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/262.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/94.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/70.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/251.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/152.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/83.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/282.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/369.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/149.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/80.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/388.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/148.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/363.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/4.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/101.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/135.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/317.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/218.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/246.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/298.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/55.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/106.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/150.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/97.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/62.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/245.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/69.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/228.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/37.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/233.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/269.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/157.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/130.avi",
+        "label": "Z"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/234.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/J/290.avi",
+        "label": "J"
+      },
+      {
+        "source_path": "data/raw/dynamic/external/signnteam_jz/SigNN Video Data/Z/86.avi",
+        "label": "Z"
+      }
+    ]
+  },
+  "class_counts": {
+    "train": {
+      "J": 212,
+      "Z": 300
+    },
+    "validation": {
+      "J": 26,
+      "Z": 38
+    },
+    "test": {
+      "Z": 37,
+      "J": 27
+    }
+  },
+  "source_overlap": 0
+}

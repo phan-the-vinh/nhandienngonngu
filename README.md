@@ -1,25 +1,45 @@
 # NhanDienCuChi: Real-Time Hand Gesture Sign Language Recognition System
 
-A real-time American Sign Language (ASL) and digit recognition system powered by Google MediaPipe Hand Landmarker, scikit-learn classifiers, and local language intelligence.
+A high-performance American Sign Language (ASL), digit, and gesture recognition system powered by Google MediaPipe Hand Landmarker, calibrated scikit-learn classifiers, and local language intelligence.
+
+[![GitHub Repository](https://img.shields.io/badge/GitHub-phan--the--vinh%2Fnhandienngonngu-blue?logo=github)](https://github.com/phan-the-vinh/nhandienngonngu)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Python 3.10 | 3.11](https://img.shields.io/badge/Python-3.10%20%7C%203.11-blue.svg)](environment.yml)
+[![Google Drive Dataset](https://img.shields.io/badge/Google%20Drive-Dataset%20Archive-orange?logo=googledrive)](https://drive.google.com/drive/u/0/folders/11dG6JtCcgB_fniRazOeujuJPRiJl9m10)
 
 ---
 
-## Overview
+## 1. Overview & Architecture
 
-**NhanDienCuChi** translates hand gestures captured via a standard webcam into text characters and sentences in real time. The system combines geometric landmark normalization, spatial-temporal trajectory analysis, and machine learning to achieve robust character input.
+**NhanDienCuChi** captures video from a standard webcam, tracks 21 3D hand landmarks in real time, normalizes them against hand size and position, and classifies them into characters, numbers, and words with sub-second latency.
+
+```mermaid
+flowchart LR
+    A["Webcam Video Stream"] --> B["MediaPipe Hand Landmarker (21 3D Points)"]
+    B --> C["Wrist-Relative & Scale Normalization (63 Features)"]
+    C --> D{"Multi-Modal Recognition Dispatcher"}
+    D --> E["Static Letters: MLP Classifier (A-I, K-Y)"]
+    D --> F["Static Digits: Aligner + Scaler + MLP (0-9)"]
+    D --> G["Dynamic J/Z: Trajectory Segmenter (16 Frames)"]
+    D --> H["SPACE Gesture: LogReg Classifier"]
+    E & F & G & H --> I["Hold-to-Commit Arbitration Window"]
+    I --> J["Offline Trie Word Suggestions (25k Words)"]
+    J --> K["Local LLM Sentence Completion (Ollama)"]
+```
 
 > [!NOTE]
-> **Source-Only Open Source Distribution:**
-> This repository is published under a **Source-Only** distribution policy. It includes all source code, MediaPipe landmark processors, feature normalization algorithms, dynamic J/Z models (CC0), word dictionaries (CC BY-SA 4.0), reproduction scripts, and test suites. Pre-trained weights for the static letter, digit, and space classifiers are excluded from Git tracking due to upstream dataset licensing boundaries.
-> For details on providing your own checkpoints or training new models, please read **[MODEL_DISTRIBUTION.md](docs/MODEL_DISTRIBUTION.md)**.
+> **Batteries-Included Open Source Distribution:**
+> This repository is fully self-contained for real-time inference. It includes all Python source code, pre-trained model checkpoints (ABC letters, Digits 0–9, Dynamic J/Z, SPACE), MediaPipe task bundles, scalers, word suggestion dictionaries, reproduction manifests, and test suites.
+> Heavy raw training datasets (source videos, extracted image archives, raw landmark coordinates) are hosted externally on **[Google Drive Dataset Archive](https://drive.google.com/drive/u/0/folders/11dG6JtCcgB_fniRazOeujuJPRiJl9m10)**.
+> For details on licensing and attribution, please read **[MODEL_DISTRIBUTION.md](docs/MODEL_DISTRIBUTION.md)** and **[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)**.
 
 ### Supported Gestures
 - **Static ASL Letters (24 classes):** `A–I`, `K–Y` recognized using calibrated Multi-Layer Perceptron (MLP) classifiers.
-- **Static Digits (10 classes):** `0–9` recognized with dedicated spatial geometric models.
+- **Static Digits (10 classes):** `0–9` recognized with a 2D-alignment pipeline and specialized MLP model.
 - **Dynamic Letters (2 classes):**
   - **`J`**: Curved pinky-hook motion trajectory.
   - **`Z`**: Three-stroke zig-zag motion with index finger extension.
-  - Features motion segmentation (First16Segmenter), wrist-relative feature normalization, and ratio-gated trajectory validation.
+  - Features motion segmentation (First16Segmenter), wrist-relative trajectory normalization, and ratio-gated validation.
 - **SPACE Gesture:** Open-palm static posture with thumb extension to separate words naturally.
 
 ### Language Intelligence
@@ -29,25 +49,30 @@ A real-time American Sign Language (ASL) and digit recognition system powered by
 
 ---
 
-## Project Structure
+## 2. Project Structure
 
 ```
+D:\NhanDienCuChi\
 ├── app/               # Application runtime and real-time inference pipelines
-│   ├── camera/        # Camera loops and unified multi-modal coordinator
-│   └── inference/     # Specialized predictors (letters, digits, dynamic J/Z, SPACE)
-├── src/               # Public architectural APIs and clean adapters
+│   ├── camera/        # Camera loops, rendering, and unified multi-modal coordinator
+│   ├── inference/     # Predictors (letter_inference, digit_inference, dynamic_jz, space)
+│   └── suggestion/    # Trie dictionary prefix search and Ollama LLM integration
+├── src/               # Public architectural APIs and clean model wrappers
 ├── ai/                # Hand landmark utilities, geometric features, normalization
 ├── models/            # Production model weights and MediaPipe task bundles
-│   ├── mediapipe/     # Google MediaPipe hand_landmarker.task
-│   ├── letters/       # ASL letter MLP models (uvw_medium, v1)
-│   ├── digits/        # Digit production models (digits_final)
-│   └── space/         # Calibrated SPACE gesture classifier
+│   ├── mediapipe/     # Google MediaPipe hand_landmarker.task (Apache 2.0)
+│   ├── letters/       # ASL letter MLP models (uvw_medium_model.joblib, scaler)
+│   ├── digits/        # Static digit production models (digits_final.joblib)
+│   └── space/         # Calibrated SPACE gesture classifier (final_space_model.joblib)
 ├── data/
-│   ├── dictionary/    # 25,000 English word dictionary for offline Trie lookup
-│   └── experiments/   # Dynamic J/Z binary baseline pipeline
-├── configs/           # JSON configurations (application, space, etc.)
-├── tools/             # Utilities (model downloader, camera diagnostic tools)
+│   ├── dictionary/    # 25,000 English word dictionary (SUBTLEX-US, CC BY-SA 4.0)
+│   ├── processed/     # Extracted frozen landmark feature datasets
+│   └── experiments/   # Dynamic J/Z binary baseline pipeline and metadata
+├── configs/           # JSON runtime configurations (space.json, letters.json, digits.json)
+├── tools/             # Utilities (download_models.py, camera diagnostic tools)
+├── docs/              # Technical documentation (dataset.md, MODEL_DISTRIBUTION.md)
 ├── tests/             # Unit and integration test suite
+├── THIRD_PARTY_NOTICES.md  # Upstream license notices and attribution
 ├── run.py             # Primary entry point (one-click launch)
 ├── requirements.txt   # Pip dependencies
 └── environment.yml    # Conda environment definition
@@ -55,18 +80,15 @@ A real-time American Sign Language (ASL) and digit recognition system powered by
 
 ---
 
-## Quick Start
+## 3. Quick Start & Installation
 
-### 1. Prerequisites
-- **Operating System:** Windows 10/11, macOS, or Linux.
-- **Python:** Version 3.10 or 3.11.
-- **Webcam:** Any standard USB or built-in webcam (720p @ 30 FPS recommended).
-- *(Optional)* [Ollama](https://ollama.com) with the `qwen3:4b` model installed if local LLM sentence generation is desired:
-  ```bash
-  ollama pull qwen3:4b
-  ```
+### Step 1: Clone the Repository
+```bash
+git clone https://github.com/phan-the-vinh/nhandienngonngu.git
+cd nhandienngonngu
+```
 
-### 2. Environment Setup
+### Step 2: Environment Setup
 
 #### Option A: Using Conda (Recommended)
 ```bash
@@ -84,106 +106,127 @@ python -m venv .venv
 # On Linux/macOS:
 source .venv/bin/activate
 
+pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-### 3. Model Download and Verification
-Download the official Google MediaPipe hand landmark model and verify local checkpoints:
+### Step 3: Model Verification & Optional Dataset Access
 
-```bash
-# Check integrity of existing models
-python tools/download_models.py --check-only
+1. **Verify All Production Model Checkpoints:**
+   All required pre-trained model weights, scalers, and the MediaPipe landmarker are pre-packaged in the repository. Verify their integrity at any time:
+   ```bash
+   python tools/download_models.py --check-only
+   ```
+   If `models/mediapipe/hand_landmarker.task` is missing or needs re-downloading, run:
+   ```bash
+   python tools/download_models.py
+   ```
 
-# Download missing MediaPipe Hand Landmarker task bundle
-python tools/download_models.py
-```
+2. **Accessing Raw Training Datasets (Optional):**
+   If you wish to inspect raw data, review extraction pipelines, or retrain the models from scratch:
+   - Access the complete dataset package on the [Google Drive Dataset Archive](https://drive.google.com/drive/u/0/folders/11dG6JtCcgB_fniRazOeujuJPRiJl9m10).
+   - Datasets include raw ASL video recordings, static alphabet frames, digit captures, and landmark parquet/JSON manifests as documented in [docs/dataset.md](docs/dataset.md).
 
-> [!TIP]
-> On a clean clone, pre-trained weights for static letters, digits, and space must either be placed in `models/` or trained locally using the scripts in `training/`. See **[MODEL_DISTRIBUTION.md](docs/MODEL_DISTRIBUTION.md)** for path requirements.
+---
 
-### 4. Run the Application
+## 4. Running the Application
 
-#### One-Click Launch (Default Unified Mode)
-Simply run `run.py` or click **Run Python File** in VS Code:
+### One-Click Launch (Default Unified Mode)
+Execute `run.py` to launch the complete multi-modal recognition system:
 ```bash
 python run.py
 ```
-This automatically launches:
-- Static ASL (`A–Y` except `J`/`Z`) + Digits (`0–9`) recognition
-- Dynamic `J` and `Z` recognition
+This automatically initiates:
+- Static ASL (`A–Y` except `J`/`Z`) + Static Digits (`0–9`) recognition
+- Dynamic `J` and `Z` trajectory recognition
 - `SPACE` gesture recognition
-- Offline Trie word suggestions + local Ollama completion
+- Offline Trie word suggestions + local Ollama completion (if available)
 
-#### Non-Camera Preflight Check
-Verify that all model artifacts, configurations, and inference pipelines initialize correctly without accessing the webcam:
+### Preflight Non-Camera Check
+Verify that all model artifacts, configurations, and pipelines initialize correctly without opening the webcam:
 ```bash
 python run.py --check-only
 ```
 
-#### Dedicated Recognition Modes
+### Dedicated Recognition Modes & Options
 ```bash
-# Letters only
+# Letters only mode
 python run.py --mode letters
 
-# Digits only
+# Letters check-only mode
+python run.py --mode letters --check-only
+
+# Digits only mode
 python run.py --mode digits
 
-# Specify a different camera index
+# Specify a different webcam index (e.g., external USB camera)
 python run.py --camera-index 1
-```
 
-#### Command-Line Options
-| Option | Description |
-|---|---|
-| `--mode {unified,letters,digits}` | Operating mode (default: `unified`) |
-| `--camera-index <int>` | OpenCV camera capture index (default: `0`) |
-| `--check-only` | Validate all components and exit without opening camera |
-| `--disable-experimental-jz` | Disable dynamic J/Z gesture commits (diagnostic-only) |
-| `--disable-space` | Disable the SPACE gesture classifier |
-| `--disable-word-suggestion` | Disable the Trie word suggestion bar |
-| `--ollama-model <name>` | Select alternative local Ollama model (default: `qwen3:4b`) |
+# Disable experimental J/Z dynamic recognition
+python run.py --disable-experimental-jz
+
+# Disable SPACE gesture detection
+python run.py --disable-space
+
+# Disable word suggestion bar
+python run.py --disable-word-suggestion
+```
 
 ---
 
-## Operating Instructions & Gesture Tips
+## 5. Operating Instructions & Gesture Tips
 
-1. **Camera Framing:** Position the webcam approximately 50–80 cm away with good ambient lighting. Avoid harsh backlighting.
-2. **Holding for Commitment:** When signing a static letter or digit, hold the gesture steady inside the frame. A green confirmation ring will fill up (~3 seconds) before committing the character to the composition buffer.
-3. **Inserting a Space:** Form an open palm gesture facing the camera to trigger the SPACE classifier.
-4. **Dynamic J & Z:**
+1. **Camera Framing & Lighting:**
+   - Position the webcam approximately 50–80 cm away with even, ambient lighting.
+   - Avoid harsh backlighting or cluttered backgrounds containing hand-like shapes.
+2. **Holding for Commitment (Green Ring):**
+   - When signing a static letter or digit, hold the gesture steady inside the frame.
+   - A green confirmation ring will fill up (~3 seconds) before committing the character to the composition buffer.
+3. **Inserting a Space:**
+   - Form an open palm gesture facing the camera to trigger the SPACE classifier.
+4. **Signing Dynamic Letters (J & Z):**
    - **Letter J:** Extend the pinky finger and sweep downwards and upwards in a smooth 'J' shape curve.
    - **Letter Z:** Extend the index finger and draw a three-stroke 'Z' pattern in the air.
-5. **Word Suggestions:** As characters accumulate, candidate words from the Trie dictionary appear on the UI.
-6. **Exit:** Press `q` or `ESC` in the OpenCV display window to gracefully exit the application.
+5. **Word Suggestions & Auto-Complete:**
+   - As characters accumulate, candidate words from the Trie dictionary appear on the UI.
+6. **Exit Application:**
+   - Press `q` or `ESC` in the OpenCV display window to gracefully exit the application.
 
 ---
 
-## Verification & Testing
+## 6. Troubleshooting Common Issues
 
-Execute the automated regression and unit test suite:
+| Issue / Error Message | Root Cause | Solution |
+|---|---|---|
+| `camera_index 0 failed to open` | Webcam is busy or OS permissions denied | 1. Close Zoom, Teams, Discord, or browser tabs using the camera.<br>2. Check camera privacy settings in Windows Settings > Privacy > Camera.<br>3. Try alternative camera index: `python run.py --camera-index 1`. |
+| `Missing required pre-trained model file(s)` | Model checkpoints not yet downloaded | Download `.joblib` model files from [Google Drive](https://drive.google.com/drive/u/0/folders/11dG6JtCcgB_fniRazOeujuJPRiJl9m10) into `models/`, then run `python tools/download_models.py --check-only`. |
+| `Missing hand_landmarker.task` | MediaPipe model bundle missing | Run `python tools/download_models.py` to automatically fetch it from Google Cloud Storage. |
+| `InconsistentVersionWarning: Trying to unpickle...` | Minor scikit-learn version difference | Benign scikit-learn warning. Does not affect inference results. Ensure `scikit-learn>=1.4.0` is installed. |
+| `Ollama connection error / fallback` | Ollama service not running | Optional feature. The application gracefully degrades to instant offline Trie dictionary suggestions without raising an error. |
+| Low recognition accuracy on live camera | Framing, distance, or mirroring issue | Ensure your hand occupies 30-50% of the frame height. Use normal right hand signing; the system automatically handles display mirroring. |
 
+---
+
+## 7. Verification & Automated Testing
+
+Execute the core integration validation test:
 ```bash
-python -m unittest discover -s tests -q
+python -m unittest tests/test_stage13_integration.py -v
+```
+
+Run preflight checks across all modules:
+```bash
+python tools/download_models.py --check-only
+python run.py --check-only
+python run.py --mode letters --check-only
 ```
 
 ---
 
-## Troubleshooting
+## 8. License & Attribution
 
-- **Webcam Not Detected (`camera_index 0 failed to open`):**
-  - Verify your webcam permissions in OS settings.
-  - Try alternative camera indices: `python run.py --camera-index 1`.
-  - Close other software currently accessing the camera (Zoom, Teams, Discord, etc.).
-- **Missing Model Files:**
-  - For MediaPipe hand landmark bundle: run `python tools/download_models.py` to restore `models/mediapipe/hand_landmarker.task`.
-  - For letter/digit/space weights: refer to **[MODEL_DISTRIBUTION.md](docs/MODEL_DISTRIBUTION.md)** for instructions on providing checkpoints or training replacements.
-- **Ollama Connection Warning:**
-  - If Ollama is not installed or running, the application gracefully degrades to fast offline Trie dictionary suggestions without raising an exception.
-
----
-
-## License & Attribution
-
-- **MediaPipe Hand Landmarker:** Developed by Google, distributed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
-- **Core Dependencies:** OpenCV, scikit-learn, NumPy, and pandas are licensed under their respective open-source licenses (BSD / Apache / MIT).
-- **NhanDienCuChi:** Distributed under the MIT License. See [LICENSE](LICENSE) for details.
+- **NhanDienCuChi Source Code:** Licensed under the [MIT License](LICENSE).
+- **Google MediaPipe:** Licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
+- **Third-Party Data & Models:** Detailed attribution and license acknowledgments for Arda Mavi Digits, ASL-HG Mendeley, SUBTLEX-US, SigNN Team, and Kaggle ASL Alphabet are documented in **[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)**.
+- **Dataset Documentation:** See **[docs/dataset.md](docs/dataset.md)** for data composition, splits, and Google Drive links.
+- **Model Distribution Policy:** See **[docs/MODEL_DISTRIBUTION.md](docs/MODEL_DISTRIBUTION.md)** for model provenance and deployment policies.

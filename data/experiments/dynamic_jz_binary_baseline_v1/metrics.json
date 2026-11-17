@@ -1,0 +1,134 @@
+{
+  "status": "EXPERIMENTAL_JZ_BINARY_EVALUATION",
+  "model": "StandardScaler -> LogisticRegression",
+  "test_used_for_tuning": false,
+  "signer_independent_test": false,
+  "limitation": "Signer/session identities unavailable; source-video split may leak signer style.",
+  "splits": {
+    "train": {
+      "samples": 512,
+      "class_counts": {
+        "J": 212,
+        "Z": 300
+      },
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "per_class": {
+        "J": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 212
+        },
+        "Z": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 300
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "J",
+          "Z"
+        ],
+        "rows_true_columns_predicted": [
+          [
+            212,
+            0
+          ],
+          [
+            0,
+            300
+          ]
+        ]
+      },
+      "error_count": 0,
+      "errors": []
+    },
+    "validation": {
+      "samples": 64,
+      "class_counts": {
+        "J": 26,
+        "Z": 38
+      },
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "per_class": {
+        "J": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 26
+        },
+        "Z": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 38
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "J",
+          "Z"
+        ],
+        "rows_true_columns_predicted": [
+          [
+            26,
+            0
+          ],
+          [
+            0,
+            38
+          ]
+        ]
+      },
+      "error_count": 0,
+      "errors": []
+    },
+    "test": {
+      "samples": 64,
+      "class_counts": {
+        "Z": 37,
+        "J": 27
+      },
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "per_class": {
+        "J": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 27
+        },
+        "Z": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 37
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "J",
+          "Z"
+        ],
+        "rows_true_columns_predicted": [
+          [
+            27,
+            0
+          ],
+          [
+            0,
+            37
+          ]
+        ]
+      },
+      "error_count": 0,
+      "errors": []
+    }
+  },
+  "training_manifest_sha256": "c432b4871e26ed9062ab758781d9032e65896b735d81e29f2eab5ec2b623ce2f",
+  "split_manifest_sha256": "8a0bdc86f2b695e6cdfa30a254260d6e6e0b8685cd75b1cc1883d50909f0cd7d"
+}
