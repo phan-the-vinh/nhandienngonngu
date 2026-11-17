@@ -39,6 +39,11 @@ RUNTIME_LOCAL_ASSETS: dict[str, dict[str, Any]] = {
         "path": ROOT / "models" / "letters" / "production" / "uvw_medium_model.joblib",
         "expected_sha256": "88ea2f270cd75575d8914650265aa00193ffe451eb1a72d3ce70970bb1525a45",
     },
+    "letters_scaler": {
+        "description": "ASL Static Letters Scaler (uvw_medium_scaler)",
+        "path": ROOT / "models" / "letters" / "production" / "uvw_medium_scaler.joblib",
+        "expected_sha256": "93a0ddf102e456fef90cc54ddfa8cfadde60b72cce30e4f3c7810a0309fe0d4c",
+    },
     "digits_model": {
         "description": "Static Digits Model (digits_final)",
         "path": ROOT / "models" / "digits" / "production" / "digits_final.joblib",
@@ -53,6 +58,11 @@ RUNTIME_LOCAL_ASSETS: dict[str, dict[str, Any]] = {
         "description": "Dynamic J/Z Baseline Model (model_pipeline)",
         "path": ROOT / "data" / "experiments" / "dynamic_jz_binary_baseline_v1" / "model_pipeline.joblib",
         "expected_sha256": "8878b0c0cd04a1ff8bbfc263cb3d49b4c7bc92706140b71c99a36e37bc33c497",
+    },
+    "jz_scaler": {
+        "description": "Dynamic J/Z Scaler (scaler.joblib)",
+        "path": ROOT / "data" / "experiments" / "dynamic_jz_binary_baseline_v1" / "scaler.joblib",
+        "expected_sha256": "93804d73f4fc63aee7f2da08c1f0a879dc6d2bdc50ec27c0f5cfa4011b6fad7c",
     },
     "english_dictionary": {
         "description": "Offline English Word Suggestion Dictionary (25k words)",
