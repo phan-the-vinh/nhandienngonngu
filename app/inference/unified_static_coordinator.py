@@ -272,6 +272,14 @@ class RecognitionCoordinator:
         self.hold = HoldConfirmation(self.hold_settings)
         self.hold.text = self.composer.text  # Existing HOLD UI displays this text.
 
+    def backspace(self) -> None:
+        self.composer.backspace()
+        self.hold.text = self.composer.text
+
+    def clear(self) -> None:
+        self.composer.clear()
+        self.hold.text = self.composer.text
+
     def missing_hand(self, now: float) -> None:
         if self.mode in self.predictors:
             self.predictors[self.mode].reset()

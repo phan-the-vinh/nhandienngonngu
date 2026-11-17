@@ -176,6 +176,27 @@ def mode_from_click(x,y,width):
     return None
 
 
+def text_action_from_click(x: int, y: int, width: int, height: int) -> str | None:
+    """Determine if a canvas click at (x, y) hit Backspace or Clear button.
+
+    Args:
+        x: Logical canvas x coordinate.
+        y: Logical canvas y coordinate.
+        width: Camera frame width (offset to side panel).
+        height: Frame/panel height.
+
+    Returns:
+        'BACKSPACE', 'CLEAR', or None.
+    """
+    panel_x = x - width
+    if height - 60 <= y <= height - 36:
+        if 156 <= panel_x <= 224:
+            return "BACKSPACE"
+        if 232 <= panel_x <= 296:
+            return "CLEAR"
+    return None
+
+
 def render(inference_frame,mode,static_hand,raw_frame,raw_hand,coordinator,now):
     if mode == "ABC" and static_hand is None and raw_hand is not None:
         # Raw overlays are drawn BEFORE mirroring the display, not by changing
@@ -311,6 +332,7 @@ def run_camera(coordinator,camera_index):
     camera = None
     requested = [coordinator.mode]
     width = [0]
+    height = [480]
     window_ctrl = CameraWindowController(WINDOW)
     def on_mouse(event,x,y,_flags,_userdata):
         if event == cv2.EVENT_LBUTTONDOWN:
@@ -321,6 +343,15 @@ def run_camera(coordinator,camera_index):
             selected = mode_from_click(x,y,width[0])
             if selected:
                 requested[0] = selected
+                return
+            action = text_action_from_click(x, y, width[0], height[0])
+            if action == "BACKSPACE":
+                coordinator.backspace()
+                print(f"BUTTON_CLICK=BACKSPACE TEXT={coordinator.composer.text}", flush=True)
+                return
+            elif action == "CLEAR":
+                coordinator.clear()
+                print(f"BUTTON_CLICK=CLEAR TEXT={coordinator.composer.text}", flush=True)
                 return
             hitboxes = getattr(coordinator, "suggestion_hitboxes", [])
             if hitboxes:
@@ -392,6 +423,7 @@ def run_camera(coordinator,camera_index):
                 shape = raw.shape
                 inference_frame = prepare_inference_frame(raw,coordinator.mode)
                 width[0] = raw.shape[1]
+                height[0] = raw.shape[0]
                 timestamp = max(int((now-started)*1000),last_timestamp+1)
                 last_timestamp = timestamp
                 static_hand = None
@@ -428,8 +460,7 @@ def run_camera(coordinator,camera_index):
                 elif key in (ord("q"),ord("Q"),27):
                     return 0
                 elif key in (8, 127):
-                    coordinator.composer.backspace()
-                    coordinator.hold.text = coordinator.composer.text
+                    coordinator.backspace()
                 index += 1
     finally:
         try:

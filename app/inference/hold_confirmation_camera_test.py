@@ -56,6 +56,55 @@ def _confirmation_font() -> ImageFont.FreeTypeFont:
     return ImageFont.truetype(str(FONT_PATH), 19)
 
 
+@lru_cache(maxsize=2)
+def _get_button_patch(btn_type: str, width: int = 68, height: int = 24) -> np.ndarray:
+    """Pre-render action button patch with symbol and subtle border."""
+    bg_color = (235, 238, 242) if btn_type == "BACKSPACE" else (242, 236, 236)
+    patch = np.full((height, width, 3), bg_color, dtype=np.uint8)
+    cv2.rectangle(patch, (0, 0), (width - 1, height - 1), (140, 140, 140), 1)
+
+    rendered_pil = False
+    if btn_type == "BACKSPACE":
+        for font_path in [
+            "C:/Windows/Fonts/seguisym.ttf",
+            "C:/Windows/Fonts/segoeui.ttf",
+        ]:
+            if Path(font_path).is_file():
+                try:
+                    f = ImageFont.truetype(font_path, 15)
+                    bbox = f.getbbox(chr(0x232B))
+                    tw, th = bbox[2] - bbox[0], bbox[3] - bbox[1]
+                    pil_img = Image.fromarray(cv2.cvtColor(patch, cv2.COLOR_BGR2RGB))
+                    d = ImageDraw.Draw(pil_img)
+                    tx = (width - tw) // 2 - bbox[0]
+                    ty = (height - th) // 2 - bbox[1]
+                    d.text((tx, ty), chr(0x232B), font=f, fill=(20, 20, 20))
+                    patch = cv2.cvtColor(np.asarray(pil_img), cv2.COLOR_RGB2BGR)
+                    rendered_pil = True
+                    break
+                except Exception:
+                    pass
+        if not rendered_pil:
+            cv2.putText(patch, "<-", (width // 2 - 10, height // 2 + 5),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.45, (20, 20, 20), 1, cv2.LINE_AA)
+    elif btn_type == "CLEAR":
+        cv2.putText(patch, "Clear", (width // 2 - 19, height // 2 + 5),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.42, (30, 30, 30), 1, cv2.LINE_AA)
+
+    return patch
+
+
+def _draw_text_action_buttons(panel: np.ndarray, height: int) -> None:
+    """Draw Backspace and Clear action buttons on the side panel."""
+    # Backspace: x 156..224, y height - 60 .. height - 36
+    p_bs = _get_button_patch("BACKSPACE", 68, 24)
+    panel[height - 60:height - 36, 156:224] = p_bs
+
+    # Clear: x 232..296, y height - 60 .. height - 36
+    p_clr = _get_button_patch("CLEAR", 64, 24)
+    panel[height - 60:height - 36, 232:296] = p_clr
+
+
 def _panel(frame: np.ndarray, machine: HoldConfirmation, current_label: str | None,
            now: float) -> np.ndarray:
     height = frame.shape[0]
@@ -96,10 +145,15 @@ def _panel(frame: np.ndarray, machine: HoldConfirmation, current_label: str | No
                                    font=_confirmation_font(), fill=(0, 0, 0))
         panel = cv2.cvtColor(np.asarray(image), cv2.COLOR_RGB2BGR)
 
-    cv2.putText(panel, "TEXT:", (20, height - 57), cv2.FONT_HERSHEY_SIMPLEX,
-                .60, (0, 0, 0), 2, cv2.LINE_AA)
-    cv2.putText(panel, machine.text[-22:] or "-", (20, height - 25),
-                cv2.FONT_HERSHEY_SIMPLEX, .72, (0, 0, 0), 2, cv2.LINE_AA)
+    cv2.putText(panel, "TEXT:", (20, height - 42), cv2.FONT_HERSHEY_SIMPLEX,
+                .58, (0, 0, 0), 2, cv2.LINE_AA)
+    _draw_text_action_buttons(panel, height)
+
+    # Clean text container box
+    cv2.rectangle(panel, (16, height - 32), (296, height - 8), (255, 255, 255), -1)
+    cv2.rectangle(panel, (16, height - 32), (296, height - 8), (200, 200, 200), 1)
+    cv2.putText(panel, machine.text[-22:] or "-", (22, height - 14),
+                cv2.FONT_HERSHEY_SIMPLEX, .58, (20, 20, 20), 2, cv2.LINE_AA)
     return np.concatenate((frame, panel), axis=1)
 
 

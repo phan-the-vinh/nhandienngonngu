@@ -138,6 +138,20 @@ class UnifiedAutoCoordinator:
     def composer(self):
         return self.static.composer
 
+    def backspace(self) -> None:
+        self.composer.backspace()
+        self.static.hold.text = self.composer.text
+        self.jz_hold.text = self.composer.text
+        if self.suggestion_manager is not None:
+            self.suggestion_manager.update_text(self.composer.text)
+
+    def clear(self) -> None:
+        self.composer.clear()
+        self.static.hold.text = self.composer.text
+        self.jz_hold.text = self.composer.text
+        if self.suggestion_manager is not None:
+            self.suggestion_manager.update_text(self.composer.text)
+
     @property
     def hold(self):
         machine = self.jz_hold if self.fresh_validated_segment or self.post_jz_latch else self.static.hold
