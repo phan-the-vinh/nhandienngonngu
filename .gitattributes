@@ -15,7 +15,9 @@ data/dictionary/*.tsv text eol=lf
 models/letters/production/*.json text eol=lf
 models/letters/fallback/*.json text eol=lf
 configs/*.json text eol=lf
-data/experiments/**/*.json text eol=lf
+
+# Dynamic J/Z experimental baseline manifests pinned to Windows CRLF checksums in training_manifest.json
+data/experiments/dynamic_jz_binary_baseline_v1/*.json text eol=crlf
 
 # Binary files
 *.joblib binary
